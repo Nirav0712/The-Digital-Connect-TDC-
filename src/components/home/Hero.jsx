@@ -22,13 +22,13 @@ const Hero = () => {
       >
         <span className="w-2 h-2 rounded-full bg-brand-lavender"></span> UI/UX Design
       </motion.div>
-      <motion.div
+      {/* <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         className="absolute bottom-[25%] right-[15%] hidden lg:flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md rounded-full border border-white shadow-sm text-sm font-medium z-10"
       >
         <span className="w-2 h-2 rounded-full bg-brand-blue"></span> Web Development
-      </motion.div>
+      </motion.div> */}
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}

@@ -21,6 +21,11 @@ import NotFound from '../pages/NotFound';
 
 // Service Pages
 import WebDevelopment from '../pages/services/WebDevelopment';
+import FrontendDevelopment from '../pages/services/sub/FrontendDevelopment';
+import BackendDevelopment from '../pages/services/sub/BackendDevelopment';
+import CMSDevelopment from '../pages/services/sub/CMSDevelopment';
+import APIIntegration from '../pages/services/sub/APIIntegration';
+import CustomWebApplications from '../pages/services/sub/CustomWebApplications';
 import MobileDevelopment from '../pages/services/MobileDevelopment';
 import UIUXDesign from '../pages/services/UIUXDesign';
 import Ecommerce from '../pages/services/Ecommerce';
@@ -41,6 +46,33 @@ import BlogTemplate from '../components/blog/BlogTemplate';
 import CaseStudyTemplate from '../components/caseStudies/CaseStudyTemplate';
 import ScrollToTop from '../components/common/ScrollToTop';
 
+import UXResearch from '../pages/services/uiux/UXResearch';
+import Wireframing from '../pages/services/uiux/Wireframing';
+import Prototyping from '../pages/services/uiux/Prototyping';
+import UIDesign from '../pages/services/uiux/UIDesign';
+import DesignSystems from '../pages/services/uiux/DesignSystems';
+import Shopify from '../pages/services/ecommerce/Shopify';
+import WooCommerce from '../pages/services/ecommerce/WooCommerce';
+import CustomEcommerce from '../pages/services/ecommerce/CustomEcommerce';
+import PaymentIntegration from '../pages/services/ecommerce/PaymentIntegration';
+import MarketplaceDev from '../pages/services/ecommerce/MarketplaceDev';
+import CRM from '../pages/services/software/CRM';
+import ERP from '../pages/services/software/ERP';
+import SaaS from '../pages/services/software/SaaS';
+import BusinessAutomation from '../pages/services/software/BusinessAutomation';
+import APIDevelopment from '../pages/services/software/APIDevelopment';
+import SEO from '../pages/services/marketing/SEO';
+import PPC from '../pages/services/marketing/PPC';
+import SocialMedia from '../pages/services/marketing/SocialMedia';
+import ContentMarketing from '../pages/services/marketing/ContentMarketing';
+import PerformanceMarketing from '../pages/services/marketing/PerformanceMarketing';
+import IOSDevelopment from '../pages/services/mobile/IOSDevelopment';
+import AndroidDevelopment from '../pages/services/mobile/AndroidDevelopment';
+import FlutterDev from '../pages/services/mobile/FlutterDev';
+import ReactNativeDev from '../pages/services/mobile/ReactNativeDev';
+import CrossPlatform from '../pages/services/mobile/CrossPlatform';
+
+
 const AppRoutes = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -57,6 +89,12 @@ const AppRoutes = () => {
                     <Route path="/about" element={<About />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/services/web-development" element={<WebDevelopment />} />
+                    <Route path="/services/web-development/frontend-development" element={<FrontendDevelopment />} />
+                    <Route path="/services/web-development/backend-development" element={<BackendDevelopment />} />
+                    <Route path="/services/web-development/cms-development" element={<CMSDevelopment />} />
+                    <Route path="/services/web-development/api-integration" element={<APIIntegration />} />
+                    <Route path="/services/web-development/custom-web-applications" element={<CustomWebApplications />} />
+
                     <Route path="/services/mobile-app-development" element={<MobileDevelopment />} />
                     <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
                     <Route path="/services/ecommerce-development" element={<Ecommerce />} />
@@ -81,6 +119,32 @@ const AppRoutes = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/terms-and-conditions" element={<Terms />} />
+                    <Route path="/services/ui-ux-design/ux-research" element={<UXResearch />} />
+                    <Route path="/services/ui-ux-design/wireframing" element={<Wireframing />} />
+                    <Route path="/services/ui-ux-design/prototyping" element={<Prototyping />} />
+                    <Route path="/services/ui-ux-design/ui-design" element={<UIDesign />} />
+                    <Route path="/services/ui-ux-design/design-systems" element={<DesignSystems />} />
+                    <Route path="/services/ecommerce-development/shopify" element={<Shopify />} />
+                    <Route path="/services/ecommerce-development/woocommerce" element={<WooCommerce />} />
+                    <Route path="/services/ecommerce-development/custom-ecommerce" element={<CustomEcommerce />} />
+                    <Route path="/services/ecommerce-development/payment-integration" element={<PaymentIntegration />} />
+                    <Route path="/services/ecommerce-development/marketplace-development" element={<MarketplaceDev />} />
+                    <Route path="/services/software-development/crm" element={<CRM />} />
+                    <Route path="/services/software-development/erp" element={<ERP />} />
+                    <Route path="/services/software-development/saas" element={<SaaS />} />
+                    <Route path="/services/software-development/business-automation" element={<BusinessAutomation />} />
+                    <Route path="/services/software-development/api-development" element={<APIDevelopment />} />
+                    <Route path="/services/digital-marketing/seo" element={<SEO />} />
+                    <Route path="/services/digital-marketing/ppc" element={<PPC />} />
+                    <Route path="/services/digital-marketing/social-media" element={<SocialMedia />} />
+                    <Route path="/services/digital-marketing/content-marketing" element={<ContentMarketing />} />
+                    <Route path="/services/digital-marketing/performance-marketing" element={<PerformanceMarketing />} />
+                    <Route path="/services/mobile-app-development/ios-development" element={<IOSDevelopment />} />
+                    <Route path="/services/mobile-app-development/android-development" element={<AndroidDevelopment />} />
+                    <Route path="/services/mobile-app-development/flutter-development" element={<FlutterDev />} />
+                    <Route path="/services/mobile-app-development/react-native-development" element={<ReactNativeDev />} />
+                    <Route path="/services/mobile-app-development/cross-platform-apps" element={<CrossPlatform />} />
+
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>

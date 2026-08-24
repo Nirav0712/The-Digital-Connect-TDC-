@@ -16,7 +16,7 @@ const FinalCTA = () => {
           We partner with ambitious brands to solve complex problems through design and robust engineering.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <Button to="/contact" className="bg-white text-primary hover:bg-white/90">
+          <Button to="/contact" className="bg-red text-primary hover:bg-white/90">
             Start a Project
           </Button>
           <Button to="/contact" variant="outline" className="border-white/30 text-white hover:bg-white/10">

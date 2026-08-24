@@ -1,30 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { X } from 'lucide-react';
+import { X, ChevronDown } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { megaMenuData } from '../../data/megaMenuData';
+
+const navOrder = [
+    { label: 'Company', id: 'company' },
+    { label: 'Services', id: 'services' },
+    { label: 'Industries', id: 'industries' },
+    { label: 'Portfolio', id: 'portfolio' },
+    { label: 'Process', id: 'process' },
+    { label: 'Careers', id: 'careers' }
+];
 
 const MobileMenu = ({ isOpen, onClose }) => {
     const location = useLocation();
+    const [expandedSection, setExpandedSection] = useState(null);
 
-    // Handle route change
     useEffect(() => {
         if (isOpen) {
             onClose();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [location.pathname]);
 
-    // Handle body scroll lock, Escape key & Window Resize
     useEffect(() => {
         const handleKeyDown = (e) => {
-            if (e.key === 'Escape') {
-                onClose();
-            }
+            if (e.key === 'Escape') onClose();
         };
-
         const handleResize = () => {
-            if (window.innerWidth >= 768 && isOpen) {
-                onClose();
-            }
+            if (window.innerWidth >= 768 && isOpen) onClose();
         };
 
         if (isOpen) {
@@ -33,6 +38,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             window.addEventListener('resize', handleResize);
         } else {
             document.body.style.overflow = '';
+            setExpandedSection(null); // Reset accordion on close
         }
 
         return () => {
@@ -42,15 +48,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
         };
     }, [isOpen, onClose]);
 
-    const navLinks = [
-        { label: 'About', path: '/about' },
-        { label: 'Services', path: '/services', hasDropdown: true },
-        { label: 'Portfolio', path: '/portfolio' },
-        { label: 'Industries', path: '/industries', hasDropdown: true },
-        { label: 'Process', path: '/process' },
-        { label: 'Careers', path: '/careers' },
-        { label: 'Contact', path: '/contact' }
-    ];
+    const toggleSection = (id) => {
+        setExpandedSection(prev => prev === id ? null : id);
+    };
 
     return (
         <AnimatePresence>
@@ -78,7 +78,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                         aria-modal="true"
                         aria-label="Mobile Navigation"
                     >
-                        {/* Header inside drawer */}
+                        {/* Header */}
                         <div className="flex justify-between items-center px-6 h-[90px] shrink-0 border-b border-border/30">
                             <Link to="/" className="text-xl font-heading font-extrabold tracking-tight" onClick={onClose}>
                                 THE DIGITAL CONNECT
@@ -92,30 +92,108 @@ const MobileMenu = ({ isOpen, onClose }) => {
                             </button>
                         </div>
 
-                        {/* Scrollable Navigation Area */}
+                        {/* Scrollable Accodion Navigation */}
                         <div className="flex-1 overflow-y-auto px-6 py-8">
-                            <nav className="flex flex-col gap-6 w-full">
-                                {navLinks.map((link, i) => (
-                                    <motion.div
-                                        key={link.path}
-                                        initial={{ opacity: 0, x: 20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: 0.1 + (i * 0.05), duration: 0.3 }}
-                                    >
-                                        <Link
-                                            to={link.path}
-                                            onClick={onClose}
-                                            className="flex items-center justify-between py-2 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors leading-[1.3]"
+                            <nav className="flex flex-col w-full">
+                                {navOrder.map((nav, i) => {
+                                    const sectionData = megaMenuData[nav.id];
+                                    const isExpanded = expandedSection === nav.id;
+
+                                    return (
+                                        <motion.div
+                                            key={nav.id}
+                                            initial={{ opacity: 0, x: 20 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: 0.1 + (i * 0.05), duration: 0.3 }}
+                                            className="border-b border-border/50 overflow-hidden"
                                         >
-                                            {link.label}
-                                            {link.hasDropdown && <span className="text-muted-foreground font-light text-3xl leading-none">+</span>}
-                                        </Link>
-                                    </motion.div>
-                                ))}
+                                            {sectionData ? (
+                                                <>
+                                                    <button
+                                                        className="flex items-center justify-between w-full py-4 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors text-left"
+                                                        onClick={() => toggleSection(nav.id)}
+                                                        aria-expanded={isExpanded}
+                                                    >
+                                                        {nav.label}
+                                                        <motion.div
+                                                            animate={{ rotate: isExpanded ? 180 : 0 }}
+                                                            transition={{ duration: 0.3 }}
+                                                            className="text-muted-foreground"
+                                                        >
+                                                            <ChevronDown className="w-6 h-6" />
+                                                        </motion.div>
+                                                    </button>
+
+                                                    <AnimatePresence>
+                                                        {isExpanded && (
+                                                            <motion.div
+                                                                initial={{ height: 0, opacity: 0 }}
+                                                                animate={{ height: 'auto', opacity: 1 }}
+                                                                exit={{ height: 0, opacity: 0 }}
+                                                                transition={{ duration: 0.3 }}
+                                                            >
+                                                                <div className="flex flex-col gap-4 pb-6 pl-4 border-l-2 border-border ml-2 mt-2">
+                                                                    {sectionData.items.map((subItem) => (
+                                                                        <div key={subItem.id} className="flex flex-col gap-3 mb-4">
+                                                                            <Link
+                                                                                to={subItem.href}
+                                                                                onClick={onClose}
+                                                                                className="text-lg font-bold text-foreground hover:text-primary transition-colors block"
+                                                                            >
+                                                                                {subItem.label}
+                                                                            </Link>
+                                                                            {subItem.subServices && subItem.subServices.length > 0 && (
+                                                                                <div className="flex flex-col gap-2 pl-3 border-l text-sm mb-2">
+                                                                                    {subItem.subServices.map((srv, idx) => (
+                                                                                        <Link
+                                                                                            key={idx}
+                                                                                            to={srv.href}
+                                                                                            onClick={onClose}
+                                                                                            className="text-muted-foreground hover:text-primary transition-colors block py-0.5"
+                                                                                        >
+                                                                                            {srv.title}
+                                                                                        </Link>
+                                                                                    ))}
+                                                                                </div>
+                                                                            )}
+                                                                        </div>
+                                                                    ))}
+                                                                </div>
+                                                            </motion.div>
+                                                        )}
+                                                    </AnimatePresence>
+                                                </>
+                                            ) : (
+                                                <Link
+                                                    to={`/${nav.id}`}
+                                                    onClick={onClose}
+                                                    className="flex items-center justify-between w-full py-4 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors"
+                                                >
+                                                    {nav.label}
+                                                </Link>
+                                            )}
+                                        </motion.div>
+                                    );
+                                })}
+
+                                <motion.div
+                                    initial={{ opacity: 0, x: 20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.1 + (navOrder.length * 0.05), duration: 0.3 }}
+                                    className="border-b border-border/50"
+                                >
+                                    <Link
+                                        to="/contact"
+                                        onClick={onClose}
+                                        className="flex items-center justify-between w-full py-4 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors"
+                                    >
+                                        Contact
+                                    </Link>
+                                </motion.div>
                             </nav>
                         </div>
 
-                        {/* Footer Area inside drawer */}
+                        {/* Footer */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -129,7 +207,6 @@ const MobileMenu = ({ isOpen, onClose }) => {
                             >
                                 START A PROJECT
                             </Link>
-
                             <div className="flex gap-6 mt-8 font-medium text-sm">
                                 <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
                                 <a href="#" className="hover:text-primary transition-colors">Instagram</a>
@@ -142,4 +219,5 @@ const MobileMenu = ({ isOpen, onClose }) => {
         </AnimatePresence>
     );
 };
+
 export default MobileMenu;
