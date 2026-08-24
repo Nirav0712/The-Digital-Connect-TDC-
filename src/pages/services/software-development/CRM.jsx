@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const CRM = () => {
     useSEO({ title: "Master Customer Relationships at Scale. | The Digital Connect", description: "Custom Customer Relationship Management software tailored exactly to your unique organizational sales motions, removing generic bloat." });
-    const theme = {"accent":"text-indigo-600","bg":"bg-indigo-500","softBg":"bg-indigo-50"};
+    const theme = {"accent":"text-brand-blue","bg":"bg-brand-blue/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

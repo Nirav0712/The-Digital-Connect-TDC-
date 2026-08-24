@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const ERP = () => {
     useSEO({ title: "Unifying Enterprise Operational Chaos. | The Digital Connect", description: "Enterprise Resource Planning software merging radically disconnected corporate departments directly into a singular, immensely powerful data hub." });
-    const theme = {"accent":"text-slate-800","bg":"bg-slate-800","softBg":"bg-slate-100"};
+    const theme = {"accent":"text-brand-blue","bg":"bg-brand-blue/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const UIDesign = () => {
     useSEO({ title: "Interfaces Operating With Distinct Purpose. | The Digital Connect", description: "Emotionally resonant high-fidelity interfaces perfectly balancing massive commercial conversion functionality with profound aesthetic beauty." });
-    const theme = {"accent":"text-pink-500","bg":"bg-pink-500","softBg":"bg-pink-50"};
+    const theme = {"accent":"text-brand-periwinkle","bg":"bg-brand-periwinkle/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const MarketplaceDev = () => {
     useSEO({ title: "Massive B2B & B2C Multivendor Ecosystems. | The Digital Connect", description: "Engineering extraordinarily complex environments gracefully orchestrating immense buyer/seller relationships securely identically to Airbnb or Etsy native setups." });
-    const theme = {"accent":"text-pink-600","bg":"bg-pink-500","softBg":"bg-pink-50"};
+    const theme = {"accent":"text-brand-periwinkle","bg":"bg-brand-periwinkle/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

@@ -21,17 +21,17 @@ export const FrontendVisual = () => (
                     <div className="flex gap-4">
                         <div className="w-12 h-4 bg-black/5 rounded-full"></div>
                         <div className="w-12 h-4 bg-black/5 rounded-full"></div>
-                        <div className="w-8 h-8 bg-blue-500 rounded-full"></div>
+                        <div className="w-8 h-8 bg-brand-cyan/20 rounded-full"></div>
                     </div>
                 </div>
                 <div className="flex gap-6 relative z-10">
                     <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} className="w-1/2 h-32 bg-white rounded-xl shadow-sm border border-black/5 p-4 flex flex-col justify-between">
-                        <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-500"><Layout size={20} /></div>
+                        <div className="w-10 h-10 bg-brand-cyan/20 rounded-lg flex items-center justify-center text-brand-cyan"><Layout size={20} /></div>
                         <div className="w-3/4 h-3 bg-black/10 rounded-full mt-4"></div>
                         <div className="w-1/2 h-3 bg-black/5 rounded-full mt-2"></div>
                     </motion.div>
                     <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }} className="w-1/2 h-32 bg-white rounded-xl shadow-sm border border-black/5 p-4 flex flex-col justify-between">
-                        <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-purple-500"><Code size={20} /></div>
+                        <div className="w-10 h-10 bg-brand-periwinkle/30 rounded-lg flex items-center justify-center text-brand-periwinkle"><Code size={20} /></div>
                         <div className="w-3/4 h-3 bg-black/10 rounded-full mt-4"></div>
                         <div className="w-1/2 h-3 bg-black/5 rounded-full mt-2"></div>
                     </motion.div>
@@ -39,7 +39,7 @@ export const FrontendVisual = () => (
                 <div className="w-full h-48 bg-white rounded-xl shadow-sm border border-black/5 mt-auto relative overflow-hidden flex items-end">
                     <div className="w-full flex items-end gap-2 px-4 pb-0 h-full pt-8">
                         {[40, 60, 30, 80, 50, 70, 90, 65].map((h, i) => (
-                            <motion.div key={i} initial={{ height: 0 }} animate={{ height: `${h}%` }} transition={{ delay: 0.5 + (i * 0.1), duration: 0.6 }} className="flex-1 bg-gradient-to-t from-blue-500/20 to-blue-500/5 rounded-t-sm border-t border-blue-500/20"></motion.div>
+                            <motion.div key={i} initial={{ height: 0 }} animate={{ height: `${h}%` }} transition={{ delay: 0.5 + (i * 0.1), duration: 0.6 }} className="flex-1 bg-gradient-to-t from-blue-500/20 to-blue-500/5 rounded-t-sm border-t border-brand-cyan/20"></motion.div>
                         ))}
                     </div>
                 </div>
@@ -47,7 +47,7 @@ export const FrontendVisual = () => (
             </div>
         </motion.div>
         {/* Floating Elements */}
-        <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 5, repeat: Infinity }} className="absolute -top-4 -right-4 w-20 h-20 bg-white rounded-2xl shadow-xl border border-black/5 flex items-center justify-center z-30 text-blue-500">
+        <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 5, repeat: Infinity }} className="absolute -top-4 -right-4 w-20 h-20 bg-white rounded-2xl shadow-xl border border-black/5 flex items-center justify-center z-30 text-brand-cyan">
             <Code size={32} />
         </motion.div>
     </div>
@@ -60,7 +60,7 @@ export const BackendVisual = () => (
 
                 {/* Client Layer */}
                 <motion.div initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="w-48 h-16 bg-white rounded-xl shadow-lg border border-black/5 flex items-center justify-center gap-3 z-20">
-                    <Globe className="text-emerald-500" /> <span className="font-bold text-sm">Client App</span>
+                    <Globe className="text-brand-cyan" /> <span className="font-bold text-sm">Client App</span>
                 </motion.div>
 
                 <div className="w-full flex-1 relative flex items-center justify-center my-4">
@@ -72,7 +72,7 @@ export const BackendVisual = () => (
                     </svg>
 
                     {/* API Gateway */}
-                    <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }} className="px-6 py-3 bg-emerald-500 text-white rounded-full font-bold shadow-xl shadow-emerald-500/20 z-20 flex items-center gap-2">
+                    <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }} className="px-6 py-3 bg-brand-soft-blue/30 text-white rounded-full font-bold shadow-xl shadow-emerald-500/20 z-20 flex items-center gap-2">
                         <Lock size={16} /> API Gateway
                     </motion.div>
                 </div>
@@ -80,16 +80,16 @@ export const BackendVisual = () => (
                 {/* Microservices & DB */}
                 <div className="flex w-full justify-between items-end gap-4 z-20">
                     <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }} className="w-1/3 bg-white p-4 rounded-xl shadow-lg border border-black/5 flex flex-col items-center text-center">
-                        <div className="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-3"><Server size={20} /></div>
+                        <div className="w-10 h-10 bg-brand-soft-blue/30 text-brand-cyan rounded-lg flex items-center justify-center mb-3"><Server size={20} /></div>
                         <span className="text-xs font-bold text-neutral-800">Auth Service</span>
                     </motion.div>
-                    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className="w-1/3 bg-white p-4 rounded-xl shadow-lg border border-emerald-500/30 flex flex-col items-center text-center relative overflow-hidden">
-                        <div className="absolute inset-0 bg-emerald-500/5 z-0"></div>
-                        <div className="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-3 z-10"><Database size={20} /></div>
-                        <span className="text-xs font-bold text-emerald-900 z-10">Main DB</span>
+                    <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className="w-1/3 bg-white p-4 rounded-xl shadow-lg border border-brand-soft-blue/30 flex flex-col items-center text-center relative overflow-hidden">
+                        <div className="absolute inset-0 bg-brand-soft-blue/30/5 z-0"></div>
+                        <div className="w-10 h-10 bg-brand-soft-blue/30 text-brand-cyan rounded-lg flex items-center justify-center mb-3 z-10"><Database size={20} /></div>
+                        <span className="text-xs font-bold text-brand-cyan z-10">Main DB</span>
                     </motion.div>
                     <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.7, duration: 0.5 }} className="w-1/3 bg-white p-4 rounded-xl shadow-lg border border-black/5 flex flex-col items-center text-center">
-                        <div className="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-3"><Box size={20} /></div>
+                        <div className="w-10 h-10 bg-brand-soft-blue/30 text-brand-cyan rounded-lg flex items-center justify-center mb-3"><Box size={20} /></div>
                         <span className="text-xs font-bold text-neutral-800">Logic Core</span>
                     </motion.div>
                 </div>
@@ -103,11 +103,11 @@ export const CMSVisual = () => (
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="w-full h-full bg-white rounded-2xl shadow-xl border border-black/5 overflow-hidden flex z-20">
             {/* Sidebar */}
             <div className="w-[120px] bg-[#FAF9F7] border-r border-black/5 p-4 flex flex-col gap-6">
-                <div className="w-8 h-8 bg-purple-500 rounded-lg mb-4"></div>
+                <div className="w-8 h-8 bg-brand-periwinkle/30 rounded-lg mb-4"></div>
                 <div className="flex flex-col gap-4">
                     {[1, 2, 3, 4, 5].map((i) => (
-                        <div key={i} className={`w-full h-8 rounded-lg flex items-center px-2 ${i === 2 ? 'bg-purple-100' : 'bg-transparent'}`}>
-                            <div className={`w-full h-2 rounded-full ${i === 2 ? 'bg-purple-500' : 'bg-black/10'}`}></div>
+                        <div key={i} className={`w-full h-8 rounded-lg flex items-center px-2 ${i === 2 ? 'bg-brand-periwinkle/30' : 'bg-transparent'}`}>
+                            <div className={`w-full h-2 rounded-full ${i === 2 ? 'bg-brand-periwinkle/30' : 'bg-black/10'}`}></div>
                         </div>
                     ))}
                 </div>
@@ -116,16 +116,16 @@ export const CMSVisual = () => (
             <div className="flex-1 p-6 flex flex-col">
                 <div className="flex justify-between items-center mb-8">
                     <div className="w-32 h-6 bg-black/10 rounded-md"></div>
-                    <div className="bg-purple-500 text-white text-[10px] font-bold px-4 py-2 rounded-full">PUBLISH</div>
+                    <div className="bg-brand-periwinkle/30 text-white text-[10px] font-bold px-4 py-2 rounded-full">PUBLISH</div>
                 </div>
 
                 {/* Editor Content */}
                 <div className="flex-1 border border-black/5 rounded-xl bg-[#FAF9F7]/50 p-6 flex flex-col gap-4 relative">
                     <div className="w-3/4 h-8 bg-black/10 rounded-md mb-4"></div>
 
-                    <div className="w-full h-32 bg-purple-100/30 border border-purple-500/20 rounded-lg flex items-center justify-center mb-2 overflow-hidden relative">
+                    <div className="w-full h-32 bg-brand-periwinkle/30/30 border border-brand-periwinkle/20 rounded-lg flex items-center justify-center mb-2 overflow-hidden relative">
                         <motion.div animate={{ opacity: [0.5, 1, 0.5] }} transition={{ duration: 3, repeat: Infinity }} className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12 translate-x-[-100%] hover:translate-x-[200%] transition-transform"></motion.div>
-                        <FileText className="text-purple-300 w-12 h-12" />
+                        <FileText className="text-brand-periwinkle w-12 h-12" />
                     </div>
 
                     <div className="space-y-3 mt-4">
@@ -148,14 +148,14 @@ export const APIVisual = () => (
         </div>
 
         <div className="relative w-full h-full flex flex-col items-center justify-center z-20">
-            <motion.div animate={{ rotate: 360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute w-[300px] h-[300px] border border-dashed border-pink-500/30 rounded-full flex items-center justify-center">
-                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -top-4 w-8 h-8 bg-white border border-pink-500/50 rounded-full shadow-lg flex items-center justify-center"><Database size={12} className="text-pink-500" /></motion.div>
-                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -bottom-4 w-8 h-8 bg-white border border-pink-500/50 rounded-full shadow-lg flex items-center justify-center"><Globe size={12} className="text-pink-500" /></motion.div>
-                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -left-4 w-8 h-8 bg-white border border-pink-500/50 rounded-full shadow-lg flex items-center justify-center"><Server size={12} className="text-pink-500" /></motion.div>
-                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -right-4 w-8 h-8 bg-white border border-pink-500/50 rounded-full shadow-lg flex items-center justify-center"><Code size={12} className="text-pink-500" /></motion.div>
+            <motion.div animate={{ rotate: 360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute w-[300px] h-[300px] border border-dashed border-brand-electric-cyan/30 rounded-full flex items-center justify-center">
+                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -top-4 w-8 h-8 bg-white border border-brand-electric-cyan/50 rounded-full shadow-lg flex items-center justify-center"><Database size={12} className="text-brand-electric-cyan" /></motion.div>
+                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -bottom-4 w-8 h-8 bg-white border border-brand-electric-cyan/50 rounded-full shadow-lg flex items-center justify-center"><Globe size={12} className="text-brand-electric-cyan" /></motion.div>
+                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -left-4 w-8 h-8 bg-white border border-brand-electric-cyan/50 rounded-full shadow-lg flex items-center justify-center"><Server size={12} className="text-brand-electric-cyan" /></motion.div>
+                <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }} className="absolute -right-4 w-8 h-8 bg-white border border-brand-electric-cyan/50 rounded-full shadow-lg flex items-center justify-center"><Code size={12} className="text-brand-electric-cyan" /></motion.div>
             </motion.div>
 
-            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", delay: 0.2 }} className="w-24 h-24 bg-pink-500 rounded-2xl shadow-xl shadow-pink-500/30 flex items-center justify-center text-white relative z-30">
+            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", delay: 0.2 }} className="w-24 h-24 bg-brand-electric-cyan/20 rounded-2xl shadow-xl shadow-pink-500/30 flex items-center justify-center text-white relative z-30">
                 <Webhook size={40} />
             </motion.div>
 
@@ -163,8 +163,8 @@ export const APIVisual = () => (
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-0 border-t border-black/10 -z-10 bg-black -rotate-45"></div>
 
             {/* Packets */}
-            <motion.div animate={{ x: [-150, 0], y: [-150, 0], opacity: [0, 1, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }} className="absolute w-2 h-2 bg-pink-500 rounded-full"></motion.div>
-            <motion.div animate={{ x: [150, 0], y: [150, 0], opacity: [0, 1, 0] }} transition={{ duration: 2, delay: 1, repeat: Infinity, ease: "easeOut" }} className="absolute w-2 h-2 bg-pink-500 rounded-full"></motion.div>
+            <motion.div animate={{ x: [-150, 0], y: [-150, 0], opacity: [0, 1, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }} className="absolute w-2 h-2 bg-brand-electric-cyan/20 rounded-full"></motion.div>
+            <motion.div animate={{ x: [150, 0], y: [150, 0], opacity: [0, 1, 0] }} transition={{ duration: 2, delay: 1, repeat: Infinity, ease: "easeOut" }} className="absolute w-2 h-2 bg-brand-electric-cyan/20 rounded-full"></motion.div>
         </div>
     </div>
 );

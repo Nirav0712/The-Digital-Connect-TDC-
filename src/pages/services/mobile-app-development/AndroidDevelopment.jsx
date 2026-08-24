@@ -8,7 +8,7 @@ import { Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi
 
 const AndroidDevelopment = () => {
     useSEO({ title: "Universal Reach, Perfectly Engineered. | The Digital Connect", description: "We engineer complex Kotlin applications navigating mass hardware fragmentation to deliver a singular, frictionless experience globally." });
-    const theme = {"accent":"text-emerald-500","bg":"bg-emerald-500","softBg":"bg-emerald-50"};
+    const theme = {"accent":"text-brand-electric-cyan","bg":"bg-brand-electric-cyan/20","softBg":"bg-brand-periwinkle/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

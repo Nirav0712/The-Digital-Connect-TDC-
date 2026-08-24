@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const Prototyping = () => {
     useSEO({ title: "Experience The Product Before It Breathes. | The Digital Connect", description: "Lightning-fast interactive models validating complex user journeys instantaneously prior to committing exhaustive engineering resources." });
-    const theme = {"accent":"text-blue-500","bg":"bg-blue-500","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-bg-light"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

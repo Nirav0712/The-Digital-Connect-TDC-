@@ -8,7 +8,7 @@ import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Bo
 
 const FrontendDevelopment = () => {
     useSEO({ title: "From Design System to Pixel-Perfect Interface | The Digital Connect", description: "We engineer lightning-fast, accessible, and deeply interactive interfaces that convert casual browsers into dedicated customers. Our frontend architectures are built to scale globally." });
-    const theme = {"accent":"text-blue-500","bg":"bg-blue-500","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-soft-blue/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

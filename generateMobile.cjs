@@ -8,7 +8,7 @@ const generate = () => {
             pRoute: '/services/mobile-app-development', pTitle: 'Mobile App Development', eyebrow: 'iOS Development',
             title: 'Native iOS Excellence on Apple Silicon.',
             desc: 'Designing and engineering premium iOS applications using Swift and SwiftUI that effortlessly dominate the App Store rankings.',
-            theme: { accent: 'text-blue-500', bg: 'bg-blue-500', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-electric-cyan', bg: 'bg-brand-electric-cyan/20', softBg: 'bg-brand-periwinkle/20' },
             visual: 'IOSVisual', visualImport: 'import { IOSVisual } from \'../../../components/services/subservices/visuals/VisualsMobile\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -20,7 +20,7 @@ const generate = () => {
                 ]
             },
             capabilities: [
-                { title: 'SwiftUI Architecture', desc: 'Building dynamic, declarative user interfaces that compile instantly and scale seamlessly.', icon: '<Codepen />' },
+                { title: 'SwiftUI Architecture', desc: 'Building dynamic, declarative user interfaces that compile instantly and scale seamlessly.', icon: '<Code />' },
                 { title: 'Core Data & Networking', desc: 'Secure local storage mechanisms synced flawlessly with complex remote REST/GraphQL backend logic.', icon: '<Database />' },
                 { title: 'App Store Optimization', desc: 'Navigating rigorous Apple review processes ensuring zero-delay publishing pipelines.', icon: '<Rocket />' },
                 { title: 'Push Notifications', desc: 'Implementing APNs for rich, segmented, hyper-targeted messaging increasing daily active usage.', icon: '<Bell />' },
@@ -52,7 +52,7 @@ const generate = () => {
             pRoute: '/services/mobile-app-development', pTitle: 'Mobile App Development', eyebrow: 'Android Development',
             title: 'Universal Reach, Perfectly Engineered.',
             desc: 'We engineer complex Kotlin applications navigating mass hardware fragmentation to deliver a singular, frictionless experience globally.',
-            theme: { accent: 'text-emerald-500', bg: 'bg-emerald-500', softBg: 'bg-emerald-50' },
+            theme: { accent: 'text-brand-electric-cyan', bg: 'bg-brand-electric-cyan/20', softBg: 'bg-brand-periwinkle/20' },
             visual: 'AndroidVisual', visualImport: 'import { AndroidVisual } from \'../../../components/services/subservices/visuals/VisualsMobile\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -96,7 +96,7 @@ const generate = () => {
             pRoute: '/services/mobile-app-development', pTitle: 'Mobile App Development', eyebrow: 'React Native',
             title: 'Web Talent Intersecting Native Power.',
             desc: 'Simultaneous iOS and Android deployments using a unified JavaScript pipeline cutting total cost and time dynamically.',
-            theme: { accent: 'text-cyan-500', bg: 'bg-cyan-500', softBg: 'bg-cyan-50' },
+            theme: { accent: 'text-brand-electric-cyan', bg: 'bg-brand-electric-cyan/20', softBg: 'bg-brand-periwinkle/20' },
             visual: 'ReactNativeVisual', visualImport: 'import { ReactNativeVisual } from \'../../../components/services/subservices/visuals/VisualsMobile\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -140,7 +140,7 @@ const generate = () => {
             pRoute: '/services/mobile-app-development', pTitle: 'Mobile App Development', eyebrow: 'Flutter',
             title: 'Uncompromised 60fps Canvas Graphics Globally.',
             desc: 'Google-backed Dart infrastructures painting incredibly fast, fundamentally beautiful applications completely ignoring traditional native restrictions.',
-            theme: { accent: 'text-blue-600', bg: 'bg-blue-600', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-electric-cyan', bg: 'bg-brand-electric-cyan/20', softBg: 'bg-brand-periwinkle/20' },
             visual: 'FlutterVisual', visualImport: 'import { FlutterVisual } from \'../../../components/services/subservices/visuals/VisualsMobile\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -184,7 +184,7 @@ const generate = () => {
             pRoute: '/services/mobile-app-development', pTitle: 'Mobile App Development', eyebrow: 'Cross-Platform Apps',
             title: 'One Solitary Codebase. Universal Enterprise Output.',
             desc: 'Simultaneous immense multi-store deployments slicing physical production cycles by half without sacrificing critical application robustness.',
-            theme: { accent: 'text-orange-500', bg: 'bg-orange-500', softBg: 'bg-orange-50' },
+            theme: { accent: 'text-brand-electric-cyan', bg: 'bg-brand-electric-cyan/20', softBg: 'bg-brand-periwinkle/20' },
             visual: 'CrossPlatformVisual', visualImport: 'import { CrossPlatformVisual } from \'../../../components/services/subservices/visuals/VisualsMobile\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -225,7 +225,7 @@ const generate = () => {
         }
     ];
 
-    let imports = `import { Codepen, Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi, BatteryCharging, PlaySquare, FileCode2, Network, Zap, Sparkles, Boxes, MonitorSmartphone, Box, RefreshCw, Globe, Users, ShieldCheck, Search, LayoutDashboard } from 'lucide-react';\n`;
+    let imports = `import { Code, Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi, BatteryCharging, PlaySquare, FileCode2, Network, Zap, Sparkles, Boxes, MonitorSmartphone, Box, RefreshCw, Globe, Users, ShieldCheck, Search, LayoutDashboard } from 'lucide-react';\n`;
 
     pages.forEach(p => {
         let code = `import React from 'react';\nimport useSEO from '../../../hooks/useSEO';\nimport PageTransition from '../../../components/common/PageTransition';\nimport { SubServiceShared } from '../../../components/services/subservices/SubServiceShared';\n${p.visualImport}\n${imports}\n\n`;

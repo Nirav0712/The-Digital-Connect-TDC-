@@ -53,18 +53,15 @@ const DesktopNavigation = () => {
                             <Link
                                 to={link.path}
                                 onClick={() => setActiveMenu(null)}
-                                className="text-[14px] xl:text-[15px] font-medium transition-colors duration-200 py-6 text-[#222] hover:text-[#6D5DFB]"
+                                className={`text-[14px] xl:text-[15px] font-bold transition-colors duration-200 py-6 hover:text-brand-electric-cyan ${activeMenu === link.id ? 'text-brand-electric-cyan' : 'text-brand-primary-navy'}`}
                                 aria-expanded={activeMenu === link.id}
-                                style={{
-                                    color: activeMenu === link.id ? '#6D5DFB' : ''
-                                }}
                             >
                                 {link.label}
                             </Link>
 
                             {/* Active Indicator Underline */}
                             <div
-                                className={`absolute bottom-[16px] left-1/2 -translate-x-1/2 h-[3px] rounded-full transition-all duration-300 ${isActive ? 'w-full bg-[#6D5DFB]/20' : 'w-0 bg-transparent group-hover:w-1/2 group-hover:bg-[#6D5DFB]/10'
+                                className={`absolute bottom-[16px] left-1/2 -translate-x-1/2 h-[3px] rounded-full transition-all duration-300 ${isActive ? 'w-full bg-brand-cyan/20' : 'w-0 bg-transparent group-hover:w-1/2 group-hover:bg-brand-cyan/10'
                                     }`}
                             />
                         </div>

@@ -10,9 +10,9 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-brand-soft">
       {/* Background Motion System */}
       <AnimatedGrid />
-      <GlowOrb className="w-[600px] h-[600px] top-[-10%] left-[-10%]" color="bg-brand-lavender" />
-      <GlowOrb className="w-[500px] h-[500px] bottom-[-10%] right-[10%] animate-blob" style={{ animationDelay: '2s' }} color="bg-brand-blue" />
-      <GlowOrb className="w-[400px] h-[400px] top-[20%] right-[-5%] animate-blob" style={{ animationDelay: '5s' }} color="bg-brand-peach" />
+      <GlowOrb className="w-[600px] h-[600px] top-[-10%] left-[-10%]" color="bg-brand-cyan" />
+      <GlowOrb className="w-[500px] h-[500px] bottom-[-10%] right-[10%] animate-blob" style={{ animationDelay: '2s' }} color="bg-brand-deep-blue" />
+      <GlowOrb className="w-[400px] h-[400px] top-[20%] right-[-5%] animate-blob" style={{ animationDelay: '5s' }} color="bg-brand-electric-cyan" />
 
       {/* Floating Labels */}
       <motion.div
@@ -20,21 +20,21 @@ const Hero = () => {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-[25%] left-[10%] hidden lg:flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md rounded-full border border-white shadow-sm text-sm font-medium z-10"
       >
-        <span className="w-2 h-2 rounded-full bg-brand-lavender"></span> UI/UX Design
+        <span className="w-2 h-2 rounded-full bg-brand-cyan"></span> UI/UX Design
       </motion.div>
       {/* <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         className="absolute bottom-[25%] right-[15%] hidden lg:flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md rounded-full border border-white shadow-sm text-sm font-medium z-10"
       >
-        <span className="w-2 h-2 rounded-full bg-brand-blue"></span> Web Development
+        <span className="w-2 h-2 rounded-full bg-brand-deep-blue"></span> Web Development
       </motion.div> */}
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         className="absolute top-[35%] right-[5%] hidden xl:flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md rounded-full border border-white shadow-sm text-sm font-medium z-10"
       >
-        <span className="w-2 h-2 rounded-full bg-brand-peach"></span> Digital Solutions
+        <span className="w-2 h-2 rounded-full bg-brand-electric-cyan"></span> Digital Solutions
       </motion.div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
@@ -85,12 +85,12 @@ const Hero = () => {
             </div>
 
             <div className="relative z-10 w-full bg-white/60 backdrop-blur-lg rounded-2xl p-6 shadow-sm border border-white/50">
-              <div className="w-16 h-2 bg-brand-purple/50 rounded-full mb-4"></div>
-              <div className="w-full h-8 bg-brand-blue/30 rounded-lg mb-2"></div>
-              <div className="w-3/4 h-8 bg-brand-mint/30 rounded-lg mb-4"></div>
+              <div className="w-16 h-2 bg-brand-primary-navy/50 rounded-full mb-4"></div>
+              <div className="w-full h-8 bg-brand-deep-blue/30 rounded-lg mb-2"></div>
+              <div className="w-3/4 h-8 bg-brand-deep-blue/30 rounded-lg mb-4"></div>
               <div className="flex gap-2">
-                <div className="w-8 h-8 rounded-full bg-brand-peach/50"></div>
-                <div className="w-8 h-8 rounded-full bg-brand-yellow/50"></div>
+                <div className="w-8 h-8 rounded-full bg-brand-electric-cyan/50"></div>
+                <div className="w-8 h-8 rounded-full bg-brand-soft-blue/50"></div>
               </div>
             </div>
           </div>

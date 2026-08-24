@@ -8,7 +8,7 @@ import { Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi
 
 const CrossPlatformApps = () => {
     useSEO({ title: "One Solitary Codebase. Universal Enterprise Output. | The Digital Connect", description: "Simultaneous immense multi-store deployments slicing physical production cycles by half without sacrificing critical application robustness." });
-    const theme = {"accent":"text-orange-500","bg":"bg-orange-500","softBg":"bg-orange-50"};
+    const theme = {"accent":"text-brand-electric-cyan","bg":"bg-brand-electric-cyan/20","softBg":"bg-brand-periwinkle/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

@@ -9,7 +9,7 @@ const generatePages = () => {
             pRoute: '/services/ui-ux-design', pTitle: 'UI/UX Design', eyebrow: 'UX Research',
             title: 'Understand People Before Building for Them.',
             desc: 'Deep qualitative and quantitative behavioral research powering human-centered product development and eliminating vast engineering waste.',
-            theme: { accent: 'text-purple-600', bg: 'bg-purple-500', softBg: 'bg-purple-50' },
+            theme: { accent: 'text-brand-periwinkle', bg: 'bg-brand-periwinkle/20', softBg: 'bg-brand-cyan/10' },
             visual: 'UXResearchVisual', visualImport: 'import { UXResearchVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -47,7 +47,7 @@ const generatePages = () => {
             pRoute: '/services/ui-ux-design', pTitle: 'UI/UX Design', eyebrow: 'Wireframing',
             title: 'Turn Ideas Into Clear Product Architectures.',
             desc: 'Low-fidelity structural blueprints isolating structural logic from surface visual aesthetics, guaranteeing frictionless navigation models.',
-            theme: { accent: 'text-gray-600', bg: 'bg-gray-400', softBg: 'bg-gray-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'WireframingVisual', visualImport: 'import { WireframingVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -61,7 +61,7 @@ const generatePages = () => {
             capabilities: [
                 { title: 'Information Architecture', desc: 'Structuring massive complex datasets intuitively preventing deep navigation confusion natively.', icon: '<Layers />' },
                 { title: 'Low Fidelity Layouts', desc: 'Rapid gray-box sketching ensuring macro page flow dominates effectively.', icon: '<Layout />' },
-                { title: 'User Flow Diagrams', desc: 'Mapping exact conditional logic chains ("If user clicks here, show X").', icon: '<Map />' }
+                { title: 'User Flow Diagrams', desc: 'Mapping exact conditional logic chains (\'If user clicks here, show X\').', icon: '<Map />' }
             ],
             tech: [],
             process: [],
@@ -78,7 +78,7 @@ const generatePages = () => {
             pRoute: '/services/ui-ux-design', pTitle: 'UI/UX Design', eyebrow: 'Prototyping',
             title: 'Experience The Product Before It Breathes.',
             desc: 'Lightning-fast interactive models validating complex user journeys instantaneously prior to committing exhaustive engineering resources.',
-            theme: { accent: 'text-blue-500', bg: 'bg-blue-500', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'PrototypingVisual', visualImport: 'import { PrototypingVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -113,7 +113,7 @@ const generatePages = () => {
             pRoute: '/services/ui-ux-design', pTitle: 'UI/UX Design', eyebrow: 'UI Design',
             title: 'Interfaces Operating With Distinct Purpose.',
             desc: 'Emotionally resonant high-fidelity interfaces perfectly balancing massive commercial conversion functionality with profound aesthetic beauty.',
-            theme: { accent: 'text-pink-500', bg: 'bg-pink-500', softBg: 'bg-pink-50' },
+            theme: { accent: 'text-brand-periwinkle', bg: 'bg-brand-periwinkle/20', softBg: 'bg-brand-cyan/10' },
             visual: 'UIDesignVisual', visualImport: 'import { UIDesignVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -148,7 +148,7 @@ const generatePages = () => {
             pRoute: '/services/ui-ux-design', pTitle: 'UI/UX Design', eyebrow: 'Design Systems',
             title: 'Infinite Consistency at Every Touchpoint.',
             desc: 'Scalable React-ready tokenized UX component libraries ensuring absolute infinite visual consistency universally aiding massive engineering team scaling.',
-            theme: { accent: 'text-emerald-500', bg: 'bg-emerald-500', softBg: 'bg-emerald-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-gold/10' },
             visual: 'DesignSystemsVisual', visualImport: 'import { DesignSystemsVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -185,7 +185,7 @@ const generatePages = () => {
             pRoute: '/services/ecommerce-development', pTitle: 'Ecommerce Development', eyebrow: 'Shopify Development',
             title: 'Shopify Experiences Exclusively Designed to Scale.',
             desc: 'Custom headless Shopify architectures maximizing absolute storefront versatility mapping strictly to high-conversion checkout optimization.',
-            theme: { accent: 'text-emerald-600', bg: 'bg-emerald-500', softBg: 'bg-emerald-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-gold/10' },
             visual: 'ShopifyVisual', visualImport: 'import { ShopifyVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -223,7 +223,7 @@ const generatePages = () => {
             pRoute: '/services/ecommerce-development', pTitle: 'Ecommerce Development', eyebrow: 'WooCommerce',
             title: 'Limitless Omnichannel Commerce Built on Code.',
             desc: 'Deeply customized open-source Woo commerce experiences granting complete data ownership and literally limitless platform structural capabilities.',
-            theme: { accent: 'text-purple-600', bg: 'bg-purple-500', softBg: 'bg-purple-50' },
+            theme: { accent: 'text-brand-periwinkle', bg: 'bg-brand-periwinkle/20', softBg: 'bg-brand-cyan/10' },
             visual: 'WooCommerceVisual', visualImport: 'import { WooCommerceVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -254,7 +254,7 @@ const generatePages = () => {
             pRoute: '/services/ecommerce-development', pTitle: 'Ecommerce Development', eyebrow: 'Custom Ecommerce',
             title: 'Shattering Standard Platform Limitations.',
             desc: 'Bespoke Node/React storefronts engineered entirely from scratch exclusively explicitly covering extraordinarily unique catalog and checkout demands.',
-            theme: { accent: 'text-orange-500', bg: 'bg-orange-500', softBg: 'bg-orange-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'CustomEcommerceVisual', visualImport: 'import { CustomEcommerceVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -290,7 +290,7 @@ const generatePages = () => {
             pRoute: '/services/ecommerce-development', pTitle: 'Ecommerce Development', eyebrow: 'Payment Integrations',
             title: 'Secure Cart Checkouts Facilitating Utmost Trust.',
             desc: 'Multi-gateway logic integrations strictly encompassing absolute PCI compliance natively and seamless intense global subscription recurring billing.',
-            theme: { accent: 'text-blue-500', bg: 'bg-blue-500', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'PaymentIntegrationVisual', visualImport: 'import { PaymentIntegrationVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -326,7 +326,7 @@ const generatePages = () => {
             pRoute: '/services/ecommerce-development', pTitle: 'Ecommerce Development', eyebrow: 'Marketplaces',
             title: 'Massive B2B & B2C Multivendor Ecosystems.',
             desc: 'Engineering extraordinarily complex environments gracefully orchestrating immense buyer/seller relationships securely identically to Airbnb or Etsy native setups.',
-            theme: { accent: 'text-pink-600', bg: 'bg-pink-500', softBg: 'bg-pink-50' },
+            theme: { accent: 'text-brand-periwinkle', bg: 'bg-brand-periwinkle/20', softBg: 'bg-brand-cyan/10' },
             visual: 'MarketplaceVisual', visualImport: 'import { MarketplaceVisual } from \'../../../components/services/subservices/visuals/VisualsUIUX_Ecom\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {

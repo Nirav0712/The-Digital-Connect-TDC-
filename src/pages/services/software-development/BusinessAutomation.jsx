@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const BusinessAutomation = () => {
     useSEO({ title: "Replacing Repetitive Humans with Logic. | The Digital Connect", description: "Extreme process automation explicitly mapping intense API endpoints securely removing monumental manual operational hours instantly." });
-    const theme = {"accent":"text-orange-500","bg":"bg-orange-500","softBg":"bg-orange-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-gold/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

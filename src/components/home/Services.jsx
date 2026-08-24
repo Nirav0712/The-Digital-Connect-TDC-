@@ -5,12 +5,12 @@ import SectionHeading from '../common/SectionHeading';
 import { servicesData } from '../../data/services';
 
 const bgColors = [
-  'bg-brand-lavender',
+  'bg-brand-cyan',
+  'bg-brand-deep-blue',
   'bg-brand-blue',
-  'bg-brand-mint',
-  'bg-brand-peach',
-  'bg-brand-yellow',
-  'bg-brand-purple'
+  'bg-brand-electric-cyan',
+  'bg-brand-soft-blue',
+  'bg-brand-primary-navy'
 ];
 
 const Services = () => {

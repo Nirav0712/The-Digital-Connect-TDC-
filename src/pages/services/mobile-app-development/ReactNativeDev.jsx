@@ -8,7 +8,7 @@ import { Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi
 
 const ReactNativeDev = () => {
     useSEO({ title: "Web Talent Intersecting Native Power. | The Digital Connect", description: "Simultaneous iOS and Android deployments using a unified JavaScript pipeline cutting total cost and time dynamically." });
-    const theme = {"accent":"text-cyan-500","bg":"bg-cyan-500","softBg":"bg-cyan-50"};
+    const theme = {"accent":"text-brand-electric-cyan","bg":"bg-brand-electric-cyan/20","softBg":"bg-brand-periwinkle/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

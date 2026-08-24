@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const SocialMedia = () => {
     useSEO({ title: "Cultivating Dedicated Brand Cults. | The Digital Connect", description: "Organic social trajectory strategy explicitly engineering massive community engagement transforming standard followers directly into radical brand evangelists." });
-    const theme = {"accent":"text-pink-600","bg":"bg-pink-500","softBg":"bg-pink-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-bg-light"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

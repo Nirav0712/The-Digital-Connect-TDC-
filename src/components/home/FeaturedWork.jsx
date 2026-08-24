@@ -26,7 +26,7 @@ const FeaturedWork = () => {
             >
               <div className="w-full h-full p-8 flex flex-col justify-between">
                 <div className="flex justify-between items-start">
-                  <span className="px-4 py-1.5 rounded-full bg-brand-lavender/50 text-foreground text-sm font-bold tracking-wide">
+                  <span className="px-4 py-1.5 rounded-full bg-brand-cyan/50 text-foreground text-sm font-bold tracking-wide">
                     {project.category}
                   </span>
                   <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">

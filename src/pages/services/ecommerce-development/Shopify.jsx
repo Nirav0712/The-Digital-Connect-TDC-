@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const Shopify = () => {
     useSEO({ title: "Shopify Experiences Exclusively Designed to Scale. | The Digital Connect", description: "Custom headless Shopify architectures maximizing absolute storefront versatility mapping strictly to high-conversion checkout optimization." });
-    const theme = {"accent":"text-emerald-600","bg":"bg-emerald-500","softBg":"bg-emerald-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-gold/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

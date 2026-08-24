@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const PPC = () => {
     useSEO({ title: "Precision Target Explicit Intent. | The Digital Connect", description: "Highly aggressive Google Ads and LinkedIn PPC deployments maximizing exact algorithmic ROAS targeting high-value immediate commercial intents." });
-    const theme = {"accent":"text-orange-600","bg":"bg-orange-500","softBg":"bg-orange-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-gold/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

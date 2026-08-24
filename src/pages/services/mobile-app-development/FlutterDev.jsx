@@ -8,7 +8,7 @@ import { Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi
 
 const FlutterDevelopment = () => {
     useSEO({ title: "Uncompromised 60fps Canvas Graphics Globally. | The Digital Connect", description: "Google-backed Dart infrastructures painting incredibly fast, fundamentally beautiful applications completely ignoring traditional native restrictions." });
-    const theme = {"accent":"text-blue-600","bg":"bg-blue-600","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-electric-cyan","bg":"bg-brand-electric-cyan/20","softBg":"bg-brand-periwinkle/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

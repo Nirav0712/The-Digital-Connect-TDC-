@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const SaaS = () => {
     useSEO({ title: "Launch the Next Subscribed Phenomenon. | The Digital Connect", description: "End-to-end full-stack architectures engineered specifically for extreme multi-tenant scalability fueling modern Software-as-a-Service companies." });
-    const theme = {"accent":"text-blue-600","bg":"bg-blue-600","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-blue","bg":"bg-brand-blue/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

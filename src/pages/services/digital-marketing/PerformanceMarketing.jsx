@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const PerformanceMarketing = () => {
     useSEO({ title: "Math Not Magic. Scale with Confidence. | The Digital Connect", description: "Omnichannel paid-acquisition actively deploying intense Meta, TikTok, and Programmatic ad structures strictly focusing heavily exclusively on mathematically guaranteed positive ROAS." });
-    const theme = {"accent":"text-emerald-600","bg":"bg-emerald-500","softBg":"bg-emerald-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-bg-light"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

@@ -8,7 +8,7 @@ import { Database, Rocket, Bell, Cpu, CreditCard, Code, Layers, Smartphone, Wifi
 
 const IOSDevelopment = () => {
     useSEO({ title: "Native iOS Excellence on Apple Silicon. | The Digital Connect", description: "Designing and engineering premium iOS applications using Swift and SwiftUI that effortlessly dominate the App Store rankings." });
-    const theme = {"accent":"text-blue-500","bg":"bg-blue-500","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-electric-cyan","bg":"bg-brand-electric-cyan/20","softBg":"bg-brand-periwinkle/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const ContentMarketing = () => {
     useSEO({ title: "Value that Consistently Converts. | The Digital Connect", description: "Producing elite long-form educational ecosystems explicitly capturing high-intent prospects entirely before they are ready to transact physically." });
-    const theme = {"accent":"text-indigo-600","bg":"bg-indigo-500","softBg":"bg-indigo-50"};
+    const theme = {"accent":"text-brand-blue","bg":"bg-brand-blue/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

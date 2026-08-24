@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const CustomEcommerce = () => {
     useSEO({ title: "Shattering Standard Platform Limitations. | The Digital Connect", description: "Bespoke Node/React storefronts engineered entirely from scratch exclusively explicitly covering extraordinarily unique catalog and checkout demands." });
-    const theme = {"accent":"text-orange-500","bg":"bg-orange-500","softBg":"bg-orange-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-bg-light"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

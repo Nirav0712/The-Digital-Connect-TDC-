@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const PaymentIntegration = () => {
     useSEO({ title: "Secure Cart Checkouts Facilitating Utmost Trust. | The Digital Connect", description: "Multi-gateway logic integrations strictly encompassing absolute PCI compliance natively and seamless intense global subscription recurring billing." });
-    const theme = {"accent":"text-blue-500","bg":"bg-blue-500","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-bg-light"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

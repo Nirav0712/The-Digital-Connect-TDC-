@@ -15,7 +15,7 @@ export const megaMenuData = {
                 ],
                 cta: "Learn More \u2192",
                 href: "/about",
-                background: "bg-brand-lavender",
+                background: "bg-brand-primary-navy text-white",
                 imageText: "Agency"
             },
             {
@@ -31,7 +31,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Values \u2192",
                 href: "/about#values",
-                background: "bg-brand-mint",
+                background: "bg-brand-cyan/20 border-brand-cyan text-brand-primary-navy",
                 imageText: "Values"
             },
             {
@@ -47,7 +47,7 @@ export const megaMenuData = {
                 ],
                 cta: "Meet the Team \u2192",
                 href: "/about#team",
-                background: "bg-brand-blue",
+                background: "bg-brand-deep-blue text-white",
                 imageText: "Team"
             }
         ]
@@ -69,7 +69,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Web Development \u2192",
                 href: "/services/web-development",
-                background: "bg-brand-lavender",
+                background: "bg-brand-primary-navy text-white",
                 imageText: "Web Dev"
             },
             {
@@ -86,7 +86,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Mobile Development \u2192",
                 href: "/services/mobile-app-development",
-                background: "bg-brand-blue",
+                background: "bg-brand-deep-blue text-white",
                 imageText: "Mobile"
             },
             {
@@ -103,7 +103,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore UI/UX Design \u2192",
                 href: "/services/ui-ux-design",
-                background: "bg-brand-peach",
+                background: "bg-brand-periwinkle/30 text-brand-primary-navy",
                 imageText: "UI/UX"
             },
             {
@@ -120,7 +120,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Ecommerce \u2192",
                 href: "/services/ecommerce-development",
-                background: "bg-brand-mint",
+                background: "bg-brand-cyan/20 border-brand-cyan text-brand-primary-navy",
                 imageText: "Ecommerce"
             },
             {
@@ -137,7 +137,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Software Development \u2192",
                 href: "/services/software-development",
-                background: "bg-brand-yellow",
+                background: "bg-brand-gold/20 text-brand-primary-navy",
                 imageText: "Software"
             },
             {
@@ -154,7 +154,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Digital Marketing \u2192",
                 href: "/services/digital-marketing",
-                background: "bg-brand-purple",
+                background: "bg-brand-electric-cyan/20 text-brand-primary-navy",
                 imageText: "Marketing"
             }
         ]
@@ -175,7 +175,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Healthcare \u2192",
                 href: "/industries/healthcare",
-                background: "bg-brand-mint",
+                background: "bg-brand-cyan/20 border-brand-cyan text-brand-primary-navy",
                 imageText: "Healthcare"
             },
             {
@@ -191,7 +191,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Fintech \u2192",
                 href: "/industries/fintech",
-                background: "bg-brand-purple",
+                background: "bg-brand-electric-cyan/20 text-brand-primary-navy",
                 imageText: "Fintech"
             },
             {
@@ -207,7 +207,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Ecommerce \u2192",
                 href: "/industries/ecommerce",
-                background: "bg-brand-peach",
+                background: "bg-brand-periwinkle/30 text-brand-primary-navy",
                 imageText: "Retail"
             },
             {
@@ -223,7 +223,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore SaaS \u2192",
                 href: "/industries/saas",
-                background: "bg-brand-blue",
+                background: "bg-brand-deep-blue text-white",
                 imageText: "SaaS"
             }
         ]
@@ -244,7 +244,7 @@ export const megaMenuData = {
                 ],
                 cta: "View All Projects \u2192",
                 href: "/portfolio",
-                background: "bg-brand-lavender",
+                background: "bg-brand-primary-navy text-white",
                 imageText: "All Work"
             },
             {
@@ -259,7 +259,7 @@ export const megaMenuData = {
                 ],
                 cta: "View Web Projects \u2192",
                 href: "/portfolio?filter=web",
-                background: "bg-brand-blue",
+                background: "bg-brand-deep-blue text-white",
                 imageText: "Web"
             },
             {
@@ -273,7 +273,7 @@ export const megaMenuData = {
                 ],
                 cta: "View Mobile Projects \u2192",
                 href: "/portfolio?filter=mobile",
-                background: "bg-brand-peach",
+                background: "bg-brand-periwinkle/30 text-brand-primary-navy",
                 imageText: "Mobile"
             }
         ]
@@ -294,7 +294,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Our Process \u2192",
                 href: "/process#discovery",
-                background: "bg-brand-mint",
+                background: "bg-brand-cyan/20 border-brand-cyan text-brand-primary-navy",
                 imageText: "Phase 1"
             },
             {
@@ -310,7 +310,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Our Process \u2192",
                 href: "/process#strategy",
-                background: "bg-brand-blue",
+                background: "bg-brand-deep-blue text-white",
                 imageText: "Phase 2"
             },
             {
@@ -326,7 +326,7 @@ export const megaMenuData = {
                 ],
                 cta: "Explore Our Process \u2192",
                 href: "/process#design",
-                background: "bg-brand-lavender",
+                background: "bg-brand-primary-navy text-white",
                 imageText: "Phase 3"
             }
         ]
@@ -347,7 +347,7 @@ export const megaMenuData = {
                 ],
                 cta: "View Open Roles \u2192",
                 href: "/careers",
-                background: "bg-brand-peach",
+                background: "bg-brand-periwinkle/30 text-brand-primary-navy",
                 imageText: "Careers"
             }
         ]

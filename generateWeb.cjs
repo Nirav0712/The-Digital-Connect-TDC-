@@ -8,7 +8,7 @@ const generate = () => {
             pRoute: '/services/web-development', pTitle: 'Web Development', eyebrow: 'Frontend Development',
             title: 'From Design System to Pixel-Perfect Interface',
             desc: 'We engineer lightning-fast, accessible, and deeply interactive interfaces that convert casual browsers into dedicated customers. Our frontend architectures are built to scale globally.',
-            theme: { accent: 'text-blue-500', bg: 'bg-blue-500', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-soft-blue/20' },
             visual: 'FrontendVisual', visualImport: 'import { FrontendVisual } from \'../../../components/services/subservices/visuals/VisualsWeb\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -20,7 +20,7 @@ const generate = () => {
                 ]
             },
             capabilities: [
-                { title: "React & Next.js Architecture", desc: "Constructing massive enterprise-scale component libraries utilizing Next.js App Router for extreme performance.", icon: "<MonitorCode />" },
+                { title: "React & Next.js Architecture", desc: "Constructing massive enterprise-scale component libraries utilizing Next.js App Router for extreme performance.", icon: "<Code />" },
                 { title: "Design System Translation", desc: "Pixel-perfect translation of complex Figma design tokens into strict Tailwind configurations.", icon: "<PenTool />" },
                 { title: "State Management", desc: "Redux, Zustand, and React Query orchestrating massive real-time data payloads flawlessly.", icon: "<Database />" },
                 { title: "Performance Optimization", desc: "Aggressive bundle splitting, layout shift prevention, and sub-second Time To Interactive (TTI).", icon: "<Zap />" },
@@ -52,7 +52,7 @@ const generate = () => {
             pRoute: '/services/web-development', pTitle: 'Web Development', eyebrow: 'Backend Development',
             title: 'Bulletproof Cloud Infrastructure & APIs',
             desc: 'The invisible engine powering your platforms. We architect hyper-scalable microservices, secure databases, and sub-millisecond API endpoints handling millions of requests.',
-            theme: { accent: 'text-emerald-500', bg: 'bg-emerald-500', softBg: 'bg-emerald-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-soft-blue/20' },
             visual: 'BackendVisual', visualImport: 'import { BackendVisual } from \'../../../components/services/subservices/visuals/VisualsWeb\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -96,7 +96,7 @@ const generate = () => {
             pRoute: '/services/web-development', pTitle: 'Web Development', eyebrow: 'CMS Development',
             title: 'Absolute Control Over Your Content',
             desc: 'Decoupled headless CMS architectures and highly customized WordPress engines granting marketing teams infinite publishing freedom natively.',
-            theme: { accent: 'text-purple-500', bg: 'bg-purple-500', softBg: 'bg-purple-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-soft-blue/20' },
             visual: 'CMSVisual', visualImport: 'import { CMSVisual } from \'../../../components/services/subservices/visuals/VisualsWeb\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -140,7 +140,7 @@ const generate = () => {
             pRoute: '/services/web-development', pTitle: 'Web Development', eyebrow: 'API Integration',
             title: 'Connecting Fragmented Digital Ecosystems',
             desc: 'We architect robust middleware and secure webhooks connecting your isolated platforms (CRM, ERP, Web) into a singular, transparent real-time algorithmic sequence.',
-            theme: { accent: 'text-pink-500', bg: 'bg-pink-500', softBg: 'bg-pink-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-soft-blue/20' },
             visual: 'APIVisual', visualImport: 'import { APIVisual } from \'../../../components/services/subservices/visuals/VisualsWeb\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -184,7 +184,7 @@ const generate = () => {
             pRoute: '/services/web-development', pTitle: 'Web Development', eyebrow: 'Custom Web Apps',
             title: 'Enterprise Architecture Custom Engineered.',
             desc: 'Turn exhaustive manual operations into sleek, centralized digital platforms. We build massive internal dashboards, client portals, and bespoke SaaS applications from scratch.',
-            theme: { accent: 'text-orange-500', bg: 'bg-orange-500', softBg: 'bg-orange-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-soft-blue/20' },
             visual: 'CustomWebVisual', visualImport: 'import { CustomWebVisual } from \'../../../components/services/subservices/visuals/VisualsWeb\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -225,7 +225,7 @@ const generate = () => {
         }
     ];
 
-    let imports = `import { PenTool, MonitorCode, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Box, Server, Boxes, GitMerge, LayoutTemplate, ArrowRightLeft, Globe, Languages, Network, RadioReceiver, ShieldCheck, LayoutDashboard, Users, Repeat, Radio, LineChart } from 'lucide-react';\n`;
+    let imports = `import { PenTool, Code, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Box, Server, Boxes, GitMerge, LayoutTemplate, ArrowRightLeft, Globe, Languages, Network, RadioReceiver, ShieldCheck, LayoutDashboard, Users, Repeat, Radio, LineChart } from 'lucide-react';\n`;
 
     pages.forEach(p => {
         let code = `import React from 'react';\nimport useSEO from '../../../hooks/useSEO';\nimport PageTransition from '../../../components/common/PageTransition';\nimport { SubServiceShared } from '../../../components/services/subservices/SubServiceShared';\n${p.visualImport}\n${imports}\n\n`;

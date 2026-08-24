@@ -21,7 +21,7 @@ const MegaMenu = ({ activeMenu }) => {
     const currentContent = currentMenu.items.find(i => i.id === activeSubItem) || currentMenu.items[0];
 
     return (
-        <div className="w-full bg-[#F7F5F2] border border-border rounded-3xl shadow-xl overflow-hidden hidden lg:block">
+        <div className="w-full bg-brand-off-white border border-brand-border rounded-3xl shadow-xl overflow-hidden hidden lg:block">
             <motion.div
                 initial={{ opacity: 0, y: -8 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -30,21 +30,21 @@ const MegaMenu = ({ activeMenu }) => {
                 className="flex w-full min-h-[450px]"
             >
                 {/* LEFT SIDE - CATEGORIES */}
-                <div className="w-[280px] shrink-0 bg-white border-r border-border p-6 flex flex-col gap-2">
+                <div className="w-[280px] shrink-0 bg-white border-r border-brand-border p-6 flex flex-col gap-2">
                     {currentMenu.items.map((item) => {
                         const isActive = activeSubItem === item.id;
                         return (
                             <div
                                 key={item.id}
                                 onMouseEnter={() => setActiveSubItem(item.id)}
-                                className={`relative group rounded-xl px-4 py-3 cursor-pointer transition-all duration-300 ${isActive ? item.background : 'hover:bg-brand-soft'}`}
+                                className={`relative group rounded-xl px-4 py-3 cursor-pointer transition-all duration-300 ${isActive ? 'bg-brand-bg-light' : 'hover:bg-brand-bg-light/50'}`}
                             >
                                 <div className="flex items-center justify-between relative z-10">
-                                    <span className={`font-semibold text-sm transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground group-hover:text-primary'}`}>
+                                    <span className={`font-semibold text-sm transition-colors ${isActive ? 'text-brand-primary-navy' : 'text-brand-text-muted group-hover:text-brand-primary-navy'}`}>
                                         {item.label}
                                     </span>
                                     {isActive && (
-                                        <motion.div layoutId="arrow-active" className="text-primary">
+                                        <motion.div layoutId="arrow-active" className="text-brand-cyan">
                                             <ArrowRight className="w-4 h-4" />
                                         </motion.div>
                                     )}
@@ -55,7 +55,7 @@ const MegaMenu = ({ activeMenu }) => {
                 </div>
 
                 {/* RIGHT SIDE - CONTENT */}
-                <div className="flex-1 p-8 xl:p-10 bg-[#F7F5F2] relative overflow-hidden">
+                <div className="flex-1 p-8 xl:p-10 bg-brand-off-white relative overflow-hidden">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={currentContent.id}
@@ -66,13 +66,13 @@ const MegaMenu = ({ activeMenu }) => {
                             className="flex justify-between h-full gap-8 relative z-10"
                         >
                             <div className="flex flex-col flex-1 max-w-[65%]">
-                                <span className="text-xs font-bold tracking-widest uppercase text-muted-foreground mb-4">
+                                <span className="text-xs font-bold tracking-widest uppercase text-brand-cyan mb-4">
                                     {currentContent.label}
                                 </span>
-                                <h3 className="text-3xl font-heading font-extrabold mb-4 text-primary leading-tight">
+                                <h3 className="text-3xl font-heading font-extrabold mb-4 text-brand-primary-navy leading-tight">
                                     {currentContent.heading}
                                 </h3>
-                                <p className="text-muted-foreground leading-relaxed mb-6">
+                                <p className="text-brand-text-muted leading-relaxed mb-6">
                                     {currentContent.description}
                                 </p>
 
@@ -81,15 +81,15 @@ const MegaMenu = ({ activeMenu }) => {
                                         <Link
                                             key={i}
                                             to={service.href}
-                                            className="group flex items-center justify-between p-3 rounded-lg hover:bg-brand-lavender/40 transition-colors duration-200"
+                                            className="group flex items-center justify-between p-3 rounded-lg hover:bg-brand-electric-cyan/5 transition-colors duration-200"
                                         >
                                             <div className="flex items-center gap-3">
-                                                <div className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover:bg-primary transition-colors"></div>
-                                                <span className="text-sm font-semibold text-foreground/80 group-hover:text-primary transition-colors">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-brand-deep-blue/30 group-hover:bg-brand-cyan transition-colors"></div>
+                                                <span className="text-sm font-semibold text-brand-primary-navy/80 group-hover:text-brand-cyan transition-colors">
                                                     {service.title}
                                                 </span>
                                             </div>
-                                            <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-primary" />
+                                            <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan" />
                                         </Link>
                                     ))}
                                 </div>
@@ -97,7 +97,7 @@ const MegaMenu = ({ activeMenu }) => {
                                 <div className="mt-auto">
                                     <Link
                                         to={currentContent.href}
-                                        className="inline-flex items-center text-sm font-bold bg-white border border-border px-6 py-3 rounded-full hover:border-primary/20 hover:shadow-md transition-all"
+                                        className="inline-flex items-center text-sm font-bold bg-white border border-brand-border px-6 py-3 rounded-full hover:border-brand-cyan/40 hover:text-brand-cyan hover:shadow-md hover:shadow-brand-cyan/5 transition-all"
                                     >
                                         {currentContent.cta}
                                     </Link>

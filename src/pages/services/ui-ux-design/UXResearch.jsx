@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const UXResearch = () => {
     useSEO({ title: "Understand People Before Building for Them. | The Digital Connect", description: "Deep qualitative and quantitative behavioral research powering human-centered product development and eliminating vast engineering waste." });
-    const theme = {"accent":"text-purple-600","bg":"bg-purple-500","softBg":"bg-purple-50"};
+    const theme = {"accent":"text-brand-periwinkle","bg":"bg-brand-periwinkle/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

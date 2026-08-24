@@ -8,7 +8,7 @@ import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Bo
 
 const CustomWebApplications = () => {
     useSEO({ title: "Enterprise Architecture Custom Engineered. | The Digital Connect", description: "Turn exhaustive manual operations into sleek, centralized digital platforms. We build massive internal dashboards, client portals, and bespoke SaaS applications from scratch." });
-    const theme = {"accent":"text-orange-500","bg":"bg-orange-500","softBg":"bg-orange-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-soft-blue/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

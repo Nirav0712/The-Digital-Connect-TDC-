@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const APIDevelopment = () => {
     useSEO({ title: "The Neural Pathways of Modern Software. | The Digital Connect", description: "Robust RESTful and GraphQL API ecosystems enabling completely seamless, intensely secure machine-to-machine global data exchange protocols." });
-    const theme = {"accent":"text-emerald-500","bg":"bg-emerald-500","softBg":"bg-emerald-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-bg-light"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

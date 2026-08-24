@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const WooCommerce = () => {
     useSEO({ title: "Limitless Omnichannel Commerce Built on Code. | The Digital Connect", description: "Deeply customized open-source Woo commerce experiences granting complete data ownership and literally limitless platform structural capabilities." });
-    const theme = {"accent":"text-purple-600","bg":"bg-purple-500","softBg":"bg-purple-50"};
+    const theme = {"accent":"text-brand-periwinkle","bg":"bg-brand-periwinkle/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

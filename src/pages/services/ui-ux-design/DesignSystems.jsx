@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const DesignSystems = () => {
     useSEO({ title: "Infinite Consistency at Every Touchpoint. | The Digital Connect", description: "Scalable React-ready tokenized UX component libraries ensuring absolute infinite visual consistency universally aiding massive engineering team scaling." });
-    const theme = {"accent":"text-emerald-500","bg":"bg-emerald-500","softBg":"bg-emerald-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-gold/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

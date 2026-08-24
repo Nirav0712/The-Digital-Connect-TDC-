@@ -14,8 +14,8 @@ const reasons = [
 const WhyChooseUs = () => {
   return (
     <section className="py-24 bg-primary text-white overflow-hidden relative">
-      <GlowOrb className="w-[800px] h-[800px] top-[-20%] left-[-20%] bg-brand-lavender opacity-10" />
-      <GlowOrb className="w-[600px] h-[600px] bottom-[-10%] right-[-10%] bg-brand-blue opacity-10 animate-blob" style={{ animationDelay: '3s' }} />
+      <GlowOrb className="w-[800px] h-[800px] top-[-20%] left-[-20%] bg-brand-cyan opacity-10" />
+      <GlowOrb className="w-[600px] h-[600px] bottom-[-10%] right-[-10%] bg-brand-deep-blue opacity-10 animate-blob" style={{ animationDelay: '3s' }} />
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16 relative z-10">
         <div className="lg:col-span-1 border-b lg:border-b-0 lg:border-r border-white/10 pb-12 lg:pb-0 lg:pr-12">

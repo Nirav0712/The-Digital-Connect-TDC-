@@ -9,7 +9,7 @@ const generatePages = () => {
             pRoute: '/services/software-development', pTitle: 'Software Development', eyebrow: 'CRM Development',
             title: 'Master Customer Relationships at Scale.',
             desc: 'Custom Customer Relationship Management software tailored exactly to your unique organizational sales motions, removing generic bloat.',
-            theme: { accent: 'text-indigo-600', bg: 'bg-indigo-500', softBg: 'bg-indigo-50' },
+            theme: { accent: 'text-brand-blue', bg: 'bg-brand-blue/20', softBg: 'bg-brand-cyan/10' },
             visual: 'CRMVisual', visualImport: 'import { CRMVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -45,7 +45,7 @@ const generatePages = () => {
             pRoute: '/services/software-development', pTitle: 'Software Development', eyebrow: 'ERP Development',
             title: 'Unifying Enterprise Operational Chaos.',
             desc: 'Enterprise Resource Planning software merging radically disconnected corporate departments directly into a singular, immensely powerful data hub.',
-            theme: { accent: 'text-slate-800', bg: 'bg-slate-800', softBg: 'bg-slate-100' },
+            theme: { accent: 'text-brand-blue', bg: 'bg-brand-blue/20', softBg: 'bg-brand-cyan/10' },
             visual: 'ERPVisual', visualImport: 'import { ERPVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -76,7 +76,7 @@ const generatePages = () => {
             pRoute: '/services/software-development', pTitle: 'Software Development', eyebrow: 'SaaS Architecture',
             title: 'Launch the Next Subscribed Phenomenon.',
             desc: 'End-to-end full-stack architectures engineered specifically for extreme multi-tenant scalability fueling modern Software-as-a-Service companies.',
-            theme: { accent: 'text-blue-600', bg: 'bg-blue-600', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-blue', bg: 'bg-brand-blue/20', softBg: 'bg-brand-cyan/10' },
             visual: 'SaaSVisual', visualImport: 'import { SaaSVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -112,7 +112,7 @@ const generatePages = () => {
             pRoute: '/services/software-development', pTitle: 'Software Development', eyebrow: 'Business Automation',
             title: 'Replacing Repetitive Humans with Logic.',
             desc: 'Extreme process automation explicitly mapping intense API endpoints securely removing monumental manual operational hours instantly.',
-            theme: { accent: 'text-orange-500', bg: 'bg-orange-500', softBg: 'bg-orange-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-gold/10' },
             visual: 'BusinessAutomationVisual', visualImport: 'import { BusinessAutomationVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -147,7 +147,7 @@ const generatePages = () => {
             pRoute: '/services/software-development', pTitle: 'Software Development', eyebrow: 'API Development',
             title: 'The Neural Pathways of Modern Software.',
             desc: 'Robust RESTful and GraphQL API ecosystems enabling completely seamless, intensely secure machine-to-machine global data exchange protocols.',
-            theme: { accent: 'text-emerald-500', bg: 'bg-emerald-500', softBg: 'bg-emerald-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'APIVisual', visualImport: 'import { APIVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -185,7 +185,7 @@ const generatePages = () => {
             pRoute: '/services/digital-marketing', pTitle: 'Digital Marketing', eyebrow: 'Search Engine Optimization',
             title: 'Dominate Organic Industry Search Authority.',
             desc: 'Technical, programmatic, and content-driven SEO explicitly dominating Google SERP rankings heavily replacing paid acquisition fundamentally.',
-            theme: { accent: 'text-blue-600', bg: 'bg-blue-600', softBg: 'bg-blue-50' },
+            theme: { accent: 'text-brand-blue', bg: 'bg-brand-blue/20', softBg: 'bg-brand-cyan/10' },
             visual: 'SEOVisual', visualImport: 'import { SEOVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -221,7 +221,7 @@ const generatePages = () => {
             pRoute: '/services/digital-marketing', pTitle: 'Digital Marketing', eyebrow: 'Pay Per Click',
             title: 'Precision Target Explicit Intent.',
             desc: 'Highly aggressive Google Ads and LinkedIn PPC deployments maximizing exact algorithmic ROAS targeting high-value immediate commercial intents.',
-            theme: { accent: 'text-orange-600', bg: 'bg-orange-500', softBg: 'bg-orange-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-gold/10' },
             visual: 'PPCVisual', visualImport: 'import { PPCVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -252,7 +252,7 @@ const generatePages = () => {
             pRoute: '/services/digital-marketing', pTitle: 'Digital Marketing', eyebrow: 'Social Media Management',
             title: 'Cultivating Dedicated Brand Cults.',
             desc: 'Organic social trajectory strategy explicitly engineering massive community engagement transforming standard followers directly into radical brand evangelists.',
-            theme: { accent: 'text-pink-600', bg: 'bg-pink-500', softBg: 'bg-pink-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'SocialMediaVisual', visualImport: 'import { SocialMediaVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -288,7 +288,7 @@ const generatePages = () => {
             pRoute: '/services/digital-marketing', pTitle: 'Digital Marketing', eyebrow: 'Content Marketing',
             title: 'Value that Consistently Converts.',
             desc: 'Producing elite long-form educational ecosystems explicitly capturing high-intent prospects entirely before they are ready to transact physically.',
-            theme: { accent: 'text-indigo-600', bg: 'bg-indigo-500', softBg: 'bg-indigo-50' },
+            theme: { accent: 'text-brand-blue', bg: 'bg-brand-blue/20', softBg: 'bg-brand-cyan/10' },
             visual: 'ContentMarketingVisual', visualImport: 'import { ContentMarketingVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'FAQ', 'Related', 'CTA'],
             overview: {
@@ -319,7 +319,7 @@ const generatePages = () => {
             pRoute: '/services/digital-marketing', pTitle: 'Digital Marketing', eyebrow: 'Performance Marketing',
             title: 'Math Not Magic. Scale with Confidence.',
             desc: 'Omnichannel paid-acquisition actively deploying intense Meta, TikTok, and Programmatic ad structures strictly focusing heavily exclusively on mathematically guaranteed positive ROAS.',
-            theme: { accent: 'text-emerald-600', bg: 'bg-emerald-500', softBg: 'bg-emerald-50' },
+            theme: { accent: 'text-brand-cyan', bg: 'bg-brand-cyan/20', softBg: 'bg-brand-bg-light' },
             visual: 'PerformanceMarketingVisual', visualImport: 'import { PerformanceMarketingVisual } from \'../../../components/services/subservices/visuals/VisualsSoftware_Marketing\';',
             order: ['Hero', 'Overview', 'Capabilities', 'Technology', 'Process', 'FAQ', 'Related', 'CTA'],
             overview: {

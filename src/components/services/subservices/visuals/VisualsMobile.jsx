@@ -31,7 +31,7 @@ export const IOSVisual = () => (
                 </div>
             </div>
         </motion.div>
-        <motion.div animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: "linear" }} className="absolute inset-4 border border-blue-500/10 rounded-full z-0 border-dashed"></motion.div>
+        <motion.div animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: "linear" }} className="absolute inset-4 border border-brand-cyan/10 rounded-full z-0 border-dashed"></motion.div>
     </div>
 );
 
@@ -40,19 +40,19 @@ export const AndroidVisual = () => (
         <motion.div initial={{ y: 20 }} animate={{ y: [0, -10, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="w-[300px] h-[580px] bg-[#2D2D2D] rounded-[24px] shadow-2xl relative z-20 border-[3px] border-[#3D3D3D] flex items-center justify-center overflow-hidden">
             <div className="w-[98%] h-[99%] bg-gradient-to-br from-emerald-400 to-teal-600 rounded-[20px] overflow-hidden relative flex flex-col">
                 {/* Status Bar */}
-                <div className="h-6 w-full flex justify-between items-center px-4 text-emerald-900 border-b border-white/10">
+                <div className="h-6 w-full flex justify-between items-center px-4 text-brand-cyan border-b border-white/10">
                     <div className="text-[10px] font-bold">12:00</div>
                     <div className="flex gap-1">
-                        <div className="w-2 h-2 rounded-full bg-emerald-900"></div>
-                        <div className="w-2 h-2 rounded-full bg-emerald-900"></div>
+                        <div className="w-2 h-2 rounded-full bg-brand-soft-blue/30"></div>
+                        <div className="w-2 h-2 rounded-full bg-brand-soft-blue/30"></div>
                     </div>
                 </div>
                 {/* Material Design Header */}
-                <div className="p-6 bg-white shadow-md rounded-b-[24px] z-10 flex flex-col text-emerald-900">
-                    <div className="w-8 h-8 bg-emerald-100 rounded-full items-center flex justify-center mb-4"><Terminal size={14} /></div>
-                    <div className="w-32 h-6 bg-emerald-100 rounded-md mb-2"></div>
+                <div className="p-6 bg-white shadow-md rounded-b-[24px] z-10 flex flex-col text-brand-cyan">
+                    <div className="w-8 h-8 bg-brand-soft-blue/30 rounded-full items-center flex justify-center mb-4"><Terminal size={14} /></div>
+                    <div className="w-32 h-6 bg-brand-soft-blue/30 rounded-md mb-2"></div>
                     <div className="w-20 h-3 bg-black/10 rounded-full mb-6"></div>
-                    <div className="absolute right-6 -bottom-6 w-12 h-12 rounded-full bg-emerald-500 shadow-lg text-white flex items-center justify-center border-4 border-white"><Play size={20} /></div>
+                    <div className="absolute right-6 -bottom-6 w-12 h-12 rounded-full bg-brand-soft-blue/30 shadow-lg text-white flex items-center justify-center border-4 border-white"><Play size={20} /></div>
                 </div>
                 {/* Content List */}
                 <div className="p-4 pt-10 flex flex-col gap-3">
@@ -81,7 +81,7 @@ export const FlutterVisual = () => (
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-cyan-500/5 rounded-full z-0 opacity-50 blur-3xl"></div>
         <div className="w-full h-full relative z-20 flex flex-col items-center justify-center">
 
-            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="w-20 h-20 bg-blue-500 rounded-xl shadow-lg border border-blue-400 rotate-45 flex items-center justify-center mb-8"><Layers className="text-white -rotate-45" size={32} /></motion.div>
+            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="w-20 h-20 bg-brand-cyan/20 rounded-xl shadow-lg border border-brand-cyan rotate-45 flex items-center justify-center mb-8"><Layers className="text-white -rotate-45" size={32} /></motion.div>
 
             <div className="flex w-full justify-between items-center relative mt-4">
                 <svg className="absolute w-full h-32 top-0 left-0 -z-10 -translate-y-[80px]" style={{ zIndex: 0 }}>
@@ -91,27 +91,27 @@ export const FlutterVisual = () => (
                 </svg>
 
                 <div className="flex flex-col items-center">
-                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }} className="w-16 h-16 bg-white shadow-xl rounded-2xl border border-black/5 flex items-center justify-center text-blue-500"><Box size={24} /></motion.div>
+                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }} className="w-16 h-16 bg-white shadow-xl rounded-2xl border border-black/5 flex items-center justify-center text-brand-cyan"><Box size={24} /></motion.div>
                     <span className="text-xs font-bold text-gray-400 mt-2">Widget</span>
                 </div>
                 <div className="flex flex-col items-center">
-                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, delay: 0.5, repeat: Infinity, ease: 'easeInOut' }} className="w-16 h-16 bg-white shadow-xl rounded-2xl border border-black/5 flex items-center justify-center text-blue-500"><Terminal size={24} /></motion.div>
+                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, delay: 0.5, repeat: Infinity, ease: 'easeInOut' }} className="w-16 h-16 bg-white shadow-xl rounded-2xl border border-black/5 flex items-center justify-center text-brand-cyan"><Terminal size={24} /></motion.div>
                     <span className="text-xs font-bold text-gray-400 mt-2">State</span>
                 </div>
                 <div className="flex flex-col items-center">
-                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, delay: 1, repeat: Infinity, ease: 'easeInOut' }} className="w-20 h-20 bg-blue-50 shadow-xl rounded-2xl border border-blue-100 flex items-center justify-center text-blue-600"><Cpu size={32} /></motion.div>
+                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, delay: 1, repeat: Infinity, ease: 'easeInOut' }} className="w-20 h-20 bg-brand-cyan/20 shadow-xl rounded-2xl border border-brand-cyan flex items-center justify-center text-brand-cyan"><Cpu size={32} /></motion.div>
                     <span className="text-xs font-bold text-gray-400 mt-2">Native Engine</span>
                 </div>
             </div>
 
             <div className="w-full mt-12 bg-white rounded-xl shadow-sm border border-black/5 p-4 overflow-hidden relative">
-                <code className="text-[10px] text-blue-500 block">const App = () ={'>'} (</code>
+                <code className="text-[10px] text-brand-cyan block">const App = () ={'>'} (</code>
                 <code className="text-[10px] text-black/40 block ml-4">{'<MaterialApp>'}</code>
                 <code className="text-[10px] text-black/40 block ml-8">{'<Scaffold>'}</code>
                 <code className="text-[10px] text-black/40 block ml-12">{'<WidgetTree />'}</code>
                 <code className="text-[10px] text-black/40 block ml-8">{'</Scaffold>'}</code>
                 <code className="text-[10px] text-black/40 block ml-4">{'</MaterialApp>'}</code>
-                <code className="text-[10px] text-blue-500 block">);</code>
+                <code className="text-[10px] text-brand-cyan block">);</code>
             </div>
         </div>
     </div>
@@ -134,7 +134,7 @@ export const ReactNativeVisual = () => (
 
             <div className="h-16 w-full flex justify-between absolute bottom-1/4 mt-4 px-12 top-1/2 pt-[90px] -z-10">
                 <div className="w-[2px] h-[100px] bg-indigo-500/30 transform -rotate-45 translate-x-[120px] origin-top"></div>
-                <div className="w-[2px] h-[100px] bg-emerald-500/30 transform rotate-45 -translate-x-[120px] origin-top"></div>
+                <div className="w-[2px] h-[100px] bg-brand-soft-blue/30/30 transform rotate-45 -translate-x-[120px] origin-top"></div>
             </div>
 
             <div className="flex justify-between w-full mt-16 px-8 z-20">
@@ -143,7 +143,7 @@ export const ReactNativeVisual = () => (
                     <div className="text-xs font-bold text-gray-600">iOS Native</div>
                 </motion.div>
                 <motion.div initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.6 }} className="w-32 h-32 bg-white rounded-[32px] shadow-lg border border-black/5 flex flex-col items-center justify-center">
-                    <Terminal className="text-emerald-500 mb-2" size={32} />
+                    <Terminal className="text-brand-cyan mb-2" size={32} />
                     <div className="text-xs font-bold text-gray-600">Android Native</div>
                 </motion.div>
             </div>
@@ -167,15 +167,15 @@ export const CrossPlatformVisual = () => (
                 </svg>
 
                 <div className="w-1/3 flex flex-col items-center z-10 transition-transform hover:scale-110 cursor-pointer">
-                    <div className="w-16 h-16 bg-white shadow-md rounded-xl border border-black/5 flex items-center justify-center text-blue-500 mb-3"><Apple size={24} /></div>
+                    <div className="w-16 h-16 bg-white shadow-md rounded-xl border border-black/5 flex items-center justify-center text-brand-cyan mb-3"><Apple size={24} /></div>
                     <span className="text-xs font-bold text-gray-500">iOS</span>
                 </div>
                 <div className="w-1/3 flex flex-col items-center z-10 transition-transform hover:scale-110 cursor-pointer">
-                    <div className="w-16 h-16 bg-white shadow-md rounded-xl border border-black/5 flex items-center justify-center text-emerald-500 mb-3"><Terminal size={24} /></div>
+                    <div className="w-16 h-16 bg-white shadow-md rounded-xl border border-black/5 flex items-center justify-center text-brand-cyan mb-3"><Terminal size={24} /></div>
                     <span className="text-xs font-bold text-gray-500">Android</span>
                 </div>
                 <div className="w-1/3 flex flex-col items-center z-10 transition-transform hover:scale-110 cursor-pointer">
-                    <div className="w-16 h-16 bg-white shadow-md rounded-xl border border-black/5 flex items-center justify-center text-purple-500 mb-3"><SplitSquareHorizontal size={24} /></div>
+                    <div className="w-16 h-16 bg-white shadow-md rounded-xl border border-black/5 flex items-center justify-center text-brand-periwinkle mb-3"><SplitSquareHorizontal size={24} /></div>
                     <span className="text-xs font-bold text-gray-500">Web Dashboard</span>
                 </div>
             </div>

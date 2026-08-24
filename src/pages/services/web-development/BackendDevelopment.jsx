@@ -8,7 +8,7 @@ import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Bo
 
 const BackendDevelopment = () => {
     useSEO({ title: "Bulletproof Cloud Infrastructure & APIs | The Digital Connect", description: "The invisible engine powering your platforms. We architect hyper-scalable microservices, secure databases, and sub-millisecond API endpoints handling millions of requests." });
-    const theme = {"accent":"text-emerald-500","bg":"bg-emerald-500","softBg":"bg-emerald-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-soft-blue/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

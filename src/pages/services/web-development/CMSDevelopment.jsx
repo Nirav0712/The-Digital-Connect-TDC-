@@ -8,7 +8,7 @@ import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Bo
 
 const CMSDevelopment = () => {
     useSEO({ title: "Absolute Control Over Your Content | The Digital Connect", description: "Decoupled headless CMS architectures and highly customized WordPress engines granting marketing teams infinite publishing freedom natively." });
-    const theme = {"accent":"text-purple-500","bg":"bg-purple-500","softBg":"bg-purple-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-soft-blue/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

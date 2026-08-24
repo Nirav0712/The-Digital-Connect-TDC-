@@ -8,7 +8,7 @@ import { Search, Map, Layout, Zap, Pointer, Target, Layers, Component, Maximize,
 
 const SEO = () => {
     useSEO({ title: "Dominate Organic Industry Search Authority. | The Digital Connect", description: "Technical, programmatic, and content-driven SEO explicitly dominating Google SERP rankings heavily replacing paid acquisition fundamentally." });
-    const theme = {"accent":"text-blue-600","bg":"bg-blue-600","softBg":"bg-blue-50"};
+    const theme = {"accent":"text-brand-blue","bg":"bg-brand-blue/20","softBg":"bg-brand-cyan/10"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

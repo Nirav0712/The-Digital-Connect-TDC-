@@ -8,7 +8,7 @@ import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Bo
 
 const APIIntegration = () => {
     useSEO({ title: "Connecting Fragmented Digital Ecosystems | The Digital Connect", description: "We architect robust middleware and secure webhooks connecting your isolated platforms (CRM, ERP, Web) into a singular, transparent real-time algorithmic sequence." });
-    const theme = {"accent":"text-pink-500","bg":"bg-pink-500","softBg":"bg-pink-50"};
+    const theme = {"accent":"text-brand-cyan","bg":"bg-brand-cyan/20","softBg":"bg-brand-soft-blue/20"};
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">

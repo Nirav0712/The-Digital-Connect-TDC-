@@ -8,7 +8,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Target, Layers, Compo
 
 const Wireframing = () => {
     useSEO({ title: "Turn Ideas Into Clear Product Architectures. | The Digital Connect", description: "Low-fidelity structural blueprints isolating structural logic from surface visual aesthetics, guaranteeing frictionless navigation models." });
-    const theme = { "accent": "text-gray-600", "bg": "bg-gray-400", "softBg": "bg-gray-50" };
+    const theme = { "accent": "text-brand-cyan", "bg": "bg-brand-cyan/20", "softBg": "bg-brand-bg-light" };
     return (
         <PageTransition>
             <div className="w-full bg-white min-h-screen font-sans">
