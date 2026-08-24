@@ -1,0 +1,28 @@
+import React from 'react';
+import useSEO from '../../../hooks/useSEO';
+import PageTransition from '../../../components/common/PageTransition';
+import { SubServiceShared } from '../../../components/services/subservices/SubServiceShared';
+import { APIVisual } from '../../../components/services/subservices/visuals/VisualsWeb';
+import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Box, Server, Boxes, GitMerge, LayoutTemplate, ArrowRightLeft, Globe, Languages, Network, RadioReceiver, ShieldCheck, LayoutDashboard, Users, Repeat, Radio, LineChart } from 'lucide-react';
+
+
+const APIIntegration = () => {
+    useSEO({ title: "Connecting Fragmented Digital Ecosystems | The Digital Connect", description: "We architect robust middleware and secure webhooks connecting your isolated platforms (CRM, ERP, Web) into a singular, transparent real-time algorithmic sequence." });
+    const theme = {"accent":"text-pink-500","bg":"bg-pink-500","softBg":"bg-pink-50"};
+    return (
+        <PageTransition>
+            <div className="w-full bg-white min-h-screen font-sans">
+                <SubServiceShared.Hero parentTitle="Web Development" parentRoute="/services/web-development" eyebrow="API Integration" title="Connecting Fragmented Digital Ecosystems" description="We architect robust middleware and secure webhooks connecting your isolated platforms (CRM, ERP, Web) into a singular, transparent real-time algorithmic sequence." theme={theme} visual={APIVisual} />
+                <SubServiceShared.Overview title="Data synchronization across every platform" content={["Modern businesses do not operate on a single software. They use Salesforce for sales, Shopify for commerce, NetSuite for finance, and custom applications for operations. When these systems are siloed, human manual data entry creates catastrophic operational bottlenecks.","We specialize in deeply complex API integrations. We build custom middleware layers that securely listen to webhooks, transform incoming data payloads natively, and route them to multiple third-party endpoints automatically, strictly in real-time.","Whether you need a legacy SOAP API modernized into a GraphQL interface, or require payment gateways perfectly synced to your inventory management system, we engineer solutions that permanently remove human error from your fundamental data flows."]} theme={theme} />
+                <SubServiceShared.Capabilities theme={theme} capabilities={[{title: "Third-Party Integration", desc: "Connecting Stripe, Salesforce, Hubspot, and Shopify flawlessly into custom infrastructures.", icon: <Network />}, {title: "Custom Middleware", desc: "Standalone Node.js environments transforming and routing data securely between incompatible platforms.", icon: <Server />}, {title: "GraphQL & REST", desc: "Exposing clean, documented endpoints for mobile and web systems to consume effortlessly.", icon: <Webhook />}, {title: "Webhook Architecture", desc: "Event-driven asynchronous listening ensuring zero-delay triggers across business operations.", icon: <RadioReceiver />}, {title: "Legacy System Bridging", desc: "Modernizing outdated SOAP XML interfaces into rapid JSON architectures safely.", icon: <ArrowRightLeft />}, {title: "API Security & Rate Limiting", desc: "Protecting sensitive endpoints via OAuth2, API Keys, and aggressive DDoS mitigation rules.", icon: <ShieldCheck />}]} />
+                <SubServiceShared.Technology theme={theme} technologies={["Node.js","REST API","GraphQL","WebSocket","AWS API Gateway","Postman","OAuth2","Redis"]} />
+                <SubServiceShared.Process theme={theme} process={[{"title":"Endpoint Auditing","desc":"Analyzing the third-party documentation, rate limits, and authentication protocols."},{"title":"Middleware Architecture","desc":"Designing the serverless cloud layer responsible for ingesting and altering the payload."},{"title":"Development & Mapping","desc":"Writing the extraction logic, mapping JSON properties, and handling failure retries."},{"title":"Monitoring Setup","desc":"Deploying deep logging tools (Datadog/Sentry) to catch dropped packets instantly in production."}]} />
+                <SubServiceShared.FAQ theme={theme} faqs={[{"q":"What happens if a third-party API goes down?","a":"We implement robust Message Queues (like RabbitMQ or AWS SQS). If the receiving API is down, our middleware holds the data securely and retries exponentially until successful."},{"q":"Can you integrate with a system that doesn't have an API?","a":"It is difficult, but possible via techniques like secure automated web-scraping (Puppeteer) or direct database cross-connections, though native APIs are drastically preferred."},{"q":"How do you handle API security?","a":"Every endpoint we expose requires strict authentication (OAuth2 / JWT). Content is transmitted purely via HTTPS, and we implement payload validation to prevent injection."},{"q":"Do you document the APIs you build?","a":"Yes. Every custom API is delivered with comprehensive Swagger/OpenAPI documentation, allowing future developers to understand the endpoints immediately."}]} />
+                <SubServiceShared.Related theme={theme} links={[{"title":"Custom Web Apps","href":"/services/web-development/custom-web-applications"},{"title":"Backend Engineering","href":"/services/web-development/backend-development"},{"title":"Business Automation","href":"/services/software-development/business-automation"},{"title":"CRM Integration","href":"/services/software-development/crm"}]} />
+                <SubServiceShared.CTA theme={theme} />
+            </div>
+        </PageTransition>
+    );
+};
+
+export default APIIntegration;

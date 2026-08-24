@@ -1,0 +1,28 @@
+import React from 'react';
+import useSEO from '../../../hooks/useSEO';
+import PageTransition from '../../../components/common/PageTransition';
+import { SubServiceShared } from '../../../components/services/subservices/SubServiceShared';
+import { CustomWebVisual } from '../../../components/services/subservices/visuals/VisualsWeb';
+import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Box, Server, Boxes, GitMerge, LayoutTemplate, ArrowRightLeft, Globe, Languages, Network, RadioReceiver, ShieldCheck, LayoutDashboard, Users, Repeat, Radio, LineChart } from 'lucide-react';
+
+
+const CustomWebApplications = () => {
+    useSEO({ title: "Enterprise Architecture Custom Engineered. | The Digital Connect", description: "Turn exhaustive manual operations into sleek, centralized digital platforms. We build massive internal dashboards, client portals, and bespoke SaaS applications from scratch." });
+    const theme = {"accent":"text-orange-500","bg":"bg-orange-500","softBg":"bg-orange-50"};
+    return (
+        <PageTransition>
+            <div className="w-full bg-white min-h-screen font-sans">
+                <SubServiceShared.Hero parentTitle="Web Development" parentRoute="/services/web-development" eyebrow="Custom Web Apps" title="Enterprise Architecture Custom Engineered." description="Turn exhaustive manual operations into sleek, centralized digital platforms. We build massive internal dashboards, client portals, and bespoke SaaS applications from scratch." theme={theme} visual={CustomWebVisual} />
+                <SubServiceShared.Overview title="Software built exclusively for your operational edge" content={["Off-the-shelf software forces your company to adapt to the software. Custom web applications force the software to adapt entirely to how your company actually functions. We engineer massive, feature-rich web applications that perfectly mirror your most complex operational workflows.","These applications are vastly fundamentally different from standard websites. They require intense state management, real-time bidirectional data flowing, strict role-based access controls (RBAC), and immense data visualization dashboards.","Whether you are building a B2B SaaS platform intended for global market distribution, or a secure internal portal meant exclusively to optimize your employee logistics pipeline, we deploy React and Node architectures capable of maintaining absolute stability at scale."]} theme={theme} />
+                <SubServiceShared.Capabilities theme={theme} capabilities={[{title: "B2B SaaS Platforms", desc: "Multi-tenant cloud platforms encompassing subscription billing, user tiers, and rich analytics.", icon: <Cloud />}, {title: "Internal Dashboards", desc: "Centralizing fragmented company data into a singular, real-time command center safely.", icon: <LayoutDashboard />}, {title: "Client Portals", desc: "Secure interfaces allowing your customers to interact with their data, invoices, and progress directly.", icon: <Users />}, {title: "Workflow Automation", desc: "Digitizing heavy physical paper trails into rapid, zero-error programmatic sequences.", icon: <Repeat />}, {title: "Real-Time Collaboration", desc: "WebSocket driven multiplayer environments similar to Figma or Google Docs capabilities.", icon: <Radio />}, {title: "Complex Data Visualization", desc: "Rendering vast relational databases into human-readable, interactive chart graphs instantly.", icon: <LineChart />}]} />
+                <SubServiceShared.Technology theme={theme} technologies={["React","Next.js","Node.js","PostgreSQL","Tailwind CSS","AWS","WebSockets","Prisma","Stripe"]} />
+                <SubServiceShared.Process theme={theme} process={[{"title":"Architecture Planning","desc":"Defining the complex database ERD models and strict user permission roles fundamentally."},{"title":"UX/UI Wireframing","desc":"Mapping the dashboard interfaces to ensure users can navigate dense data structures easily."},{"title":"Full-Stack Development","desc":"Engineering the secure Node logic alongside the interactive React dashboard environments."},{"title":"Security & Penetration","desc":"Aggressive vulnerability testing ensuring sensitive client data remains completely inaccessible to exploits."}]} />
+                <SubServiceShared.FAQ theme={theme} faqs={[{"q":"Is a custom web app better than buying existing SaaS?","a":"If your operations are generic (e.g. basic email), buy SaaS. But if your competitive edge relies on a unique process that standard software cannot handle, custom development is fundamentally required."},{"q":"Who owns the code?","a":"You do. Upon completion, you possess 100% full Intellectual Property rights and source code access drastically unlike standard SaaS."},{"q":"Can it integrate with our existing software?","a":"Yes. Custom apps act as the central hub; we use APIs to seamlessly pull your legacy data in from CRMs, ERPs, or accounting tools."},{"q":"How do you handle future maintenance?","a":"We build using extremely standard, widely adopted modern tech stacks (React/Node) and provide deep documentation, allowing our team or internal engineers to maintain it easily."}]} />
+                <SubServiceShared.Related theme={theme} links={[{"title":"SaaS Engineering","href":"/services/software-development/saas"},{"title":"UI/UX Design","href":"/services/ui-ux-design"},{"title":"Frontend Development","href":"/services/web-development/frontend-development"},{"title":"ERP Solutions","href":"/services/software-development/erp"}]} />
+                <SubServiceShared.CTA theme={theme} />
+            </div>
+        </PageTransition>
+    );
+};
+
+export default CustomWebApplications;

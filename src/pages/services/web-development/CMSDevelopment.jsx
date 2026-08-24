@@ -1,0 +1,28 @@
+import React from 'react';
+import useSEO from '../../../hooks/useSEO';
+import PageTransition from '../../../components/common/PageTransition';
+import { SubServiceShared } from '../../../components/services/subservices/SubServiceShared';
+import { CMSVisual } from '../../../components/services/subservices/visuals/VisualsWeb';
+import { PenTool, Database, Zap, Sparkles, Eye, Cloud, Lock, Layers, Webhook, Box, Server, Boxes, GitMerge, LayoutTemplate, ArrowRightLeft, Globe, Languages, Network, RadioReceiver, ShieldCheck, LayoutDashboard, Users, Repeat, Radio, LineChart } from 'lucide-react';
+
+
+const CMSDevelopment = () => {
+    useSEO({ title: "Absolute Control Over Your Content | The Digital Connect", description: "Decoupled headless CMS architectures and highly customized WordPress engines granting marketing teams infinite publishing freedom natively." });
+    const theme = {"accent":"text-purple-500","bg":"bg-purple-500","softBg":"bg-purple-50"};
+    return (
+        <PageTransition>
+            <div className="w-full bg-white min-h-screen font-sans">
+                <SubServiceShared.Hero parentTitle="Web Development" parentRoute="/services/web-development" eyebrow="CMS Development" title="Absolute Control Over Your Content" description="Decoupled headless CMS architectures and highly customized WordPress engines granting marketing teams infinite publishing freedom natively." theme={theme} visual={CMSVisual} />
+                <SubServiceShared.Overview title="Empowering marketing without developer bottlenecks" content={["Content is the lifeblood of organic growth, but rigid, outdated Content Management Systems frequently throttle marketing velocity. We build highly customized CMS platforms that remove engineering friction, allowing your editorial teams to create, schedule, and publish rich media effortlessly.","Our primary expertise lies in Headless CMS architectures (Sanity, Contentful, Strapi). By decoupling the backend content repository from the frontend Next.js presentation layer, we deliver absolute creative freedom while simultaneously protecting the website from the inherent security flaws of traditional monolithic setups.","For clients heavily invested in WordPress, we completely overhaul the editorial experience by stripping out bloated plugins, developing custom Gutenberg blocks natively, and turning the backend into an intuitive, lightning-fast enterprise publishing tool."]} theme={theme} />
+                <SubServiceShared.Capabilities theme={theme} capabilities={[{title: "Headless CMS", desc: "Sanity and Contentful integrations delivering structured data purely via API to any frontend.", icon: <Boxes />}, {title: "Custom Editorial Workflows", desc: "Multi-tier draft, review, and approval pipelines mapped specifically to your organization.", icon: <GitMerge />}, {title: "Gutenberg Block Development", desc: "Bespoke React-based WordPress blocks replacing rigid templates and slow visual builders.", icon: <LayoutTemplate />}, {title: "CMS Data Migration", desc: "Seamless algorithmic extraction of thousands of legacy articles safely without SEO drops.", icon: <ArrowRightLeft />}, {title: "Omnichannel Distribution", desc: "Publish once, render everywhere—distribute content to Web, iOS, and Android simultaneously.", icon: <Globe />}, {title: "Content Localization", desc: "Deep multi-lingual architecture supporting vast global directory structures seamlessly.", icon: <Languages />}]} />
+                <SubServiceShared.Technology theme={theme} technologies={["Sanity.io","Contentful","Strapi","WordPress","Next.js","GraphQL","Prisma","Tailwind CSS"]} />
+                <SubServiceShared.Process theme={theme} process={[{"title":"Content Modeling","desc":"Analyzing your publishing needs and structuring strictly typed data models and schemas."},{"title":"CMS Configuration","desc":"Setting up the backend dashboards, roles, permissions, and editorial workflows natively."},{"title":"Frontend Consumption","desc":"Building the Next.js presentation layer to rapidly ingest and render the API content."},{"title":"Training & Handover","desc":"Providing comprehensive documentation so your marketing team can publish instantly."}]} />
+                <SubServiceShared.FAQ theme={theme} faqs={[{"q":"What is a Headless CMS?","a":"A Headless CMS stores content but has no built-in frontend. It delivers content via API (like JSON), allowing us to build a hyper-fast custom frontend (like React) without being restricted by traditional themes."},{"q":"Is WordPress still relevant?","a":"Absolutely. When built correctly—avoiding heavy pre-made themes and plugins—WordPress remains a massively powerful and familiar interface for editorial teams."},{"q":"Can you migrate our articles from our old site?","a":"Yes. We write custom node scripts to securely scrape, format, and inject your legacy posts directly into the new CMS architecture while strictly preserving your URL slugs."},{"q":"Does a headless CMS help with SEO?","a":"Immensely. Because the frontend is decoupled, we use Next.js to pre-render the pages (SSG), passing perfect, lightning-fast HTML directly to Google's crawlers."}]} />
+                <SubServiceShared.Related theme={theme} links={[{"title":"Content Marketing","href":"/services/digital-marketing/content-marketing"},{"title":"SEO Strategy","href":"/services/digital-marketing/seo"},{"title":"Frontend UI","href":"/services/web-development/frontend-development"},{"title":"Ecommerce Dev","href":"/services/ecommerce-development/custom-ecommerce"}]} />
+                <SubServiceShared.CTA theme={theme} />
+            </div>
+        </PageTransition>
+    );
+};
+
+export default CMSDevelopment;

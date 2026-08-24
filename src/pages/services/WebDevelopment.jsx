@@ -2,7 +2,7 @@ import React from 'react';
 import useSEO from '../../hooks/useSEO';
 import { motion } from 'framer-motion';
 import MainServiceLayout from '../../components/services/MainServiceLayout';
-import { Cloud, Code, Database, Monitor, Search, Lock, Zap, MousePointer2 } from 'lucide-react';
+import { Cloud, Database, Monitor, Search, Lock, Zap, MousePointer2 } from 'lucide-react';
 
 const WebHeroVisual = () => (
   <div className="relative w-full max-w-[500px] h-[500px] z-20">

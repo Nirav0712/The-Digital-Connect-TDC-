@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from '../components/layout/Header';
@@ -21,11 +22,6 @@ import NotFound from '../pages/NotFound';
 
 // Service Pages
 import WebDevelopment from '../pages/services/WebDevelopment';
-import FrontendDevelopment from '../pages/services/sub/FrontendDevelopment';
-import BackendDevelopment from '../pages/services/sub/BackendDevelopment';
-import CMSDevelopment from '../pages/services/sub/CMSDevelopment';
-import APIIntegration from '../pages/services/sub/APIIntegration';
-import CustomWebApplications from '../pages/services/sub/CustomWebApplications';
 import MobileDevelopment from '../pages/services/MobileDevelopment';
 import UIUXDesign from '../pages/services/UIUXDesign';
 import Ecommerce from '../pages/services/Ecommerce';
@@ -46,32 +42,36 @@ import BlogTemplate from '../components/blog/BlogTemplate';
 import CaseStudyTemplate from '../components/caseStudies/CaseStudyTemplate';
 import ScrollToTop from '../components/common/ScrollToTop';
 
-import UXResearch from '../pages/services/uiux/UXResearch';
-import Wireframing from '../pages/services/uiux/Wireframing';
-import Prototyping from '../pages/services/uiux/Prototyping';
-import UIDesign from '../pages/services/uiux/UIDesign';
-import DesignSystems from '../pages/services/uiux/DesignSystems';
-import Shopify from '../pages/services/ecommerce/Shopify';
-import WooCommerce from '../pages/services/ecommerce/WooCommerce';
-import CustomEcommerce from '../pages/services/ecommerce/CustomEcommerce';
-import PaymentIntegration from '../pages/services/ecommerce/PaymentIntegration';
-import MarketplaceDev from '../pages/services/ecommerce/MarketplaceDev';
-import CRM from '../pages/services/software/CRM';
-import ERP from '../pages/services/software/ERP';
-import SaaS from '../pages/services/software/SaaS';
-import BusinessAutomation from '../pages/services/software/BusinessAutomation';
-import APIDevelopment from '../pages/services/software/APIDevelopment';
-import SEO from '../pages/services/marketing/SEO';
-import PPC from '../pages/services/marketing/PPC';
-import SocialMedia from '../pages/services/marketing/SocialMedia';
-import ContentMarketing from '../pages/services/marketing/ContentMarketing';
-import PerformanceMarketing from '../pages/services/marketing/PerformanceMarketing';
-import IOSDevelopment from '../pages/services/mobile/IOSDevelopment';
-import AndroidDevelopment from '../pages/services/mobile/AndroidDevelopment';
-import FlutterDev from '../pages/services/mobile/FlutterDev';
-import ReactNativeDev from '../pages/services/mobile/ReactNativeDev';
-import CrossPlatform from '../pages/services/mobile/CrossPlatform';
-
+import FrontendDevelopment from '../pages/services/web-development/FrontendDevelopment';
+import BackendDevelopment from '../pages/services/web-development/BackendDevelopment';
+import CMSDevelopment from '../pages/services/web-development/CMSDevelopment';
+import APIIntegration from '../pages/services/web-development/APIIntegration';
+import CustomWebApplications from '../pages/services/web-development/CustomWebApplications';
+import IOSDevelopment from '../pages/services/mobile-app-development/IOSDevelopment';
+import AndroidDevelopment from '../pages/services/mobile-app-development/AndroidDevelopment';
+import FlutterDevelopment from '../pages/services/mobile-app-development/FlutterDevelopment';
+import ReactNativeDevelopment from '../pages/services/mobile-app-development/ReactNativeDevelopment';
+import CrossPlatformApps from '../pages/services/mobile-app-development/CrossPlatformApps';
+import UXResearch from '../pages/services/ui-ux-design/UXResearch';
+import Wireframing from '../pages/services/ui-ux-design/Wireframing';
+import Prototyping from '../pages/services/ui-ux-design/Prototyping';
+import UIDesign from '../pages/services/ui-ux-design/UIDesign';
+import DesignSystems from '../pages/services/ui-ux-design/DesignSystems';
+import Shopify from '../pages/services/ecommerce-development/Shopify';
+import WooCommerce from '../pages/services/ecommerce-development/WooCommerce';
+import CustomEcommerce from '../pages/services/ecommerce-development/CustomEcommerce';
+import PaymentIntegration from '../pages/services/ecommerce-development/PaymentIntegration';
+import MarketplaceDev from '../pages/services/ecommerce-development/MarketplaceDev';
+import CRM from '../pages/services/software-development/CRM';
+import ERP from '../pages/services/software-development/ERP';
+import SaaS from '../pages/services/software-development/SaaS';
+import BusinessAutomation from '../pages/services/software-development/BusinessAutomation';
+import APIDevelopment from '../pages/services/software-development/APIDevelopment';
+import SEO from '../pages/services/digital-marketing/SEO';
+import PPC from '../pages/services/digital-marketing/PPC';
+import SocialMedia from '../pages/services/digital-marketing/SocialMedia';
+import ContentMarketing from '../pages/services/digital-marketing/ContentMarketing';
+import PerformanceMarketing from '../pages/services/digital-marketing/PerformanceMarketing';
 
 const AppRoutes = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,19 +82,12 @@ const AppRoutes = () => {
             <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
-            {/* We apply a generic z-index context on main to ensure it defaults below the 1000 Header */}
             <main className="min-h-screen pt-[72px] relative z-[1]">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/services/web-development" element={<WebDevelopment />} />
-                    <Route path="/services/web-development/frontend-development" element={<FrontendDevelopment />} />
-                    <Route path="/services/web-development/backend-development" element={<BackendDevelopment />} />
-                    <Route path="/services/web-development/cms-development" element={<CMSDevelopment />} />
-                    <Route path="/services/web-development/api-integration" element={<APIIntegration />} />
-                    <Route path="/services/web-development/custom-web-applications" element={<CustomWebApplications />} />
-
                     <Route path="/services/mobile-app-development" element={<MobileDevelopment />} />
                     <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
                     <Route path="/services/ecommerce-development" element={<Ecommerce />} />
@@ -119,6 +112,17 @@ const AppRoutes = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/terms-and-conditions" element={<Terms />} />
+                    
+                    <Route path="/services/web-development/frontend-development" element={<FrontendDevelopment />} />
+                    <Route path="/services/web-development/backend-development" element={<BackendDevelopment />} />
+                    <Route path="/services/web-development/cms-development" element={<CMSDevelopment />} />
+                    <Route path="/services/web-development/api-integration" element={<APIIntegration />} />
+                    <Route path="/services/web-development/custom-web-applications" element={<CustomWebApplications />} />
+                    <Route path="/services/mobile-app-development/ios-development" element={<IOSDevelopment />} />
+                    <Route path="/services/mobile-app-development/android-development" element={<AndroidDevelopment />} />
+                    <Route path="/services/mobile-app-development/flutter-development" element={<FlutterDevelopment />} />
+                    <Route path="/services/mobile-app-development/react-native-development" element={<ReactNativeDevelopment />} />
+                    <Route path="/services/mobile-app-development/cross-platform-apps" element={<CrossPlatformApps />} />
                     <Route path="/services/ui-ux-design/ux-research" element={<UXResearch />} />
                     <Route path="/services/ui-ux-design/wireframing" element={<Wireframing />} />
                     <Route path="/services/ui-ux-design/prototyping" element={<Prototyping />} />
@@ -139,17 +143,11 @@ const AppRoutes = () => {
                     <Route path="/services/digital-marketing/social-media" element={<SocialMedia />} />
                     <Route path="/services/digital-marketing/content-marketing" element={<ContentMarketing />} />
                     <Route path="/services/digital-marketing/performance-marketing" element={<PerformanceMarketing />} />
-                    <Route path="/services/mobile-app-development/ios-development" element={<IOSDevelopment />} />
-                    <Route path="/services/mobile-app-development/android-development" element={<AndroidDevelopment />} />
-                    <Route path="/services/mobile-app-development/flutter-development" element={<FlutterDev />} />
-                    <Route path="/services/mobile-app-development/react-native-development" element={<ReactNativeDev />} />
-                    <Route path="/services/mobile-app-development/cross-platform-apps" element={<CrossPlatform />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
 
-            {/* Footer relative z-index stays below MobileMenu globally */}
             <div className="relative z-[1]">
                 <Footer />
             </div>

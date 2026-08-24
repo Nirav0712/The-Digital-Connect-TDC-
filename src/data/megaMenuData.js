@@ -78,11 +78,11 @@ export const megaMenuData = {
                 heading: "Mobile App Development",
                 description: "Create seamless mobile experiences for iOS and Android users.",
                 subServices: [
-                    { title: "iOS Development", href: "/services/mobile-app-development" },
-                    { title: "Android Development", href: "/services/mobile-app-development" },
-                    { title: "Flutter", href: "/services/mobile-app-development" },
-                    { title: "React Native", href: "/services/mobile-app-development" },
-                    { title: "Cross-Platform Apps", href: "/services/mobile-app-development" }
+                    { title: "iOS Development", href: "/services/mobile-app-development/ios-development" },
+                    { title: "Android Development", href: "/services/mobile-app-development/android-development" },
+                    { title: "Flutter", href: "/services/mobile-app-development/flutter-development" },
+                    { title: "React Native", href: "/services/mobile-app-development/react-native-development" },
+                    { title: "Cross-Platform Apps", href: "/services/mobile-app-development/cross-platform-apps" }
                 ],
                 cta: "Explore Mobile Development \u2192",
                 href: "/services/mobile-app-development",
@@ -95,11 +95,11 @@ export const megaMenuData = {
                 heading: "UI/UX Design",
                 description: "Design intuitive digital experiences that users love.",
                 subServices: [
-                    { title: "UX Research", href: "/services/ui-ux-design" },
-                    { title: "Wireframing", href: "/services/ui-ux-design" },
-                    { title: "Prototyping", href: "/services/ui-ux-design" },
-                    { title: "UI Design", href: "/services/ui-ux-design" },
-                    { title: "Design Systems", href: "/services/ui-ux-design" }
+                    { title: "UX Research", href: "/services/ui-ux-design/ux-research" },
+                    { title: "Wireframing", href: "/services/ui-ux-design/wireframing" },
+                    { title: "Prototyping", href: "/services/ui-ux-design/prototyping" },
+                    { title: "UI Design", href: "/services/ui-ux-design/ui-design" },
+                    { title: "Design Systems", href: "/services/ui-ux-design/design-systems" }
                 ],
                 cta: "Explore UI/UX Design \u2192",
                 href: "/services/ui-ux-design",
@@ -112,11 +112,11 @@ export const megaMenuData = {
                 heading: "Ecommerce Development",
                 description: "Create high-converting ecommerce experiences designed for growth.",
                 subServices: [
-                    { title: "Shopify", href: "/services/ecommerce-development" },
-                    { title: "WooCommerce", href: "/services/ecommerce-development" },
-                    { title: "Custom Ecommerce", href: "/services/ecommerce-development" },
-                    { title: "Payment Integration", href: "/services/ecommerce-development" },
-                    { title: "Marketplace Development", href: "/services/ecommerce-development" }
+                    { title: "Shopify", href: "/services/ecommerce-development/shopify" },
+                    { title: "WooCommerce", href: "/services/ecommerce-development/woocommerce" },
+                    { title: "Custom Ecommerce", href: "/services/ecommerce-development/custom-ecommerce" },
+                    { title: "Payment Integration", href: "/services/ecommerce-development/payment-integration" },
+                    { title: "Marketplace Development", href: "/services/ecommerce-development/marketplace-development" }
                 ],
                 cta: "Explore Ecommerce \u2192",
                 href: "/services/ecommerce-development",
@@ -129,11 +129,11 @@ export const megaMenuData = {
                 heading: "Custom Software Development",
                 description: "Build scalable software solutions around complex business requirements.",
                 subServices: [
-                    { title: "CRM", href: "/services/software-development" },
-                    { title: "ERP", href: "/services/software-development" },
-                    { title: "SaaS", href: "/services/software-development" },
-                    { title: "Business Automation", href: "/services/software-development" },
-                    { title: "API Development", href: "/services/software-development" }
+                    { title: "CRM", href: "/services/software-development/crm" },
+                    { title: "ERP", href: "/services/software-development/erp" },
+                    { title: "SaaS", href: "/services/software-development/saas" },
+                    { title: "Business Automation", href: "/services/software-development/business-automation" },
+                    { title: "API Development", href: "/services/software-development/api-development" }
                 ],
                 cta: "Explore Software Development \u2192",
                 href: "/services/software-development",
@@ -146,11 +146,11 @@ export const megaMenuData = {
                 heading: "Digital Marketing",
                 description: "Grow your digital presence with data-driven marketing strategies.",
                 subServices: [
-                    { title: "SEO", href: "/services/digital-marketing" },
-                    { title: "PPC", href: "/services/digital-marketing" },
-                    { title: "Social Media", href: "/services/digital-marketing" },
-                    { title: "Content Marketing", href: "/services/digital-marketing" },
-                    { title: "Performance Marketing", href: "/services/digital-marketing" }
+                    { title: "SEO", href: "/services/digital-marketing/seo" },
+                    { title: "PPC", href: "/services/digital-marketing/ppc" },
+                    { title: "Social Media", href: "/services/digital-marketing/social-media" },
+                    { title: "Content Marketing", href: "/services/digital-marketing/content-marketing" },
+                    { title: "Performance Marketing", href: "/services/digital-marketing/performance-marketing" }
                 ],
                 cta: "Explore Digital Marketing \u2192",
                 href: "/services/digital-marketing",
