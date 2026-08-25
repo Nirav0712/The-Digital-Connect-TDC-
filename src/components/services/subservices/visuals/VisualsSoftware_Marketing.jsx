@@ -18,7 +18,7 @@ export const CRMVisual = () => (
                 <div className="px-3 py-1 bg-white/5 rounded-full text-xs text-white/50 border border-white/10">342 Leads</div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 flex-1">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 flex-1">
                 {/* Column 1 */}
                 <div className="bg-white/5 border border-white/10 rounded-xl p-3 flex flex-col gap-3">
                     <div className="text-[10px] text-white/50 uppercase font-bold tracking-widest pl-1">New</div>
@@ -55,7 +55,7 @@ export const CRMVisual = () => (
 
 export const ERPVisual = () => (
     <div className="relative w-full max-w-[600px] aspect-square flex items-center justify-center p-8 z-20">
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full h-full relative z-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 w-full h-full relative z-20">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-slate-900 rounded-2xl shadow-xl border border-slate-700/50 flex flex-col p-6 relative overflow-hidden group hover:border-brand-cyan/50 transition-colors">
                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-brand-cyan/20/10 blur-3xl rounded-full"></div>
                 <div className="w-10 h-10 bg-brand-cyan/20/20 rounded-lg flex items-center justify-center mb-4"><Database size={20} className="text-brand-cyan" /></div>
@@ -126,7 +126,7 @@ export const SaaSVisual = () => (
 
 export const BusinessAutomationVisual = () => (
     <div className="relative w-full max-w-[600px] aspect-square flex items-center justify-center p-8 z-20">
-        <div className="w-full h-full relative z-20 grid grid-cols-3 grid-rows-3 gap-4">
+        <div className="w-full h-full relative z-20 grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-4">
             <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
                 <motion.path d="M 100 100 L 300 300 L 500 100" stroke="rgba(234, 88, 12, 0.2)" strokeWidth="2" fill="none" strokeDasharray="5 5" animate={{ strokeDashoffset: -100 }} transition={{ duration: 4, repeat: Infinity, ease: 'linear' }} />
                 <motion.path d="M 100 300 L 300 300 L 500 300" stroke="rgba(234, 88, 12, 0.2)" strokeWidth="2" fill="none" strokeDasharray="5 5" animate={{ strokeDashoffset: 100 }} transition={{ duration: 4, repeat: Infinity, ease: 'linear' }} />
@@ -217,7 +217,7 @@ export const SEOVisual = () => (
                 ))}
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
                     <div className="text-[10px] text-slate-400 font-bold uppercase mb-1">Domain Auth</div>
                     <div className="text-xl font-bold text-slate-800">DA 84</div>
@@ -250,7 +250,7 @@ export const PPCVisual = () => (
                 <div className="text-sm text-slate-600 line-clamp-2">Our highly optimized custom software architecture scales identically with your business demands. Connect with our dedicated internal sales team today.</div>
             </motion.div>
 
-            <div className="w-full mt-6 grid grid-cols-3 gap-4">
+            <div className="w-full mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
                 <div className="bg-white border border-slate-200 p-4 rounded-xl text-center shadow-sm">
                     <div className="text-[10px] text-slate-400 font-bold uppercase">CPC</div>
                     <div className="text-lg font-bold text-slate-800">$2.45</div>
@@ -280,7 +280,7 @@ export const SocialMediaVisual = () => (
                     <div className="h-4 w-32 bg-slate-200 rounded-full mt-3"></div>
                     <div className="h-2 w-24 bg-slate-100 rounded-full mt-2 mb-4"></div>
 
-                    <div className="grid grid-cols-3 gap-2 mt-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-auto">
                         <div className="h-20 bg-slate-100 rounded-lg"></div>
                         <div className="h-20 bg-slate-100 rounded-lg"></div>
                         <div className="h-20 bg-slate-100 rounded-lg"></div>
@@ -360,7 +360,7 @@ export const PerformanceMarketingVisual = () => (
                 <div className="px-3 py-1 bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 rounded-full text-xs font-mono">Live Data</div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="bg-white/5 border border-white/10 p-5 rounded-xl">
                     <div className="text-[10px] text-white/50 uppercase font-bold tracking-widest mb-1">CPA (Blended)</div>
                     <div className="text-3xl font-light text-white">$14.50</div>

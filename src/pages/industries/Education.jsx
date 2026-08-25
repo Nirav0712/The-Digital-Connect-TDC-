@@ -21,7 +21,7 @@ const EducationVisual = () => (
          <span className='text-white font-bold tracking-wider text-sm'>COURSE PROGRESS</span>
          <div className='w-full h-2 bg-white/10 rounded overflow-hidden'><motion.div animate={{width: ['10%', '80%', '80%']}} transition={{duration: 3, repeat: Infinity}} className='h-full bg-[#18C5E8]'></motion.div></div>
        </div>
-       <div className='flex-grow grid grid-cols-2 gap-4'>
+       <div className='flex-grow grid grid-cols-1 md:grid-cols-2 gap-4'>
          <div className='bg-white/5 rounded-xl border border-white/10'></div>
          <div className='bg-white/5 rounded-xl border border-white/10'></div>
        </div>

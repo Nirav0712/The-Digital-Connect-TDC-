@@ -5,7 +5,7 @@ import { Search, User, Map, Layout, Zap, Pointer, Palette, Component, Layers, Ma
 export const UXResearchVisual = () => (
     <div className="relative w-full max-w-[600px] aspect-square flex items-center justify-center p-8 z-20">
         <motion.div initial={{ rotate: -5 }} animate={{ rotate: [-2, 2, -2] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="w-full h-full bg-[#FAF9F7] rounded-3xl shadow-xl overflow-hidden relative border border-black/5 p-8 flex flex-col justify-between">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="bg-white p-4 shadow-sm border border-black/5 rounded-xl">
                     <User className="text-brand-periwinkle mb-2" size={24} />
                     <div className="w-20 h-3 bg-black/10 rounded-full mb-2"></div>
@@ -114,7 +114,7 @@ export const UIDesignVisual = () => (
 
 export const DesignSystemsVisual = () => (
     <div className="relative w-full max-w-[600px] aspect-square flex items-center justify-center p-8 z-20">
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full h-full relative z-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 w-full h-full relative z-20">
             <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="bg-white rounded-2xl shadow-md border border-black/5 p-6 flex flex-col items-center justify-center gap-3">
                 <div className="px-4 py-2 bg-brand-soft-blue/30 text-white font-bold text-xs rounded-full shadow-lg">Token</div>
                 <code className="text-xs text-brand-cyan bg-brand-soft-blue/30 px-2 py-1 rounded">--color-primary</code>
@@ -152,7 +152,7 @@ export const ShopifyVisual = () => (
                     <div className="w-24 h-8 bg-brand-soft-blue/30 rounded-full"></div>
                 </div>
             </div>
-            <div className="flex-1 p-6 grid grid-cols-2 gap-4">
+            <div className="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[1, 2].map(i => (
                     <div key={i} className="bg-white rounded-xl shadow-sm border border-[#D5E5DF] p-3 flex flex-col cursor-pointer hover:shadow-md hover:border-brand-soft-blue transition-all">
                         <div className="w-full h-24 bg-gray-50 rounded-lg mb-3"></div>
@@ -179,7 +179,7 @@ export const WooCommerceVisual = () => (
                     <div className="w-32 h-6 bg-white/10 rounded-md"></div>
                     <div className="px-3 py-1 bg-white/5 rounded-full text-xs text-white/50 border border-white/10 flex items-center gap-1">Today <ChevronRight size={10} /></div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 bg-white/5 border border-white/10 rounded-xl relative overflow-hidden">
                         <div className="text-white/40 text-[10px] uppercase font-bold mb-1">Total Sales</div>
                         <div className="text-white font-heading font-bold text-xl">$12,450</div>
@@ -203,7 +203,7 @@ export const WooCommerceVisual = () => (
 
 export const CustomEcommerceVisual = () => (
     <div className="relative w-full max-w-[600px] aspect-square flex items-center justify-center p-8 z-20">
-        <div className="w-full h-full relative grid grid-cols-2 grid-rows-2 gap-6 z-20">
+        <div className="w-full h-full relative grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 z-20">
             <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
                 <path d="M 150 150 L 400 150 L 400 350 L 150 350 Z" stroke="rgba(249, 115, 22, 0.3)" strokeWidth="2" strokeDasharray="5 5" fill="none" />
                 <motion.circle cx="150" cy="150" r="4" fill="#F97316" animate={{ cx: [150, 400, 400, 150, 150], cy: [150, 150, 350, 350, 150] }} transition={{ duration: 6, repeat: Infinity, ease: 'linear' }} />

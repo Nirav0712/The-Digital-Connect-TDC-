@@ -57,7 +57,7 @@ const BankingPortals = () => {
                                <div className="w-8 h-8 rounded-full bg-[#08BFE8]/20"></div>
                           </div>
                      </div>
-                     <div className="flex-1 grid grid-cols-2 gap-4">
+                     <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
                           <motion.div animate={{y:[0,-5,0]}} transition={{duration:3, repeat:Infinity}} className="bg-gradient-to-br from-[#08243A] to-[#061B2E] rounded-2xl border border-white/5 p-4 flex flex-col justify-end">
                                <div className="w-full h-1 bg-white/10 rounded-full mt-auto mb-2"><div className="w-[60%] h-full bg-[#08BFE8] rounded-full shadow-[0_0_10px_#08BFE8]"></div></div>
                                <div className="text-white/60 text-xs">Monthly Limit</div>

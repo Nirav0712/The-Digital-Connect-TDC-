@@ -234,7 +234,7 @@ const Team = () => {
                                     Experts helping businesses build visibility, engagement and sustainable growth. Merging performance marketing with deep analytics to maximize digital presence.
                                 </p>
 
-                                <div className="grid grid-cols-2 md:grid-cols-4 w-full gap-3 md:gap-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 w-full gap-3 md:gap-4">
                                     <div className="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-6 text-center hover:bg-white/10 transition-colors">
                                         <div className="font-bold text-[#EAF8FC] text-sm md:text-base">SEO Strategy</div>
                                     </div>

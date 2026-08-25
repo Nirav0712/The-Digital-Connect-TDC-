@@ -28,7 +28,7 @@ const AboutPreview = () => {
           <p className="text-lg lg:text-xl text-[#B9CAD7] leading-relaxed">
             The Digital Connect is a full-service digital agency focused on building platforms that push boundaries. With over a decade of experience, our team of designers, engineers, and strategists work collaboratively to transform complex problems into elegant, scalable digital solutions.
           </p>
-          <div className="grid grid-cols-2 gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
             <StatCard number="10+" text="Years Exp" />
             <StatCard number="150+" text="Projects" />
             <StatCard number="50+" text="Clients" />

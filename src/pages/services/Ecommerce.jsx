@@ -26,7 +26,7 @@ const EcommerceHeroVisual = () => (
           <div className="w-8 h-8 bg-brand-mint/20 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="h-20 border border-black/5 bg-white rounded-xl shadow-sm flex flex-col justify-center px-4">
             <div className="text-[10px] text-black/40 font-bold mb-1">REVENUE</div>
             <div className="w-16 h-4 bg-brand-mint/60 rounded"></div>

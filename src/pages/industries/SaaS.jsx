@@ -18,7 +18,7 @@ const SaaSVisual = () => (
     </div>
     <div className='flex-grow p-6 flex flex-col gap-6 bg-[#F7FAFC]'>
        <div className='flex justify-between items-center'><div className='w-32 h-6 bg-[#061A2E]/10 rounded'></div><div className='w-10 h-10 rounded-full bg-[#D9A72E]/20'></div></div>
-       <div className='grid grid-cols-3 gap-4'>
+       <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
           {[1,2,3].map(i => <div key={i} className='bg-white rounded-xl border border-[#D9E7EF] p-4 flex flex-col gap-2'><div className='text-xs font-bold text-[#087EA4]'>METRIC {i}</div><div className='w-full h-4 bg-[#061A2E]/20 rounded'></div></div>)}
        </div>
        <motion.div animate={{opacity: [0.8, 1, 0.8]}} transition={{duration:3, repeat:Infinity}} className='flex-grow bg-white rounded-xl border border-[#D9E7EF] p-4 relative overflow-hidden'>

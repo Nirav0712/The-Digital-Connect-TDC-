@@ -42,7 +42,7 @@ const SoftwareHeroVisual = () => (
             <div className="w-24 h-6 bg-brand-blue/20 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <motion.div whileHover={{ scale: 1.05 }} className="h-20 bg-white rounded-xl shadow-sm border border-black/5 p-4 flex flex-col justify-center">
               <div className="text-[9px] font-bold text-black/40 mb-2">REVENUE</div>
               <div className="w-3/4 h-3 bg-brand-lavender/60 rounded flex-1"></div>

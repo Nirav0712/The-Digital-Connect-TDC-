@@ -22,7 +22,7 @@ const MobileHeroVisual = () => (
         </div>
         <div className="h-24 w-full bg-brand-mint/20 rounded-xl mb-4"></div>
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <div className="aspect-square bg-white rounded-xl shadow-sm"></div>
           <div className="aspect-square bg-white rounded-xl shadow-sm"></div>
         </div>

@@ -47,7 +47,7 @@ const Marketplaces = () => {
                     <div className="relative w-full overflow-hidden lg:overflow-visible flex items-center justify-center lg:justify-end z-0">
                         
                 <div className="w-full h-[350px] bg-gray-50 rounded-3xl p-6 border border-gray-200 overflow-hidden relative">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 h-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-4 h-full">
                          {[1,2,3,4,5,6].map((item, i) => (
                              <motion.div 
                                  key={i} 

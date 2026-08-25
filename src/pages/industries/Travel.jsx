@@ -21,7 +21,7 @@ const TravelVisual = () => (
        </div>
        <div className='text-[#061A2E] font-bold text-2xl'>Tokyo</div>
     </div>
-    <div className='flex-grow grid grid-cols-2 gap-4'>
+    <div className='flex-grow grid grid-cols-1 md:grid-cols-2 gap-4'>
        <div className='bg-[#F7FAFC] rounded-2xl border border-[#D9E7EF] p-4 flex flex-col gap-2'>
          <div className='h-2 w-1/3 bg-[#087EA4]/30 rounded mb-4'></div>
          <div className='h-full bg-gradient-to-t from-[#D9A72E]/20 to-transparent rounded-xl'></div>

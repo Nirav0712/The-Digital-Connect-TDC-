@@ -55,7 +55,7 @@ const UIUXHeroVisual = () => (
       </div>
       <div className="w-full h-32 rounded-xl bg-gradient-to-br from-brand-peach/40 via-brand-pink/20 to-brand-lavender/30 flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-white/20 backdrop-blur-sm"></div>
-        <div className="relative z-10 grid grid-cols-2 gap-3 w-full px-4">
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-3 w-full px-4">
           <div className="h-10 bg-white rounded-lg shadow-sm border border-white/50"></div>
           <div className="h-10 bg-[#171717] rounded-lg shadow-sm"></div>
         </div>

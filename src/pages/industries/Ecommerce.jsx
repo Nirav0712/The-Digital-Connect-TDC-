@@ -15,7 +15,7 @@ const EcommerceVisual = () => (
       <div className='w-20 h-4 bg-[#061A2E]/10 rounded'></div>
       <div className='flex gap-2'><div className='w-4 h-4 rounded-full bg-[#18C5E8]/40'></div></div>
     </div>
-    <div className='p-6 grid grid-cols-2 gap-4 flex-grow'>
+    <div className='p-6 grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow'>
       <motion.div whileHover={{scale: 1.02}} className='bg-[#F7FAFC] rounded-xl border border-[#D9E7EF] overflow-hidden flex flex-col'>
          <div className='h-3/5 bg-[#D9A72E]/10'></div>
          <div className='p-3 flex-grow flex flex-col gap-2 justify-end'>

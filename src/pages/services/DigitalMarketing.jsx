@@ -25,7 +25,7 @@ const MarketingHeroVisual = () => (
       </div>
 
       <div className="p-6 flex flex-col gap-6 flex-1 bg-white">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-brand-purple/5 border border-brand-purple/10 rounded-xl p-4 flex flex-col h-20 justify-center">
             <div className="text-[10px] tracking-wider text-black/50 font-bold mb-1">TRAFFIC</div>
             <div className="flex items-end gap-2">

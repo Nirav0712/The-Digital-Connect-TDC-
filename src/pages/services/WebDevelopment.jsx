@@ -20,7 +20,7 @@ const WebHeroVisual = () => (
       <div className="p-6 flex flex-col gap-4 flex-1">
         <div className="h-6 w-3/4 bg-brand-lavender/30 rounded-lg"></div>
         <div className="h-4 w-1/2 bg-black/5 rounded-lg mb-4"></div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="h-24 bg-brand-blue/10 rounded-xl"></div>
           <div className="h-24 bg-brand-peach/10 rounded-xl"></div>
         </div>

@@ -57,7 +57,7 @@ const PatientApps = () => {
                              <div className="w-1/2 h-2 bg-[#08BFE8]/50 rounded-full"></div>
                              <div className="w-3/4 h-2 bg-[#08BFE8]/30 rounded-full"></div>
                         </div>
-                        <div className="grid grid-cols-2 gap-3 mt-auto mb-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-auto mb-4">
                             <div className="h-12 bg-gray-50 rounded-xl"></div>
                             <div className="h-12 bg-[#08BFE8]/10 rounded-xl"></div>
                         </div>

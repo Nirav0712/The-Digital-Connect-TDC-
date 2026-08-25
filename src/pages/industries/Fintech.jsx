@@ -16,7 +16,7 @@ const FintechVisual = () => (
       <div className='w-24 h-4 bg-white/10 rounded-full'></div>
     </div>
     <div className='p-6 flex-grow relative bg-[#061A2E] flex flex-col gap-4'>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
         {[1,2,3].map(i => <div key={i} className='bg-white/5 border border-white/10 rounded-lg p-3 h-16'></div>)}
       </div>
       <div className='flex-grow bg-[#0B1724] rounded-lg border border-white/5 p-4 flex items-end gap-2'>

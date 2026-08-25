@@ -16,7 +16,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-[1000] w-full transition-all duration-300 h-[72px] bg-brand-off-white/92 backdrop-blur-md ${scrolled ? 'shadow-sm border-b border-brand-border' : 'border-b border-transparent'}`}>
-      <div className="w-full h-full max-w-[1400px] mx-auto px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-[1fr_auto_1fr] items-center relative z-[1000]">
+      <div className="w-full h-full max-w-[1400px] mx-auto px-6 lg:px-8 flex justify-between items-center lg:grid lg:grid-cols-[1fr_auto_1fr] relative z-[1000]">
 
         {/* LEFT COLUMN: Logo */}
         <div className="justify-self-start flex shrink-0 h-full items-center">

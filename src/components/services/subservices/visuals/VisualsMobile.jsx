@@ -16,7 +16,7 @@ export const IOSVisual = () => (
                     <div className="w-24 h-4 bg-white/40 rounded-full mb-2"></div>
                     <div className="w-16 h-2 bg-white/20 rounded-full"></div>
                 </div>
-                <div className="grid grid-cols-2 gap-3 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                     <div className="h-24 bg-white/10 rounded-2xl p-3 backdrop-blur-md border border-white/20">
                         <div className="w-16 h-3 bg-white/40 rounded-full mb-2 mt-10"></div>
                         <div className="w-10 h-2 bg-white/20 rounded-full"></div>

@@ -176,7 +176,7 @@ const Values = () => {
                                     We focus on reliable engineering, thoughtful design and measurable outcomes. Shortcuts are temporary; robust architecture scales forever.
                                 </p>
                             </div>
-                            <div className="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+                            <div className="lg:w-1/2 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-md hover:border-[#08BFE8] hover:shadow-lg transition-all duration-300 aspect-square flex flex-col justify-center">
                                     <div className="w-10 h-10 bg-[#EAF8FC] text-[#08BFE8] flex items-center justify-center rounded-lg mb-4"><ShieldCheck size={20} /></div>
                                     <h4 className="font-bold text-[#061B2E] text-base md:text-lg">Code Integrity</h4>

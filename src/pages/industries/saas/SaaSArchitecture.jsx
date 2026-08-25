@@ -48,7 +48,7 @@ const SaaSArchitecture = () => {
                         
                 <div className="w-full h-[350px] bg-[#061B2E] rounded-3xl p-6 shadow-2xl border border-gray-800 flex items-center justify-center relative overflow-hidden">
                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(8,191,232,0.1)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                     <div className="grid grid-cols-3 grid-rows-3 gap-4 w-[80%] h-[80%] z-10">
+                     <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-4 w-[80%] h-[80%] z-10">
                           <motion.div animate={{scale:[1,1.1,1]}} transition={{duration:3, repeat:Infinity}} className="col-start-2 row-start-1 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 flex flex-col justify-center items-center"><div className="w-4 h-4 bg-white/80 rounded-full"></div></motion.div>
                           <div className="col-start-1 row-start-2 bg-[#08BFE8]/20 backdrop-blur-md rounded-xl border border-[#08BFE8]/50 flex flex-col justify-center items-center"><div className="w-4 h-4 bg-[#08BFE8] rounded-md"></div></div>
                           <div className="col-start-2 row-start-2 bg-[#159ED9] rounded-xl flex items-center justify-center shadow-[0_0_20px_#159ED9] text-white font-bold text-xs opacity-90">API</div>

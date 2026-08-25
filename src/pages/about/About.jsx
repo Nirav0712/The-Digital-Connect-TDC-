@@ -106,7 +106,7 @@ const About = () => {
                         <p className="text-[#A3B8CC] text-lg lg:text-xl leading-relaxed mb-12 lg:mb-16">
                             We started with a simple belief: the best digital products are born at the intersection of business strategy and technical excellence. We operate as a seamless extension of your internal team.
                         </p>
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             <div>
                                 <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">12+</div>
                                 <div className="text-xs md:text-sm font-bold tracking-wider text-white uppercase opacity-80">Years Experience</div>

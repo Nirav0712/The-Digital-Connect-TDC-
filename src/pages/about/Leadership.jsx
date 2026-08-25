@@ -48,7 +48,7 @@ const Leadership = () => {
                 <section className="py-24 bg-[#F4FAFC]">
                     <div className="max-w-[1320px] mx-auto px-5 md:px-8 text-center">
                         <h2 className="text-4xl font-black text-[#061B2E] mb-16">How We Lead</h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-6">
                             {['Vision', 'Ownership', 'Collaboration', 'Innovation'].map(val => (
                                 <div key={val} className="bg-white p-8 rounded-2xl border border-[#DDF7FC] font-bold text-lg text-[#08243A] shadow-sm hover:shadow-md transition-shadow">
                                     {val}
