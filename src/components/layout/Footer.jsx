@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo/TDC.png';
 
 const Footer = () => {
   return (
@@ -13,11 +14,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12 md:mb-16">
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <img src="/logo.png" alt="The Digital Connect" className="auto h-8 lg:h-10 object-contain" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
-              <span className="text-xl font-heading font-extrabold tracking-tight hidden">
-                THE DIGITAL CONNECT
-              </span>
+            <Link to="/" className="flex items-center mb-6">
+              <img src={logo} alt="The Digital Connect" className="h-8 md:h-10 lg:h-12 w-auto bg-white/5 p-3 rounded-xl object-contain drop-shadow-md" />
             </Link>
             <p className="text-[#B9CAD7] leading-relaxed mb-6 pr-4">
               We design and develop high-end digital architecture that aggressively scales enterprise functionality.
@@ -44,6 +42,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Connect</h4>
             <ul className="space-y-4 text-[#B9CAD7]">
+              <li><a href="tel:+919925843531" className="text-white hover:text-brand-electric-cyan transition-colors font-bold">+91 9925843531</a></li>
               <li><a href="#" className="hover:text-brand-electric-cyan transition-colors">LinkedIn</a></li>
               <li><a href="#" className="hover:text-brand-electric-cyan transition-colors">Twitter</a></li>
               <li><a href="#" className="hover:text-brand-electric-cyan transition-colors">Instagram</a></li>
@@ -62,4 +61,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;

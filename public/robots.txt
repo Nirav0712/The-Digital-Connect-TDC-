@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary or private crawling
+Disallow: /admin
+Disallow: /private
+Disallow: /api/
+Disallow: /cdn-cgi/
+
+# Sitemaps
+Sitemap: https://www.thedigitalconnect.com/sitemap.xml

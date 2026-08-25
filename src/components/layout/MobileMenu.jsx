@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { X, ChevronDown } from 'lucide-react';
+import { X, ChevronDown, Phone } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { megaMenuData } from '../../data/megaMenuData';
+import logo from '../../assets/logo/TDC.png';
 
 const navOrder = [
     { label: 'Company', id: 'company' },
@@ -72,9 +73,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
                     >
                         {/* Header */}
                         <div className="flex justify-between items-center px-6 h-[72px] lg:h-[76px] shrink-0 border-b border-[#061A2E]/10 bg-[rgba(247,250,252,0.94)] backdrop-blur-md">
-                            <Link to="/" className="text-xl font-heading font-extrabold tracking-tight text-brand-primary-navy flex items-center gap-2" onClick={onClose}>
-                                <img src="/logo.png" alt="The Digital Connect" className="h-8 object-contain" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
-                                THE DIGITAL CONNECT
+                            <Link to="/" className="flex items-center" onClick={onClose}>
+                                <img src={logo} alt="The Digital Connect" className="h-6 md:h-7 object-contain w-auto" />
                             </Link>
                             <button
                                 className="p-2 -mr-2 text-foreground"
@@ -209,6 +209,13 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                     >
                                         Contact
                                     </Link>
+                                    <a
+                                        href="tel:+919925843531"
+                                        onClick={onClose}
+                                        className="flex items-center gap-3 w-full pb-4 pt-1 text-[22px] md:text-[26px] font-heading font-semibold text-[#08BFE8] hover:text-[#18C5E8] transition-colors"
+                                    >
+                                        <Phone size={24} /> +91 9925843531
+                                    </a>
                                 </motion.div>
                             </nav>
 

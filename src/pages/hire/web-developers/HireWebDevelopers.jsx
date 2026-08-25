@@ -3,17 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, ArrowRight, CheckCircle2, Users, Target, Shield, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
-import useSEO from '../../../hooks/useSEO';
+import SEO from '../../../components/seo/SEO';
 import PageTransition from '../../../components/common/PageTransition';
 
 const HireWebDevelopers = () => {
-    useSEO({
-        title: "Hire Web Developers | The Digital Connect",
-        description: "Build scalable, high-performance websites and web applications with experienced developers who understand modern architecture, user experience and business goals."
-    });
-
     return (
         <PageTransition>
+            <SEO title="${cat.name} | The Digital Connect" description="${cat.desc}" />
             <div className="w-full bg-[#FAFAFA] min-h-screen font-sans">
                 {/* BREADCRUMBS */}
                 <div className="pt-[90px] md:pt-[100px] px-5 max-w-[1320px] mx-auto text-sm font-medium text-[#7F94A8] flex flex-wrap items-center gap-2">

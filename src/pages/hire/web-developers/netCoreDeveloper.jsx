@@ -3,17 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, ArrowRight, CheckCircle2, Layout, Database, Code2, Server } from 'lucide-react';
 import { motion } from 'framer-motion';
-import useSEO from '../../../hooks/useSEO';
+import SEO from '../../../components/seo/SEO';
 import PageTransition from '../../../components/common/PageTransition';
 
 const netCoreDeveloper = () => {
-    useSEO({
-        title: ".NET Core Developer | The Digital Connect",
-        description: "Hire experienced .NET Core developers to build scalable, secure and high-performance applications."
-    });
-
     return (
         <PageTransition>
+            <SEO title="${sub.name} | The Digital Connect" description="Hire experienced ${sub.tech} developers to build scalable, secure and high-performance applications." />
             <div className="w-full bg-[#FAFAFA] min-h-screen font-sans">
                 {/* BREADCRUMBS */}
                 <div className="pt-[90px] md:pt-[100px] px-5 max-w-[1320px] mx-auto text-sm font-medium text-[#7F94A8] flex flex-wrap items-center gap-2">
