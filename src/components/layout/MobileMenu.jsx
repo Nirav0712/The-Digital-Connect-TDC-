@@ -10,6 +10,7 @@ const navOrder = [
     { label: 'Industries', id: 'industries' },
     { label: 'Portfolio', id: 'portfolio' },
     { label: 'Process', id: 'process' },
+    { label: 'Hire Team', id: 'hire-team' },
     { label: 'Careers', id: 'careers' }
 ];
 
@@ -159,6 +160,17 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                                                         {srv.title}
                                                                                                     </Link>
                                                                                                 ))}
+                                                                                                {subItem.href && (
+                                                                                                    <div className="pt-2 mt-1 border-t border-[#061A2E]/5">
+                                                                                                        <Link
+                                                                                                            to={subItem.href}
+                                                                                                            onClick={onClose}
+                                                                                                            className="text-[#087EA4] font-bold hover:text-[#18C5E8] transition-colors block py-1 text-base inline-flex items-center"
+                                                                                                        >
+                                                                                                            {subItem.cta ? subItem.cta.replace(' \u2192', '') : 'Overview'} <span className="ml-1 text-sm">→</span>
+                                                                                                        </Link>
+                                                                                                    </div>
+                                                                                                )}
                                                                                             </div>
                                                                                         </motion.div>
                                                                                     )}

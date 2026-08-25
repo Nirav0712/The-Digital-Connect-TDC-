@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import MobileMenu from '../components/layout/MobileMenu';
 import Footer from '../components/layout/Footer';
+import HireRoutes from './HireRoutes';
 
 // Pages
 import Home from '../pages/Home';
@@ -197,6 +198,8 @@ const AppRoutes = () => {
                     <Route path="/services/digital-marketing/social-media" element={<SocialMedia />} />
                     <Route path="/services/digital-marketing/content-marketing" element={<ContentMarketing />} />
                     <Route path="/services/digital-marketing/performance-marketing" element={<PerformanceMarketing />} />
+
+                    {HireRoutes().props.children}
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

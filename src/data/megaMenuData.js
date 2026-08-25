@@ -331,6 +331,107 @@ export const megaMenuData = {
             }
         ]
     },
+    "hire-team": {
+        title: "Hire Team",
+        items: [
+            {
+                id: "hire-web-developers",
+                label: "Hire Web Developers",
+                heading: "Hire Web Developers",
+                description: "Build scalable, high-performance websites and web applications with experienced developers who understand modern architecture, user experience and business goals.",
+                subServices: [
+                    { title: "Hire PHP Developer", href: "/hire-team/web-developers/php-developer" },
+                    { title: "Hire Python Developer", href: "/hire-team/web-developers/python-developer" },
+                    { title: "Hire WordPress Developer", href: "/hire-team/web-developers/wordpress-developer" },
+                    { title: "Hire Magento Developer", href: "/hire-team/web-developers/magento-developer" }
+                ],
+                cta: "View All Web Developers \u2192",
+                href: "/hire-team/web-developers",
+                background: "bg-brand-primary-navy text-white",
+                imageText: "Web Dev"
+            },
+            {
+                id: "hire-mobile-app-developers",
+                label: "Hire Mobile App Developers",
+                heading: "Hire Mobile App Developers",
+                description: "Hire skilled mobile application developers to build scalable native and cross-platform mobile applications for iOS and Android platforms.",
+                subServices: [
+                    { title: "Hire iOS Developer", href: "/hire-team/mobile-app-developers/ios-developer" },
+                    { title: "Hire Android Developer", href: "/hire-team/mobile-app-developers/android-developer" },
+                    { title: "Hire Flutter Developer", href: "/hire-team/mobile-app-developers/flutter-developer" },
+                    { title: "Hire React Native Developer", href: "/hire-team/mobile-app-developers/react-native-developer" }
+                ],
+                cta: "View All Mobile Developers \u2192",
+                href: "/hire-team/mobile-app-developers",
+                background: "bg-brand-deep-blue text-white",
+                imageText: "Mobile"
+            },
+            {
+                id: "hire-javascript-developers",
+                label: "Hire JavaScript Developers",
+                heading: "Hire JavaScript Developers",
+                description: "Leverage the power of modern JavaScript frameworks. Hire expert JavaScript developers to create lightning-fast single-page applications and robust backend services.",
+                subServices: [
+                    { title: "Hire React Developer", href: "/hire-team/javascript-developers/react-developer" },
+                    { title: "Hire Angular Developer", href: "/hire-team/javascript-developers/angular-developer" },
+                    { title: "Hire Node.js Developer", href: "/hire-team/javascript-developers/node-js-developer" },
+                    { title: "Hire Next.js Developer", href: "/hire-team/javascript-developers/next-js-developer" }
+                ],
+                cta: "View All JS Developers \u2192",
+                href: "/hire-team/javascript-developers",
+                background: "bg-brand-cyan/20 border-brand-cyan text-brand-primary-navy",
+                imageText: "JS Experts"
+            },
+            {
+                id: "hire-devops-developers",
+                label: "Hire DevOps Developers",
+                heading: "Hire DevOps Developers",
+                description: "Accelerate your delivery pipeline. Hire certified DevOps developers focusing on cloud infrastructure, CI/CD, automation, scalability and secure deployment.",
+                subServices: [
+                    { title: "Hire AWS Developer", href: "/hire-team/devops-developers/aws-developer" },
+                    { title: "Hire Azure DevOps Developer", href: "/hire-team/devops-developers/azure-devops-developer" },
+                    { title: "Hire Docker Developer", href: "/hire-team/devops-developers/docker-developer" },
+                    { title: "Hire CI/CD Developer", href: "/hire-team/devops-developers/cicd-developer" }
+                ],
+                cta: "View All DevOps Experts \u2192",
+                href: "/hire-team/devops-developers",
+                background: "bg-brand-electric-cyan/20 text-brand-primary-navy",
+                imageText: "DevOps"
+            },
+            {
+                id: "hire-designers",
+                label: "Hire Designers",
+                heading: "Hire Designers",
+                description: "Elevate your digital products with world-class design. Hire UI/UX and product designers who merge aesthetics with intuitive user experiences.",
+                subServices: [
+                    { title: "Hire UI/UX Designer", href: "/hire-team/designers/ui-ux-designer" },
+                    { title: "Hire Graphic Designer", href: "/hire-team/designers/graphic-designer" },
+                    { title: "Hire Product Designer", href: "/hire-team/designers/product-designer" },
+                    { title: "Hire Web Designer", href: "/hire-team/designers/web-designer" }
+                ],
+                cta: "View All Designers \u2192",
+                href: "/hire-team/designers",
+                background: "bg-brand-periwinkle/30 text-brand-primary-navy",
+                imageText: "Designers"
+            },
+            {
+                id: "hire-salesforce-integration-developers",
+                label: "Hire Salesforce Integration Developers",
+                heading: "Hire Salesforce Integration Developers",
+                description: "Maximize your CRM capabilities. Hire expert Salesforce consultants and integration developers to architect and connect your entire business ecosystem.",
+                subServices: [
+                    { title: "Hire Salesforce Developer", href: "/hire-team/salesforce-integration-developers/salesforce-developer" },
+                    { title: "Hire Salesforce Consultant", href: "/hire-team/salesforce-integration-developers/salesforce-consultant" },
+                    { title: "Hire Salesforce Integration Developer", href: "/hire-team/salesforce-integration-developers/salesforce-integration-developer" },
+                    { title: "Hire Salesforce Admin", href: "/hire-team/salesforce-integration-developers/salesforce-admin" }
+                ],
+                cta: "View All Salesforce Experts \u2192",
+                href: "/hire-team/salesforce-integration-developers",
+                background: "bg-brand-gold/20 text-brand-primary-navy",
+                imageText: "Salesforce"
+            }
+        ]
+    },
     careers: {
         title: "Careers",
         items: [
