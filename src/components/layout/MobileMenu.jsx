@@ -16,6 +16,7 @@ const navOrder = [
 const MobileMenu = ({ isOpen, onClose }) => {
     const location = useLocation();
     const [expandedSection, setExpandedSection] = useState(null);
+    const [expandedSubSection, setExpandedSubSection] = useState(null);
 
     useEffect(() => {
         if (isOpen) {
@@ -39,6 +40,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         } else {
             document.body.style.overflow = '';
             setExpandedSection(null); // Reset accordion on close
+            setExpandedSubSection(null);
         }
 
         return () => {
@@ -123,31 +125,47 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                 transition={{ duration: 0.3 }}
                                                             >
                                                                 <div className="flex flex-col gap-4 pb-6 pl-4 border-l-2 border-[#18C5E8]/20 ml-2 mt-2">
-                                                                    {sectionData.items.map((subItem) => (
-                                                                        <div key={subItem.id} className="flex flex-col gap-3 mb-4">
-                                                                            <Link
-                                                                                to={subItem.href}
-                                                                                onClick={onClose}
-                                                                                className="text-lg font-bold text-[#087EA4] hover:text-[#061A2E] transition-colors flex items-center gap-2"
-                                                                            >
-                                                                                {subItem.label} <span className="text-sm">→</span>
-                                                                            </Link>
-                                                                            {subItem.subServices && subItem.subServices.length > 0 && (
-                                                                                <div className="flex flex-col gap-3 pl-3 border-l border-[#061A2E]/5 text-sm mb-2 mt-1">
-                                                                                    {subItem.subServices.map((srv, idx) => (
-                                                                                        <Link
-                                                                                            key={idx}
-                                                                                            to={srv.href}
-                                                                                            onClick={onClose}
-                                                                                            className="text-[#607080] hover:text-[#18C5E8] transition-colors block py-0.5 text-base"
-                                                                                        >
-                                                                                            {srv.title}
-                                                                                        </Link>
-                                                                                    ))}
-                                                                                </div>
-                                                                            )}
-                                                                        </div>
-                                                                    ))}
+                                                                    {sectionData.items.map((subItem) => {
+                                                                        const isSubExpanded = expandedSubSection === subItem.id;
+                                                                        const hasSubServices = subItem.subServices && subItem.subServices.length > 0;
+                                                                        return (
+                                                                            <div key={subItem.id} className="flex flex-col gap-3 mb-4">
+                                                                                {hasSubServices ? (
+                                                                                    <button onClick={() => setExpandedSubSection(prev => prev === subItem.id ? null : subItem.id)} className="text-lg font-bold text-[#087EA4] hover:text-[#061A2E] transition-colors flex items-center justify-between w-full pr-4 text-left">
+                                                                                        <span>{subItem.label}</span>
+                                                                                        <motion.span animate={{ rotate: isSubExpanded ? 180 : 0 }} className="text-sm">▼</motion.span>
+                                                                                    </button>
+                                                                                ) : (
+                                                                                    <Link
+                                                                                        to={subItem.href}
+                                                                                        onClick={onClose}
+                                                                                        className="text-lg font-bold text-[#087EA4] hover:text-[#061A2E] transition-colors flex items-center justify-between w-full pr-4"
+                                                                                    >
+                                                                                        {subItem.label} <span className="text-sm">→</span>
+                                                                                    </Link>
+                                                                                )}
+
+                                                                                <AnimatePresence>
+                                                                                    {isSubExpanded && hasSubServices && (
+                                                                                        <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} className="overflow-hidden">
+                                                                                            <div className="flex flex-col gap-3 pl-3 border-l border-[#061A2E]/5 text-sm mb-2 mt-2">
+                                                                                                {subItem.subServices.map((srv, idx) => (
+                                                                                                    <Link
+                                                                                                        key={idx}
+                                                                                                        to={srv.href}
+                                                                                                        onClick={onClose}
+                                                                                                        className="text-[#607080] hover:text-[#18C5E8] transition-colors block py-0.5 text-base"
+                                                                                                    >
+                                                                                                        {srv.title}
+                                                                                                    </Link>
+                                                                                                ))}
+                                                                                            </div>
+                                                                                        </motion.div>
+                                                                                    )}
+                                                                                </AnimatePresence>
+                                                                            </div>
+                                                                        )
+                                                                    })}
                                                                 </div>
                                                             </motion.div>
                                                         )}

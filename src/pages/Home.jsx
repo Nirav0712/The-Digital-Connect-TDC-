@@ -5,7 +5,7 @@ import AboutPreview from '../components/home/AboutPreview';
 import Services from '../components/home/Services';
 import FeaturedWork from '../components/home/FeaturedWork';
 import Industries from '../components/home/Industries';
-import WhyChooseUs from '../components/home/WhyChooseUs';
+import WhyChooseUs from '../components/sections/WhyChooseUs';
 import Process from '../components/home/Process';
 import Technologies from '../components/home/Technologies';
 import CaseStudies from '../components/home/CaseStudies';

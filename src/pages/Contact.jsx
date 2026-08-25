@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import GlowOrb from '../components/backgrounds/GlowOrb';
 import AnimatedGrid from '../components/backgrounds/AnimatedGrid';
 import Button from '../components/common/Button';
+import { motion } from 'framer-motion';
+import { MapPin, Globe2, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -123,6 +125,38 @@ const Contact = () => {
                 </Button>
               </form>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Global Presence Section */}
+      <section className="py-24 px-6 bg-[#061B2E] relative overflow-hidden text-white mt-12 rounded-t-[3rem]">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#19B5D8]/50 via-[#061B2E] to-[#061B2E]"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 flex items-center justify-center gap-4"><Globe2 className="text-[#19C7E8]" size={40} /> Global Presence</h2>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">Operating seamlessly across timezones to deliver world-class digital solutions.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+            {[
+              { city: "New York", country: "United States", time: "EST (UTC-5)", address: "1 World Trade Center\nNew York, NY 10007" },
+              { city: "London", country: "United Kingdom", time: "GMT (UTC+0)", address: "1 Canada Square\nLondon E14 5AB" },
+              { city: "Singapore", country: "Singapore", time: "SGT (UTC+8)", address: "8 Marina View\nSingapore 018960" }
+            ].map((loc, i) => (
+              <motion.div key={i} whileHover={{ y: -5 }} className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-[#19C7E8]/20 flex items-center justify-center text-[#19C7E8] mb-6 shadow-[0_0_15px_rgba(25,199,232,0.2)]">
+                  <MapPin size={24} />
+                </div>
+                <h3 className="text-2xl font-bold mb-1">{loc.city}</h3>
+                <div className="text-[#19C7E8] font-bold text-sm mb-4">{loc.country}</div>
+                <div className="text-white/50 text-sm mb-6 pb-6 border-b border-white/10">Timezone: {loc.time}</div>
+                <div className="text-white/70 whitespace-pre-line text-sm mb-6">{loc.address}</div>
+                <button className="flex items-center gap-2 text-sm font-bold text-[#19C7E8] group-hover:text-white transition-colors">
+                  Contact Office <ArrowRight size={16} />
+                </button>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

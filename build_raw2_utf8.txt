@@ -1,0 +1,97 @@
+﻿
+> tdc@0.0.0 build
+> vite build
+
+vite v8.2.2 building client environment for production...
+transforming...
+Γ£ô 2337 modules transformed.
+rendering chunks...
+node.exe : Γ£ù Build failed 
+in 2.36s
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Us
+ers\Thedi\AppData\Roaming\ 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (Γ£ù Bui  
+  ld failed in 2.36s:Strin   
+ g) [], RemoteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+error during build:
+Build failed with 1 error:
+
+[31m[MISSING_EXPORT] 
+[0m"Linkedin" is not 
+exported by "node_modules/luc
+ide-react/dist/esm/lucide-rea
+ct.mjs".
+   [38;5;246mΓò¡[0m[38;5;2
+46mΓöÇ[0m[38;5;246m[[0m sr
+c/pages/about/Leadership.jsx:
+5:10 [38;5;246m][0m
+   [38;5;246mΓöé[0m
+ [38;5;246m5 Γöé[0m [38;5;
+249mi[0m[38;5;249mm[0m[38
+;5;249mp[0m[38;5;249mo[0m
+[38;5;249mr[0m[38;5;249mt[
+0m[38;5;249m [0m[38;5;249m
+{[0m[38;5;249m 
+[0mLinkedin[38;5;249m [0m
+[38;5;249m}[0m[38;5;249m [
+0m[38;5;249mf[0m[38;5;249m
+r[0m[38;5;249mo[0m[38;5;2
+49mm[0m[38;5;249m [0m[38;
+5;249m"[0m[38;5;249ml[0m[
+38;5;249mu[0m[38;5;249mc[0
+m[38;5;249mi[0m[38;5;249md
+[0m[38;5;249me[0m[38;5;24
+9m-[0m[38;5;249mr[0m[38;5
+;249me[0m[38;5;249ma[0m[3
+8;5;249mc[0m[38;5;249mt[0m
+[38;5;249m"[0m[38;5;249m;
+[0m
+ [38;5;240m  Γöé[0m        
+  ΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ  
+ [38;5;240m  Γöé[0m        
+      Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+[38;5;246mΓöÇΓöÇΓöÇΓò»[0m
+
+    at aggregateBindingErrors
+IntoJsError (file:///D:/allwe
+b/TDC/node_modules/rolldown/d
+ist/shared/error-NcRuXAVN.mjs
+:48:18)
+    at unwrapBindingResult (f
+ile:///D:/allweb/TDC/node_mod
+ules/rolldown/dist/shared/err
+or-NcRuXAVN.mjs:18:128)
+    at #build (file:///D:/all
+web/TDC/node_modules/rolldown
+/dist/shared/rolldown-vcii7mE
+a.mjs:132:34)
+    at async 
+buildEnvironment (file:///D:/
+allweb/TDC/node_modules/vite/
+dist/node/chunks/node.js:3382
+1:66)
+    at async Object.build (fi
+le:///D:/allweb/TDC/node_modu
+les/vite/dist/node/chunks/nod
+e.js:34242:19)
+    at async Object.buildApp 
+(file:///D:/allweb/TDC/node_m
+odules/vite/dist/node/chunks/
+node.js:34239:153)
+    at async CAC.<anonymous> 
+(file:///D:/allweb/TDC/node_m
+odules/vite/dist/node/cli.js:
+776:3) {
+  errors: [Getter/Setter]
+}

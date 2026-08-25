@@ -245,3 +245,62 @@
     }
   }
 }
+
+/* Global Mobile Spacing & Scroll Fixes */
+html {
+  scroll-behavior: smooth;
+}
+
+section, [id] {
+  scroll-margin-top: 120px; /* Offset for sticky header */
+}
+
+@media (max-width: 768px) {
+  /* Fix giant minimum heights */
+  .min-h-screen, .h-screen, .min-h-\[90vh\], .min-h-\[80vh\] {
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  /* Padding Top & Bottom together */
+  .py-32 { padding-top: 48px !important; padding-bottom: 48px !important; }
+  .py-24 { padding-top: 40px !important; padding-bottom: 40px !important; }
+  .py-20 { padding-top: 32px !important; padding-bottom: 32px !important; }
+  .py-16 { padding-top: 28px !important; padding-bottom: 28px !important; }
+
+  /* Padding Top alone */
+  .pt-32 { padding-top: 48px !important; }
+  .pt-24 { padding-top: 40px !important; }
+  .pt-20 { padding-top: 32px !important; }
+  .pt-16 { padding-top: 28px !important; }
+
+  /* Padding Bottom alone */
+  .pb-32 { padding-bottom: 48px !important; }
+  .pb-24 { padding-bottom: 40px !important; }
+  .pb-20 { padding-bottom: 32px !important; }
+  .pb-16 { padding-bottom: 28px !important; }
+
+  /* Generic padding on all sides */
+  .p-32 { padding: 48px !important; }
+  .p-24 { padding: 32px !important; }
+  .p-20 { padding: 24px !important; }
+  .p-16 { padding: 20px !important; }
+
+  /* Margins */
+  .my-32 { margin-top: 32px !important; margin-bottom: 32px !important; }
+  .my-24 { margin-top: 24px !important; margin-bottom: 24px !important; }
+  .my-20 { margin-top: 20px !important; margin-bottom: 20px !important; }
+  
+  .mt-32 { margin-top: 32px !important; }
+  .mt-24 { margin-top: 24px !important; }
+  .mt-20 { margin-top: 20px !important; }
+  
+  .mb-32 { margin-bottom: 32px !important; }
+  .mb-24 { margin-bottom: 24px !important; }
+  .mb-20 { margin-bottom: 20px !important; }
+
+  /* Gaps */
+  .gap-32, .gap-24, .gap-20, .gap-16, .gap-12 {
+    gap: 20px !important;
+  }
+}

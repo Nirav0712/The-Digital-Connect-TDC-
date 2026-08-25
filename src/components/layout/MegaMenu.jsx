@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { megaMenuData } from '../../data/megaMenuData';
 
-const MegaMenu = ({ activeMenu }) => {
+const MegaMenu = ({ activeMenu, setActiveMenu }) => {
     const [activeSubItem, setActiveSubItem] = useState(null);
 
     const currentMenu = megaMenuData[activeMenu];
@@ -34,12 +34,14 @@ const MegaMenu = ({ activeMenu }) => {
                     {currentMenu.items.map((item) => {
                         const isActive = activeSubItem === item.id;
                         return (
-                            <div
+                            <Link
+                                to={item.href || '#'}
+                                onClick={() => setActiveMenu && setActiveMenu(null)}
                                 key={item.id}
                                 onMouseEnter={() => setActiveSubItem(item.id)}
-                                className={`relative group rounded-xl px-4 py-3 cursor-pointer transition-all duration-300 ${isActive ? 'bg-brand-bg-light' : 'hover:bg-brand-bg-light/50'}`}
+                                className={`relative block group rounded-xl px-4 py-3 cursor-pointer transition-all duration-300 ${isActive ? 'bg-brand-bg-light' : 'hover:bg-brand-bg-light/50'}`}
                             >
-                                <div className="flex items-center justify-between relative z-10">
+                                <div className="flex items-center justify-between relative z-10 w-full">
                                     <span className={`font-semibold text-sm transition-colors ${isActive ? 'text-brand-primary-navy' : 'text-brand-text-muted group-hover:text-brand-primary-navy'}`}>
                                         {item.label}
                                     </span>
@@ -49,7 +51,7 @@ const MegaMenu = ({ activeMenu }) => {
                                         </motion.div>
                                     )}
                                 </div>
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>

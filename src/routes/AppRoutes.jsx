@@ -7,7 +7,12 @@ import Footer from '../components/layout/Footer';
 
 // Pages
 import Home from '../pages/Home';
-import About from '../pages/About';
+import About from '../pages/about/About';
+import Mission from '../pages/about/Mission';
+import BrandStory from '../pages/about/BrandStory';
+import Leadership from '../pages/about/Leadership';
+import Values from '../pages/about/Values';
+import Team from '../pages/about/Team';
 import Services from '../pages/Services';
 import Portfolio from '../pages/Portfolio';
 import CaseStudies from '../pages/CaseStudies';
@@ -38,6 +43,25 @@ import Travel from '../pages/industries/Travel';
 import Logistics from '../pages/industries/Logistics';
 import SaaSIndustry from '../pages/industries/SaaS';
 
+import HealthcarePlatforms from '../pages/industries/healthcare/HealthcarePlatforms';
+import PatientApps from '../pages/industries/healthcare/PatientApps';
+import HealthcareWebsites from '../pages/industries/healthcare/HealthcareWebsites';
+import AppointmentSystems from '../pages/industries/healthcare/AppointmentSystems';
+
+import BankingPortals from '../pages/industries/fintech/BankingPortals';
+import Payments from '../pages/industries/fintech/Payments';
+import Trading from '../pages/industries/fintech/Trading';
+import FintechDashboards from '../pages/industries/fintech/FintechDashboards';
+
+import Marketplaces from '../pages/industries/ecommerce/Marketplaces';
+import B2BPortals from '../pages/industries/ecommerce/B2BPortals';
+import Inventory from '../pages/industries/ecommerce/Inventory';
+import POSIntegration from '../pages/industries/ecommerce/POSIntegration';
+
+import SaaSArchitecture from '../pages/industries/saas/SaaSArchitecture';
+import MultiTenant from '../pages/industries/saas/MultiTenant';
+import SaaSBilling from '../pages/industries/saas/SaaSBilling';
+import SaaSAnalytics from '../pages/industries/saas/SaaSAnalytics';
 // Detail Pages
 import ProjectDetails from '../pages/projects/ProjectDetails';
 import BlogTemplate from '../components/blog/BlogTemplate';
@@ -88,6 +112,11 @@ const AppRoutes = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/about/mission" element={<Mission />} />
+                    <Route path="/about/brand-story" element={<BrandStory />} />
+                    <Route path="/about/leadership" element={<Leadership />} />
+                    <Route path="/about/values" element={<Values />} />
+                    <Route path="/about/team" element={<Team />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/services/web-development" element={<WebDevelopment />} />
                     <Route path="/services/mobile-app-development" element={<MobileDevelopment />} />
@@ -104,6 +133,27 @@ const AppRoutes = () => {
                     <Route path="/industries/travel" element={<Travel />} />
                     <Route path="/industries/logistics" element={<Logistics />} />
                     <Route path="/industries/saas" element={<SaaSIndustry />} />
+
+                    <Route path="/industries/healthcare/healthcare-platforms" element={<HealthcarePlatforms />} />
+                    <Route path="/industries/healthcare/patient-apps" element={<PatientApps />} />
+                    <Route path="/industries/healthcare/healthcare-websites" element={<HealthcareWebsites />} />
+                    <Route path="/industries/healthcare/appointment-systems" element={<AppointmentSystems />} />
+
+                    <Route path="/industries/fintech/banking-portals" element={<BankingPortals />} />
+                    <Route path="/industries/fintech/payments" element={<Payments />} />
+                    <Route path="/industries/fintech/trading" element={<Trading />} />
+                    <Route path="/industries/fintech/dashboards" element={<FintechDashboards />} />
+
+                    <Route path="/industries/ecommerce/marketplaces" element={<Marketplaces />} />
+                    <Route path="/industries/ecommerce/b2b-portals" element={<B2BPortals />} />
+                    <Route path="/industries/ecommerce/inventory" element={<Inventory />} />
+                    <Route path="/industries/ecommerce/pos-integration" element={<POSIntegration />} />
+
+                    <Route path="/industries/saas/architecture" element={<SaaSArchitecture />} />
+                    <Route path="/industries/saas/multi-tenant" element={<MultiTenant />} />
+                    <Route path="/industries/saas/billing" element={<SaaSBilling />} />
+                    <Route path="/industries/saas/analytics" element={<SaaSAnalytics />} />
+
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/portfolio/:slug" element={<ProjectDetails />} />
                     <Route path="/case-studies" element={<CaseStudies />} />

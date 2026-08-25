@@ -8,9 +8,9 @@ export const megaMenuData = {
                 heading: "About The Digital Connect",
                 description: "Technology, creativity and strategy working together to build meaningful digital experiences.",
                 subServices: [
-                    { title: "Our Mission", href: "/about#mission" },
-                    { title: "Brand Story", href: "/about#story" },
-                    { title: "Leadership", href: "/about#leadership" },
+                    { title: "Our Mission", href: "/about/mission" },
+                    { title: "Brand Story", href: "/about/brand-story" },
+                    { title: "Leadership", href: "/about/leadership" },
                     { title: "Global Presence", href: "/contact" }
                 ],
                 cta: "Learn More \u2192",
@@ -24,13 +24,13 @@ export const megaMenuData = {
                 heading: "What Drives Us",
                 description: "Core principles guiding our technical engineering and design philosophy.",
                 subServices: [
-                    { title: "Innovation", href: "/about#values" },
-                    { title: "Integrity", href: "/about#values" },
-                    { title: "Collaboration", href: "/about#values" },
-                    { title: "Quality", href: "/about#values" }
+                    { title: "Innovation First", href: "/about/values#innovation" },
+                    { title: "Customer Obsession", href: "/about/values#customer-obsession" },
+                    { title: "Quality Without Compromise", href: "/about/values#quality" },
+                    { title: "Continuous Growth", href: "/about/values#growth" }
                 ],
                 cta: "Explore Values \u2192",
-                href: "/about#values",
+                href: "/about/values",
                 background: "bg-brand-cyan/20 border-brand-cyan text-brand-primary-navy",
                 imageText: "Values"
             },
@@ -40,13 +40,13 @@ export const megaMenuData = {
                 heading: "The People Behind the Platform",
                 description: "Meet the engineers, designers, and strategists crafting digital excellence.",
                 subServices: [
-                    { title: "Leadership", href: "/about#team" },
-                    { title: "Engineering", href: "/about#team" },
-                    { title: "Design", href: "/about#team" },
-                    { title: "Strategy", href: "/about#team" }
+                    { title: "Leadership Team", href: "/about/team#leadership" },
+                    { title: "Engineering Team", href: "/about/team#engineering" },
+                    { title: "Creative Team", href: "/about/team#creative" },
+                    { title: "Growth & Marketing", href: "/about/team#growth" }
                 ],
                 cta: "Meet the Team \u2192",
-                href: "/about#team",
+                href: "/about/team",
                 background: "bg-brand-deep-blue text-white",
                 imageText: "Team"
             }
@@ -168,10 +168,10 @@ export const megaMenuData = {
                 heading: "Healthcare",
                 description: "Digital solutions designed for modern healthcare businesses.",
                 subServices: [
-                    { title: "Healthcare Platforms", href: "/industries/healthcare" },
-                    { title: "Patient Apps", href: "/industries/healthcare" },
-                    { title: "Websites", href: "/industries/healthcare" },
-                    { title: "Appointments", href: "/industries/healthcare" }
+                    { title: "Healthcare Platforms", href: "/industries/healthcare/healthcare-platforms" },
+                    { title: "Patient Apps", href: "/industries/healthcare/patient-apps" },
+                    { title: "Healthcare Websites", href: "/industries/healthcare/healthcare-websites" },
+                    { title: "Appointment Systems", href: "/industries/healthcare/appointment-systems" }
                 ],
                 cta: "Explore Healthcare \u2192",
                 href: "/industries/healthcare",
@@ -184,10 +184,10 @@ export const megaMenuData = {
                 heading: "Fintech",
                 description: "Secure, scalable applications for modern financial institutions.",
                 subServices: [
-                    { title: "Banking Portals", href: "/industries/fintech" },
-                    { title: "Payments", href: "/industries/fintech" },
-                    { title: "Trading", href: "/industries/fintech" },
-                    { title: "Dashboards", href: "/industries/fintech" }
+                    { title: "Banking Portals", href: "/industries/fintech/banking-portals" },
+                    { title: "Payments", href: "/industries/fintech/payments" },
+                    { title: "Trading", href: "/industries/fintech/trading" },
+                    { title: "Dashboards", href: "/industries/fintech/dashboards" }
                 ],
                 cta: "Explore Fintech \u2192",
                 href: "/industries/fintech",
@@ -200,10 +200,10 @@ export const megaMenuData = {
                 heading: "Ecommerce",
                 description: "Tailored retail and D2C brand experiences that maximize conversion.",
                 subServices: [
-                    { title: "Marketplaces", href: "/industries/ecommerce" },
-                    { title: "B2B Portals", href: "/industries/ecommerce" },
-                    { title: "Inventory", href: "/industries/ecommerce" },
-                    { title: "POS Integration", href: "/industries/ecommerce" }
+                    { title: "Marketplaces", href: "/industries/ecommerce/marketplaces" },
+                    { title: "B2B Portals", href: "/industries/ecommerce/b2b-portals" },
+                    { title: "Inventory", href: "/industries/ecommerce/inventory" },
+                    { title: "POS Integration", href: "/industries/ecommerce/pos-integration" }
                 ],
                 cta: "Explore Ecommerce \u2192",
                 href: "/industries/ecommerce",
@@ -216,10 +216,10 @@ export const megaMenuData = {
                 heading: "Software as a Service",
                 description: "Engineering robust platforms for subscription based software businesses.",
                 subServices: [
-                    { title: "Architecture", href: "/industries/saas" },
-                    { title: "Multi-tenant", href: "/industries/saas" },
-                    { title: "Billing", href: "/industries/saas" },
-                    { title: "Analytics", href: "/industries/saas" }
+                    { title: "Architecture", href: "/industries/saas/architecture" },
+                    { title: "Multi-Tenant", href: "/industries/saas/multi-tenant" },
+                    { title: "Billing", href: "/industries/saas/billing" },
+                    { title: "Analytics", href: "/industries/saas/analytics" }
                 ],
                 cta: "Explore SaaS \u2192",
                 href: "/industries/saas",
