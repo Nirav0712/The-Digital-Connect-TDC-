@@ -1,0 +1,96 @@
+
+> tdc@0.0.0 build
+> vite build
+
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 2314 modules transformed.
+✗ Build failed in 1.26s
+error during build:
+Build failed with 48 errors:
+
+[31m[UNRESOLVED_IMPORT] [0mCould not resolve '../../components/industries/IndustryHero' in src/pages/industries/Healthcare.jsx
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/pages/industries/Healthcare.jsx:4:26 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m4 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249my[0m[38;5;249mH[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"../../components/industries/IndustryHero"[38;5;249m;[0m
+ [38;5;240m  │[0m                          ─────────────────────┬────────────────────  
+ [38;5;240m  │[0m                                               ╰────────────────────── Module not found.
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: 'src/pages/industries/Healthcare.jsx' is imported by the following path:
+ [38;5;240m  │[0m         - src/pages/industries/Healthcare.jsx
+ [38;5;240m  │[0m         - src/routes/AppRoutes.jsx
+ [38;5;240m  │[0m         - src/App.jsx
+ [38;5;240m  │[0m         - src/main.jsx
+ [38;5;240m  │[0m         - index.html
+[38;5;246m───╯[0m
+
+[31m[UNRESOLVED_IMPORT] [0mCould not resolve '../../components/industries/IndustryOverview' in src/pages/industries/Healthcare.jsx
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/pages/industries/Healthcare.jsx:5:30 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m5 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249my[0m[38;5;249mO[0m[38;5;249mv[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249me[0m[38;5;249mw[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"../../components/industries/IndustryOverview"[38;5;249m;[0m
+ [38;5;240m  │[0m                              ───────────────────────┬──────────────────────  
+ [38;5;240m  │[0m                                                     ╰──────────────────────── Module not found.
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: 'src/pages/industries/Healthcare.jsx' is imported by the following path:
+ [38;5;240m  │[0m         - src/pages/industries/Healthcare.jsx
+ [38;5;240m  │[0m         - src/routes/AppRoutes.jsx
+ [38;5;240m  │[0m         - src/App.jsx
+ [38;5;240m  │[0m         - src/main.jsx
+ [38;5;240m  │[0m         - index.html
+[38;5;246m───╯[0m
+
+[31m[UNRESOLVED_IMPORT] [0mCould not resolve '../../components/industries/IndustryChallenges' in src/pages/industries/Healthcare.jsx
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/pages/industries/Healthcare.jsx:6:32 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m6 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249my[0m[38;5;249mC[0m[38;5;249mh[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"../../components/industries/IndustryChallenges"[38;5;249m;[0m
+ [38;5;240m  │[0m                                ────────────────────────┬───────────────────────  
+ [38;5;240m  │[0m                                                        ╰───────────────────────── Module not found.
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: 'src/pages/industries/Healthcare.jsx' is imported by the following path:
+ [38;5;240m  │[0m         - src/pages/industries/Healthcare.jsx
+ [38;5;240m  │[0m         - src/routes/AppRoutes.jsx
+ [38;5;240m  │[0m         - src/App.jsx
+ [38;5;240m  │[0m         - src/main.jsx
+ [38;5;240m  │[0m         - index.html
+[38;5;246m───╯[0m
+
+[31m[UNRESOLVED_IMPORT] [0mCould not resolve '../../components/industries/IndustrySolutions' in src/pages/industries/Healthcare.jsx
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/pages/industries/Healthcare.jsx:7:31 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m7 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249my[0m[38;5;249mS[0m[38;5;249mo[0m[38;5;249ml[0m[38;5;249mu[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"../../components/industries/IndustrySolutions"[38;5;249m;[0m
+ [38;5;240m  │[0m                               ───────────────────────┬───────────────────────  
+ [38;5;240m  │[0m                                                      ╰───────────────────────── Module not found.
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: 'src/pages/industries/Healthcare.jsx' is imported by the following path:
+ [38;5;240m  │[0m         - src/pages/industries/Healthcare.jsx
+ [38;5;240m  │[0m         - src/routes/AppRoutes.jsx
+ [38;5;240m  │[0m         - src/App.jsx
+ [38;5;240m  │[0m         - src/main.jsx
+ [38;5;240m  │[0m         - index.html
+[38;5;246m───╯[0m
+
+[31m[UNRESOLVED_IMPORT] [0mCould not resolve '../../components/industries/IndustryUniqueSection' in src/pages/industries/Healthcare.jsx
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/pages/industries/Healthcare.jsx:8:35 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m8 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mI[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249my[0m[38;5;249mU[0m[38;5;249mn[0m[38;5;249mi[0m[38;5;249mq[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249me[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"../../components/industries/IndustryUniqueSection"[38;5;249m;[0m
+ [38;5;240m  │[0m                                   ─────────────────────────┬─────────────────────────  
+ [38;5;240m  │[0m                                                            ╰─────────────────────────── Module not found.
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: 'src/pages/industries/Healthcare.jsx' is imported by the following path:
+ [38;5;240m  │[0m         - src/pages/industries/Healthcare.jsx
+ [38;5;240m  │[0m         - src/routes/AppRoutes.jsx
+ [38;5;240m  │[0m         - src/App.jsx
+ [38;5;240m  │[0m         - src/main.jsx
+ [38;5;240m  │[0m         - index.html
+[38;5;246m───╯[0m
+
+...
+    at aggregateBindingErrorsIntoJsError (file:///D:/allweb/TDC/node_modules/rolldown/dist/shared/error-NcRuXAVN.mjs:48:18)
+    at unwrapBindingResult (file:///D:/allweb/TDC/node_modules/rolldown/dist/shared/error-NcRuXAVN.mjs:18:128)
+    at #build (file:///D:/allweb/TDC/node_modules/rolldown/dist/shared/rolldown-vcii7mEa.mjs:132:34)
+    at async buildEnvironment (file:///D:/allweb/TDC/node_modules/vite/dist/node/chunks/node.js:33821:66)
+    at async Object.build (file:///D:/allweb/TDC/node_modules/vite/dist/node/chunks/node.js:34242:19)
+    at async Object.buildApp (file:///D:/allweb/TDC/node_modules/vite/dist/node/chunks/node.js:34239:153)
+    at async CAC.<anonymous> (file:///D:/allweb/TDC/node_modules/vite/dist/node/cli.js:776:3) {
+  errors: [Getter/Setter]
+}

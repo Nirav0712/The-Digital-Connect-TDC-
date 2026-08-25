@@ -35,6 +35,8 @@ import EcommerceIndustry from '../pages/industries/Ecommerce';
 import Education from '../pages/industries/Education';
 import RealEstate from '../pages/industries/RealEstate';
 import Travel from '../pages/industries/Travel';
+import Logistics from '../pages/industries/Logistics';
+import SaaSIndustry from '../pages/industries/SaaS';
 
 // Detail Pages
 import ProjectDetails from '../pages/projects/ProjectDetails';
@@ -100,6 +102,8 @@ const AppRoutes = () => {
                     <Route path="/industries/education" element={<Education />} />
                     <Route path="/industries/real-estate" element={<RealEstate />} />
                     <Route path="/industries/travel" element={<Travel />} />
+                    <Route path="/industries/logistics" element={<Logistics />} />
+                    <Route path="/industries/saas" element={<SaaSIndustry />} />
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/portfolio/:slug" element={<ProjectDetails />} />
                     <Route path="/case-studies" element={<CaseStudies />} />
@@ -112,7 +116,7 @@ const AppRoutes = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/terms-and-conditions" element={<Terms />} />
-                    
+
                     <Route path="/services/web-development/frontend-development" element={<FrontendDevelopment />} />
                     <Route path="/services/web-development/backend-development" element={<BackendDevelopment />} />
                     <Route path="/services/web-development/cms-development" element={<CMSDevelopment />} />
