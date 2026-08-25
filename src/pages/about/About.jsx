@@ -97,27 +97,32 @@ const About = () => {
                 </section>
 
                 {/* Additional content below cards */}
-                <section className="py-16 md:py-24 lg:py-32 px-5 max-w-[1000px] mx-auto text-center w-full">
-                    <h2 className="text-[clamp(32px,5vw,56px)] font-heading font-black text-[#061B2E] mb-8 leading-tight">Connecting Strategy with Execution.</h2>
-                    <p className="text-[#7F94A8] text-lg lg:text-xl leading-relaxed mb-12 lg:mb-16">
-                        We started with a simple belief: the best digital products are born at the intersection of business strategy and technical excellence. We operate as a seamless extension of your internal team.
-                    </p>
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div>
-                            <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">12+</div>
-                            <div className="text-xs md:text-sm font-bold tracking-wider text-[#061B2E] uppercase">Years Experience</div>
-                        </div>
-                        <div>
-                            <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">250+</div>
-                            <div className="text-xs md:text-sm font-bold tracking-wider text-[#061B2E] uppercase">Projects Delivered</div>
-                        </div>
-                        <div>
-                            <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">50+</div>
-                            <div className="text-xs md:text-sm font-bold tracking-wider text-[#061B2E] uppercase">Engineers</div>
-                        </div>
-                        <div>
-                            <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">15</div>
-                            <div className="text-xs md:text-sm font-bold tracking-wider text-[#061B2E] uppercase">Countries</div>
+                <section className="relative w-full bg-[#061B2E] text-white py-16 md:py-24 lg:py-32 px-5 overflow-hidden">
+                    <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'linear-gradient(#08BFE8 1px, transparent 1px), linear-gradient(90deg, #08BFE8 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+                    <div className="max-w-[1000px] mx-auto text-center relative z-10">
+                        <h2 className="text-[clamp(32px,5vw,56px)] font-heading font-black text-white mb-8 leading-tight">
+                            Connecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#08BFE8] to-[#159ED9]">Strategy</span> with Execution.
+                        </h2>
+                        <p className="text-[#A3B8CC] text-lg lg:text-xl leading-relaxed mb-12 lg:mb-16">
+                            We started with a simple belief: the best digital products are born at the intersection of business strategy and technical excellence. We operate as a seamless extension of your internal team.
+                        </p>
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div>
+                                <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">12+</div>
+                                <div className="text-xs md:text-sm font-bold tracking-wider text-white uppercase opacity-80">Years Experience</div>
+                            </div>
+                            <div>
+                                <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">250+</div>
+                                <div className="text-xs md:text-sm font-bold tracking-wider text-white uppercase opacity-80">Projects Delivered</div>
+                            </div>
+                            <div>
+                                <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">50+</div>
+                                <div className="text-xs md:text-sm font-bold tracking-wider text-white uppercase opacity-80">Engineers</div>
+                            </div>
+                            <div>
+                                <div className="text-4xl lg:text-5xl font-black text-[#08BFE8] mb-3">15</div>
+                                <div className="text-xs md:text-sm font-bold tracking-wider text-white uppercase opacity-80">Countries</div>
+                            </div>
                         </div>
                     </div>
                 </section>

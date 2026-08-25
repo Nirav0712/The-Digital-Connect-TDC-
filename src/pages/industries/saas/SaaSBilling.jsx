@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const SaaSBilling = () => {
     useSEO({
         title: "SaaS Billing & Subscription Systems | The Digital Connect",
-        description: "Integration of robust recurring billing, metered usage, and invoice automation for SaaS businesses."
+        description: "Integration of robust recurring billing and metered usage."
     });
 
     return (
@@ -23,114 +23,91 @@ const SaaSBilling = () => {
                     <ChevronRight size={14} />
                     <Link to="/industries/saas" className="hover:text-[#08BFE8] transition-colors capitalize">saas</Link>
                     <ChevronRight size={14} />
-                    <span className="text-[#061B2E] font-bold">SAAS BILLING</span>
+                    <span className="text-[#061B2E] font-bold min-w-0 truncate">SAAS BILLING</span>
                 </div>
 
                 {/* HERO */}
-                <section className="py-12 md:py-20 px-5 max-w-[1320px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                    <div>
-                        <motion.span initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="text-[#08BFE8] font-bold tracking-[0.2em] text-xs uppercase mb-6 block">
+                <section className="py-10 md:py-12 lg:py-16 px-5 max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.95fr)] gap-10 lg:gap-16 items-center">
+                    <div className="flex flex-col gap-6 z-10 w-full min-w-0">
+                        <motion.span initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} className="text-[#08BFE8] font-bold tracking-[0.2em] text-xs uppercase block">
                             SAAS BILLING
                         </motion.span>
-                        <motion.h1 initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.1}} className="text-[clamp(36px,6vw,64px)] font-heading font-black text-[#061B2E] leading-tight mb-6">
-                            Frictionless recurring revenue engines.
+                        <motion.h1 initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.1}} className="text-[clamp(32px,4.5vw,56px)] font-heading font-black text-[#061B2E] leading-[1.1] text-balance">
+                            Frictionless recurring revenue engine systems.
                         </motion.h1>
-                        <motion.p initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.2}} className="text-[#7F94A8] text-lg lg:text-xl leading-relaxed mb-10">
-                            Implement complex recurring subscription models, usage-based metering, and dunning management to ensure smooth unhindered cash flow.
+                        <motion.p initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.2}} className="text-[#7F94A8] text-lg lg:text-xl leading-relaxed text-pretty max-w-2xl">
+                            Implement complex recurring subscription models, usage-based metering, and dunning management logic pipelines seamlessly.
                         </motion.p>
-                        <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.3}} className="flex flex-wrap gap-4">
-                            <Link to="/contact" className="bg-[#08BFE8] text-white px-8 py-4 rounded-xl font-bold flex items-center hover:bg-[#159ED9] transition-colors shadow-lg shadow-[#08BFE8]/20">
+                        <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay: 0.3}} className="pt-2">
+                            <Link to="/contact" className="inline-flex bg-[#08BFE8] text-white px-8 py-4 rounded-xl font-bold items-center hover:bg-[#159ED9] transition-colors shadow-lg shadow-[#08BFE8]/20">
                                 Discuss Your Project <ArrowRight size={20} className="ml-2" />
                             </Link>
                         </motion.div>
                     </div>
-                    <div className="relative w-full flex justify-center lg:justify-end">
+                    <div className="relative w-full overflow-hidden lg:overflow-visible flex items-center justify-center lg:justify-end z-0">
                         
-            <div className="w-full aspect-[16/9] md:aspect-[21/9] bg-[#061B2E] rounded-3xl md:rounded-[40px] shadow-2xl overflow-hidden relative border border-[#08BFE8]/20 flex flex-col pt-4 px-4 h-[300px]">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#08BFE8] to-transparent"></div>
-                <div className="flex gap-2 mb-4 px-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+                <div className="w-full h-[350px] bg-[#F7FAFC] rounded-3xl p-6 border border-gray-200 shadow-xl overflow-hidden flex flex-col">
+                    <div className="flex-1 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col">
+                         <div className="w-1/3 h-4 bg-gray-100 rounded-full mb-6"></div>
+                         <div className="space-y-4 flex-1">
+                             <div className="flex justify-between items-center pb-4 border-b border-gray-50"><div className="w-1/2 h-3 bg-gray-100 rounded-full"></div><div className="w-1/6 h-3 bg-gray-200 rounded-full"></div></div>
+                             <div className="flex justify-between items-center pb-4 border-b border-gray-50"><div className="w-1/3 h-3 bg-gray-100 rounded-full"></div><div className="w-1/6 h-3 bg-gray-200 rounded-full"></div></div>
+                             <div className="flex justify-between items-center"><div className="w-1/4 h-3 bg-[#08BFE8]/20 rounded-full"></div><div className="w-1/5 h-4 bg-[#08BFE8] rounded-full"></div></div>
+                         </div>
+                    </div>
+                    <motion.div animate={{y:[20, 0, 20]}} transition={{duration:5, repeat:Infinity}} className="w-3/4 mx-auto h-8 bg-green-500 rounded-b-2xl shadow-lg -mt-4 z-10 flex items-center justify-center text-white text-[10px] font-bold uppercase tracking-widest text-shadow">PAID SECURELY</motion.div>
                 </div>
-                <div className="flex-1 bg-white/5 rounded-t-2xl border-t border-x border-[#08BFE8]/10 p-6 flex items-end gap-2 relative overflow-hidden backdrop-blur-sm">
-                    <motion.div animate={{ height: ['40%', '60%', '40%'] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }} className="w-1/6 bg-[#08BFE8]/20 rounded-t-lg"></motion.div>
-                    <motion.div animate={{ height: ['20%', '80%', '20%'] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="w-1/6 bg-[#08BFE8]/40 rounded-t-lg"></motion.div>
-                    <motion.div animate={{ height: ['70%', '30%', '70%'] }} transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }} className="w-1/6 bg-[#08BFE8]/60 rounded-t-lg"></motion.div>
-                    <motion.div animate={{ height: ['90%', '50%', '90%'] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="w-1/6 bg-[#08BFE8]/80 rounded-t-lg"></motion.div>
-                </div>
-            </div>
                     </div>
                 </section>
 
                 {/* WHY IT MATTERS / CHALLENGES */}
-                <section className="bg-[#061B2E] text-white py-20 lg:py-32 px-5 relative overflow-hidden">
+                <section className="bg-[#061B2E] text-white py-16 lg:py-24 px-5 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#08BFE8]/10 rounded-full blur-[100px] pointer-events-none"></div>
                     <div className="max-w-[1320px] mx-auto relative z-10">
-                        <div className="max-w-3xl mb-16">
-                            <h2 className="text-[clamp(32px,5vw,48px)] font-heading font-black mb-6">Solving complex industry roadblocks.</h2>
-                            <p className="text-[#7F94A8] text-lg leading-relaxed">
+                        <div className="max-w-3xl mb-12">
+                            <h2 className="text-[clamp(28px,4vw,42px)] font-heading font-black mb-6 leading-tight">Solving complex industry roadblocks.</h2>
+                            <p className="text-[#7F94A8] text-lg leading-relaxed text-pretty">
                                 Standing out requires moving past legacy constraints. We remove technical debt and build modern systems designed entirely for scale and user satisfaction.
                             </p>
                         </div>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            
-                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={24} className="text-[#08BFE8] mb-4" />
-                                <h3 className="font-bold text-lg mb-2">Metered Usage</h3>
-                                <p className="text-[#7F94A8] text-sm">Essential architecture engineered for optimal performance.</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={24} className="text-[#08BFE8] mb-4" />
-                                <h3 className="font-bold text-lg mb-2">Tiered Subscriptions</h3>
-                                <p className="text-[#7F94A8] text-sm">Essential architecture engineered for optimal performance.</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={24} className="text-[#08BFE8] mb-4" />
-                                <h3 className="font-bold text-lg mb-2">Dunning Management</h3>
-                                <p className="text-[#7F94A8] text-sm">Essential architecture engineered for optimal performance.</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={24} className="text-[#08BFE8] mb-4" />
-                                <h3 className="font-bold text-lg mb-2">Invoice Automation</h3>
-                                <p className="text-[#7F94A8] text-sm">Essential architecture engineered for optimal performance.</p>
-                            </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col h-full min-w-0"><CheckCircle2 size={24} className="text-[#08BFE8] mb-4 shrink-0" /><h3 className="font-bold text-lg mb-2 text-white">Metered Usage</h3><p className="text-[#7F94A8] text-sm leading-relaxed">Essential architecture engineered for optimal performance and scale.</p></div>
+<div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col h-full min-w-0"><CheckCircle2 size={24} className="text-[#08BFE8] mb-4 shrink-0" /><h3 className="font-bold text-lg mb-2 text-white">Tiered Subscriptions</h3><p className="text-[#7F94A8] text-sm leading-relaxed">Essential architecture engineered for optimal performance and scale.</p></div>
+<div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col h-full min-w-0"><CheckCircle2 size={24} className="text-[#08BFE8] mb-4 shrink-0" /><h3 className="font-bold text-lg mb-2 text-white">Dunning Management</h3><p className="text-[#7F94A8] text-sm leading-relaxed">Essential architecture engineered for optimal performance and scale.</p></div>
+<div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col h-full min-w-0"><CheckCircle2 size={24} className="text-[#08BFE8] mb-4 shrink-0" /><h3 className="font-bold text-lg mb-2 text-white">Invoice Automation</h3><p className="text-[#7F94A8] text-sm leading-relaxed">Essential architecture engineered for optimal performance and scale.</p></div>
                         </div>
                     </div>
                 </section>
 
                 {/* EXPERTISE & CAPABILITIES */}
-                <section className="py-20 lg:py-32 px-5 max-w-[1320px] mx-auto">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-[clamp(32px,5vw,48px)] font-heading font-black text-[#061B2E] mb-6">Billing Workflows</h2>
-                        <p className="text-[#7F94A8] text-lg">We deliver end-to-end digital excellence merging strategic foresight with flawless engineering.</p>
+                <section className="py-16 lg:py-24 px-5 max-w-[1320px] mx-auto">
+                    <div className="text-center max-w-3xl mx-auto mb-12">
+                        <h2 className="text-[clamp(28px,4vw,42px)] font-heading font-black text-[#061B2E] mb-6 leading-tight">Billing Workflows</h2>
+                        <p className="text-[#7F94A8] text-lg text-pretty">We deliver end-to-end digital excellence merging strategic foresight with flawless engineering.</p>
                     </div>
-                    <div className="grid lg:grid-cols-3 gap-6">
-                        <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow lg:col-span-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-lg border border-gray-100 lg:col-span-2 flex flex-col min-w-0">
                            <h3 className="text-2xl font-black text-[#061B2E] mb-4">Strategic Architecture</h3>
-                           <p className="text-[#7F94A8] leading-relaxed mb-6">Every successful deployment starts with an airtight architectural blueprint. We map out data flows, user journeys, and component integration strategies before writing a single line of code.</p>
+                           <p className="text-[#7F94A8] leading-relaxed mb-6 text-pretty flex-1">Every successful deployment starts with an airtight architectural blueprint. We map out data flows, user journeys, and component integration strategies before writing a single line of code.</p>
                            <ul className="space-y-3 font-medium text-[#061B2E]">
-                              <li className="flex items-center"><div className="w-1.5 h-1.5 rounded-full bg-[#08BFE8] mr-3"></div> Scalable cloud infrastructure</li>
-                              <li className="flex items-center"><div className="w-1.5 h-1.5 rounded-full bg-[#08BFE8] mr-3"></div> Bulletproof security protocols</li>
-                              <li className="flex items-center"><div className="w-1.5 h-1.5 rounded-full bg-[#08BFE8] mr-3"></div> Seamless API integrations</li>
+                              <li className="flex items-center break-words"><div className="w-1.5 h-1.5 bg-[#08BFE8] rounded-full mr-3 shrink-0"></div> Scalable cloud infrastructure</li>
+                              <li className="flex items-center break-words"><div className="w-1.5 h-1.5 bg-[#08BFE8] rounded-full mr-3 shrink-0"></div> Bulletproof security protocols</li>
+                              <li className="flex items-center break-words"><div className="w-1.5 h-1.5 bg-[#08BFE8] rounded-full mr-3 shrink-0"></div> Seamless API integrations</li>
                            </ul>
                         </div>
-                        <div className="bg-[#EAF8FC] rounded-3xl p-10 shadow-md border border-[#08BFE8]/20 flex flex-col justify-center">
+                        <div className="bg-[#EAF8FC] rounded-3xl p-8 lg:p-10 shadow-md border border-[#08BFE8]/20 flex flex-col justify-center min-w-0">
                            <h3 className="text-2xl font-black text-[#061B2E] mb-4">Why Partner With Us?</h3>
-                           <p className="text-[#061B2E]/80 leading-relaxed font-medium">We deliver software that actually impacts your bottom line, built by senior engineers who act as an extension of your own team.</p>
+                           <p className="text-[#061B2E]/80 leading-relaxed font-medium text-pretty">We deliver software that actually impacts your bottom line, built by senior engineers who act as an extension of your own team.</p>
                         </div>
                     </div>
                 </section>
 
                 {/* FINAL CTA */}
-                <section className="bg-gradient-to-br from-[#061B2E] to-[#08243A] py-20 px-5 text-center relative overflow-hidden">
+                <section className="bg-gradient-to-br from-[#061B2E] to-[#08243A] py-16 lg:py-20 px-5 text-center relative overflow-hidden">
                      <div className="absolute inset-0 bg-[radial-gradient(#08BFE8_1px,transparent_1px)] opacity-[0.03] bg-[size:24px_24px]"></div>
                      <div className="max-w-2xl mx-auto relative z-10 text-white">
-                         <h2 className="text-[clamp(32px,5vw,56px)] font-heading font-black mb-8 leading-tight">Ready to elevate your digital presence?</h2>
-                         <Link to="/contact" className="inline-flex items-center justify-center bg-[#08BFE8] text-white px-10 py-5 rounded-2xl font-bold hover:bg-[#159ED9] transition-colors shadow-lg shadow-[#08BFE8]/30">
+                         <h2 className="text-[clamp(28px,4vw,48px)] font-heading font-black mb-8 leading-tight text-balance">Ready to elevate your digital presence?</h2>
+                         <Link to="/contact" className="inline-flex items-center justify-center bg-[#08BFE8] text-white px-8 lg:px-10 py-4 lg:py-5 rounded-2xl font-bold hover:bg-[#159ED9] transition-colors shadow-lg shadow-[#08BFE8]/30">
                              Let's discuss your project <ArrowRight size={20} className="ml-2" />
                          </Link>
                      </div>
