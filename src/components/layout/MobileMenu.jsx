@@ -56,31 +56,21 @@ const MobileMenu = ({ isOpen, onClose }) => {
         <AnimatePresence>
             {isOpen && (
                 <>
-                    {/* Backdrop */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="fixed inset-0 bg-black/35 backdrop-blur-sm z-[1999]"
-                        onClick={onClose}
-                        aria-hidden="true"
-                    />
-
-                    {/* Drawer */}
+                    {/* Drawer (Full Screen) */}
                     <motion.div
                         initial={{ x: '100%', opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: '100%', opacity: 0 }}
-                        transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 bg-brand-soft z-[2000] flex flex-col h-[100dvh] max-h-[100dvh] overflow-hidden"
+                        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                        className="fixed inset-0 bg-[#F7FAFC] z-[2000] flex flex-col h-[100dvh] max-h-[100dvh] overflow-hidden"
                         role="dialog"
                         aria-modal="true"
                         aria-label="Mobile Navigation"
                     >
                         {/* Header */}
-                        <div className="flex justify-between items-center px-6 h-[90px] shrink-0 border-b border-border/30">
-                            <Link to="/" className="text-xl font-heading font-extrabold tracking-tight" onClick={onClose}>
+                        <div className="flex justify-between items-center px-6 h-[72px] lg:h-[76px] shrink-0 border-b border-[#061A2E]/10 bg-[rgba(247,250,252,0.94)] backdrop-blur-md">
+                            <Link to="/" className="text-xl font-heading font-extrabold tracking-tight text-brand-primary-navy flex items-center gap-2" onClick={onClose}>
+                                <img src="/logo.png" alt="The Digital Connect" className="h-8 object-contain" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
                                 THE DIGITAL CONNECT
                             </Link>
                             <button
@@ -92,9 +82,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
                             </button>
                         </div>
 
-                        {/* Scrollable Accodion Navigation */}
-                        <div className="flex-1 overflow-y-auto px-6 py-8">
-                            <nav className="flex flex-col w-full">
+                        {/* Scrollable Nav Content & CTA Section */}
+                        <div className="flex-1 overflow-y-auto px-6 py-8 pb-[calc(2rem+env(safe-area-inset-bottom))]">
+                            <nav className="flex flex-col w-full mb-12">
                                 {navOrder.map((nav, i) => {
                                     const sectionData = megaMenuData[nav.id];
                                     const isExpanded = expandedSection === nav.id;
@@ -102,15 +92,15 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                     return (
                                         <motion.div
                                             key={nav.id}
-                                            initial={{ opacity: 0, x: 20 }}
-                                            animate={{ opacity: 1, x: 0 }}
+                                            initial={{ opacity: 0, y: 10 }}
+                                            animate={{ opacity: 1, y: 0 }}
                                             transition={{ delay: 0.1 + (i * 0.05), duration: 0.3 }}
-                                            className="border-b border-border/50 overflow-hidden"
+                                            className="border-b border-[#061A2E]/10 overflow-hidden"
                                         >
                                             {sectionData ? (
                                                 <>
                                                     <button
-                                                        className="flex items-center justify-between w-full py-4 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors text-left"
+                                                        className="flex items-center justify-between w-full py-4 text-[22px] md:text-[26px] font-heading font-semibold text-[#0B1724] hover:text-[#061A2E] transition-colors text-left"
                                                         onClick={() => toggleSection(nav.id)}
                                                         aria-expanded={isExpanded}
                                                     >
@@ -118,9 +108,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                         <motion.div
                                                             animate={{ rotate: isExpanded ? 180 : 0 }}
                                                             transition={{ duration: 0.3 }}
-                                                            className="text-muted-foreground"
+                                                            className="text-[#607080]"
                                                         >
-                                                            <ChevronDown className="w-6 h-6" />
+                                                            {isExpanded ? <span className="text-3xl font-light leading-none -mt-2 inline-block">−</span> : <span className="text-3xl font-light leading-none inline-block mt-1">+</span>}
                                                         </motion.div>
                                                     </button>
 
@@ -132,24 +122,24 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                 exit={{ height: 0, opacity: 0 }}
                                                                 transition={{ duration: 0.3 }}
                                                             >
-                                                                <div className="flex flex-col gap-4 pb-6 pl-4 border-l-2 border-border ml-2 mt-2">
+                                                                <div className="flex flex-col gap-4 pb-6 pl-4 border-l-2 border-[#18C5E8]/20 ml-2 mt-2">
                                                                     {sectionData.items.map((subItem) => (
                                                                         <div key={subItem.id} className="flex flex-col gap-3 mb-4">
                                                                             <Link
                                                                                 to={subItem.href}
                                                                                 onClick={onClose}
-                                                                                className="text-lg font-bold text-foreground hover:text-primary transition-colors block"
+                                                                                className="text-lg font-bold text-[#087EA4] hover:text-[#061A2E] transition-colors flex items-center gap-2"
                                                                             >
-                                                                                {subItem.label}
+                                                                                {subItem.label} <span className="text-sm">→</span>
                                                                             </Link>
                                                                             {subItem.subServices && subItem.subServices.length > 0 && (
-                                                                                <div className="flex flex-col gap-2 pl-3 border-l text-sm mb-2">
+                                                                                <div className="flex flex-col gap-3 pl-3 border-l border-[#061A2E]/5 text-sm mb-2 mt-1">
                                                                                     {subItem.subServices.map((srv, idx) => (
                                                                                         <Link
                                                                                             key={idx}
                                                                                             to={srv.href}
                                                                                             onClick={onClose}
-                                                                                            className="text-muted-foreground hover:text-primary transition-colors block py-0.5"
+                                                                                            className="text-[#607080] hover:text-[#18C5E8] transition-colors block py-0.5 text-base"
                                                                                         >
                                                                                             {srv.title}
                                                                                         </Link>
@@ -167,7 +157,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                 <Link
                                                     to={`/${nav.id}`}
                                                     onClick={onClose}
-                                                    className="flex items-center justify-between w-full py-4 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors"
+                                                    className="flex items-center justify-between w-full py-4 text-[22px] md:text-[26px] font-heading font-semibold text-[#0B1724] hover:text-[#061A2E] transition-colors"
                                                 >
                                                     {nav.label}
                                                 </Link>
@@ -177,42 +167,42 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                 })}
 
                                 <motion.div
-                                    initial={{ opacity: 0, x: 20 }}
-                                    animate={{ opacity: 1, x: 0 }}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + (navOrder.length * 0.05), duration: 0.3 }}
-                                    className="border-b border-border/50"
+                                    className="border-b border-[#061A2E]/10"
                                 >
                                     <Link
                                         to="/contact"
                                         onClick={onClose}
-                                        className="flex items-center justify-between w-full py-4 text-[26px] font-heading font-semibold text-foreground hover:text-primary transition-colors"
+                                        className="flex items-center justify-between w-full py-4 text-[22px] md:text-[26px] font-heading font-semibold text-[#0B1724] hover:text-[#061A2E] transition-colors"
                                     >
                                         Contact
                                     </Link>
                                 </motion.div>
                             </nav>
-                        </div>
 
-                        {/* Footer */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4, duration: 0.3 }}
-                            className="shrink-0 px-6 py-8 bg-white/50 border-t border-border/30"
-                        >
-                            <Link
-                                onClick={onClose}
-                                to="/contact"
-                                className="flex items-center justify-center w-full bg-primary text-white py-4 rounded-xl font-bold tracking-wide uppercase text-sm hover:bg-primary/90 transition-colors shadow-lg"
+                            {/* Menu Footer Layout (CTA + Socials) */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.3 }}
+                                className="w-full flex flex-col gap-6"
                             >
-                                START A PROJECT
-                            </Link>
-                            <div className="flex gap-6 mt-8 font-medium text-sm">
-                                <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
-                                <a href="#" className="hover:text-primary transition-colors">Instagram</a>
-                                <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-                            </div>
-                        </motion.div>
+                                <Link
+                                    onClick={onClose}
+                                    to="/contact"
+                                    className="flex items-center justify-center w-full bg-[#061A2E] text-white py-4 rounded-2xl font-bold tracking-wide text-[16px] hover:bg-[#061A2E]/90 transition-colors shadow-lg"
+                                >
+                                    START A PROJECT <span className="ml-2">→</span>
+                                </Link>
+                                <div className="flex gap-6 justify-center font-medium text-[15px] text-[#607080]">
+                                    <a href="#" className="hover:text-[#061A2E] transition-colors">LinkedIn</a>
+                                    <a href="#" className="hover:text-[#061A2E] transition-colors">Instagram</a>
+                                    <a href="#" className="hover:text-[#061A2E] transition-colors">Twitter</a>
+                                </div>
+                            </motion.div>
+                        </div>
                     </motion.div>
                 </>
             )}

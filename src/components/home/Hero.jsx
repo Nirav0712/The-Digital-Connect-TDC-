@@ -7,12 +7,14 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-brand-soft">
+    <section className="relative min-h-[auto] md:min-h-[90vh] flex items-center pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-[#F7FAFC]">
       {/* Background Motion System */}
-      <AnimatedGrid />
-      <GlowOrb className="w-[600px] h-[600px] top-[-10%] left-[-10%]" color="bg-brand-cyan" />
-      <GlowOrb className="w-[500px] h-[500px] bottom-[-10%] right-[10%] animate-blob" style={{ animationDelay: '2s' }} color="bg-brand-deep-blue" />
-      <GlowOrb className="w-[400px] h-[400px] top-[20%] right-[-5%] animate-blob" style={{ animationDelay: '5s' }} color="bg-brand-electric-cyan" />
+      <div className="hidden md:block">
+        <AnimatedGrid />
+      </div>
+      <GlowOrb className="hidden md:block w-[600px] h-[600px] top-[-10%] left-[-10%]" color="bg-brand-cyan" />
+      <GlowOrb className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] bottom-[-5%] right-[-5%] md:bottom-[-10%] md:right-[10%] animate-blob" style={{ animationDelay: '2s' }} color="bg-brand-soft-blue" />
+      <GlowOrb className="hidden md:block w-[400px] h-[400px] top-[20%] right-[-5%] animate-blob" style={{ animationDelay: '5s' }} color="bg-brand-electric-cyan" />
 
       {/* Floating Labels */}
       <motion.div
@@ -37,31 +39,31 @@ const Hero = () => {
         <span className="w-2 h-2 rounded-full bg-brand-electric-cyan"></span> Digital Solutions
       </motion.div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+      <div className="max-w-7xl mx-auto px-5 lg:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="lg:col-span-7"
         >
-          <span className="inline-block py-1.5 px-4 rounded-full bg-white border border-border text-sm font-bold mb-8 shadow-sm">
+          <span className="inline-block py-1.5 px-4 rounded-full bg-white border border-[#D9E7EF] text-sm font-bold mb-6 md:mb-8 shadow-sm text-[#063B63]">
             The Digital Connect
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-[80px] font-extrabold tracking-tighter leading-[1.05] mb-8">
+          <h1 className="text-responsive-h1 font-extrabold tracking-tighter leading-[1.02] mb-6 text-[#061A2E]">
             Digital Experiences <br /> Built to Move <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-primary/60">
+            <span className="text-[#087EA4]">
               Businesses Forward.
             </span>
           </h1>
-          <p className="text-lg md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+          <p className="text-responsive-body md:text-2xl text-[#607080] mb-8 md:mb-10 max-w-2xl leading-[1.6]">
             The Digital Connect creates high-performance websites, applications and digital experiences that help ambitious businesses grow.
           </p>
-          <div className="flex flex-col sm:flex-row gap-5">
-            <Button to="/contact" className="group text-base" variant="primary">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button to="/contact" className="group text-[16px] py-3.5 sm:py-2.5 w-full sm:w-auto justify-center" variant="primary">
               Start a Project
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button to="/portfolio" className="bg-white border-none shadow-sm hover:bg-white/80 text-foreground text-base" variant="secondary">
+            <Button to="/portfolio" className="bg-white border hover:border-brand-border/80 shadow-sm hover:bg-white/80 text-foreground text-[16px] py-3.5 sm:py-2.5 w-full sm:w-auto justify-center" variant="secondary">
               Explore Our Work
             </Button>
           </div>

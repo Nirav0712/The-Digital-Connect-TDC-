@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 
 export const SubServiceShared = {
     Hero: ({ parentTitle, parentRoute, title, eyebrow, description, theme, visual: Visual }) => (
-        <section className="relative pt-[120px] pb-24 lg:pt-[160px] lg:pb-32 px-6 lg:px-8 max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-16 items-center">
+        <section className="relative pt-[100px] pb-16 lg:pt-[160px] lg:pb-32 px-5 lg:px-8 max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 lg:gap-16 items-center overflow-x-hidden">
             <div className="flex flex-col z-10 relative">
-                <div className="flex items-center gap-2 text-sm font-semibold mb-8 text-[brand-primary-navy]/60 flex-wrap">
-                    <Link to="/" className="hover:text-[brand-primary-navy] transition-colors shrink-0">Home</Link>
-                    <ChevronRight className="w-4 h-4 shrink-0" />
-                    <Link to="/services" className="hover:text-[brand-primary-navy] transition-colors shrink-0">Services</Link>
-                    <ChevronRight className="w-4 h-4 shrink-0" />
-                    <Link to={parentRoute} className="hover:text-[brand-primary-navy] transition-colors shrink-0 whitespace-nowrap">{parentTitle}</Link>
-                    <ChevronRight className="w-4 h-4 shrink-0" />
+                <div className="flex items-center gap-2 text-[13px] md:text-sm font-semibold mb-6 md:mb-8 text-[#061A2E]/60 flex-wrap">
+                    <Link to="/" className="hover:text-[#061A2E] transition-colors shrink-0">Home</Link>
+                    <ChevronRight className="w-3.5 h-3.5 shrink-0" />
+                    <Link to="/services" className="hover:text-[#061A2E] transition-colors shrink-0">Services</Link>
+                    <ChevronRight className="w-3.5 h-3.5 shrink-0" />
+                    <Link to={parentRoute} className="hover:text-[#061A2E] transition-colors shrink-0 whitespace-nowrap">{parentTitle}</Link>
+                    <ChevronRight className="w-3.5 h-3.5 shrink-0" />
                     <span className={theme.accent + " shrink-0 font-bold"}>{eyebrow}</span>
                 </div>
-                <span className={"text-[13px] font-bold tracking-[0.2em] uppercase mb-6 " + theme.accent}>{eyebrow}</span>
-                <h1 className="text-4xl md:text-5xl lg:text-[64px] font-heading font-extrabold text-[brand-primary-navy] leading-[1.05] mb-8 tracking-tight max-w-[800px]">{title}</h1>
-                <p className="text-lg md:text-xl text-[brand-primary-navy]/70 leading-relaxed mb-10 max-w-xl">{description}</p>
+                <span className={"text-[12px] md:text-[13px] font-bold tracking-[0.2em] uppercase mb-4 md:mb-6 " + theme.accent}>{eyebrow}</span>
+                <h1 className="text-[clamp(40px,10vw,64px)] font-heading font-extrabold text-[#061A2E] leading-[1.05] mb-6 md:mb-8 tracking-tight max-w-[800px]">{title}</h1>
+                <p className="text-[17px] md:text-xl text-[#061A2E]/70 leading-[1.6] mb-8 md:mb-10 max-w-xl">{description}</p>
                 <div className="flex flex-wrap flex-col sm:flex-row items-start sm:items-center gap-4">
                     <Link to="/contact" className="bg-[brand-primary-navy] text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-brand-cyan transition-all shadow-lg flex items-center justify-center gap-2 w-full sm:w-auto">
                         Start a Project <ArrowRight className="w-4 h-4" />
@@ -35,11 +35,11 @@ export const SubServiceShared = {
     ),
 
     Overview: ({ title, content, theme }) => (
-        <section className="py-24 lg:py-32 bg-white px-6 lg:px-8 relative overflow-hidden">
-            <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative z-10">
+        <section className="py-16 lg:py-32 bg-white px-5 lg:px-8 relative overflow-hidden">
+            <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-24 relative z-10">
                 <div className="lg:col-span-5 relative">
-                    <span className={"text-[13px] font-bold tracking-[0.2em] uppercase mb-4 block " + theme.accent}>Overview</span>
-                    <h2 className="text-3xl lg:text-5xl font-heading font-extrabold text-[brand-primary-navy] leading-tight sticky top-32">{title}</h2>
+                    <span className={"text-[12px] md:text-[13px] font-bold tracking-[0.2em] uppercase mb-3 md:mb-4 block " + theme.accent}>Overview</span>
+                    <h2 className="text-[clamp(32px,7vw,52px)] font-heading font-extrabold text-[#061A2E] leading-[1.15] sticky top-24 md:top-32">{title}</h2>
                 </div>
                 <div className="lg:col-span-7">
                     <div className="prose prose-lg prose-neutral max-w-none text-[brand-primary-navy]/70 space-y-6 text-lg leading-relaxed">
@@ -51,17 +51,17 @@ export const SubServiceShared = {
     ),
 
     Capabilities: ({ theme, capabilities, title = "What We Build", eyebrow = "Capabilities" }) => (
-        <section className="py-24 lg:py-32 px-6 lg:px-8 bg-[brand-off-white]">
+        <section className="py-16 lg:py-32 px-5 lg:px-8 bg-[#F7FAFC]">
             <div className="max-w-[1400px] mx-auto">
-                <div className="mb-16 lg:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <div className="mb-10 lg:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-6 lg:gap-8">
                     <div className="max-w-2xl">
-                        <span className={"text-[13px] font-bold tracking-[0.2em] uppercase mb-4 block " + theme.accent}>{eyebrow}</span>
-                        <h2 className="text-3xl lg:text-5xl font-heading font-extrabold text-[brand-primary-navy]">{title}</h2>
+                        <span className={"text-[12px] md:text-[13px] font-bold tracking-[0.2em] uppercase mb-3 md:mb-4 block " + theme.accent}>{eyebrow}</span>
+                        <h2 className="text-[clamp(32px,7vw,52px)] font-heading font-extrabold text-[#061A2E] leading-tight">{title}</h2>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
                     {capabilities.map((cap, i) => (
-                        <div key={i} className="group bg-white border border-brand-border rounded-3xl p-8 lg:p-10 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.1)] transition-all duration-500 relative overflow-hidden">
+                        <div key={i} className="group bg-white border border-[#D9E7EF] rounded-[24px] lg:rounded-3xl p-6 lg:p-10 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.1)] transition-all duration-500 relative overflow-hidden">
                             <div className={"absolute top-0 right-0 w-32 h-32 rounded-full opacity-0 group-hover:opacity-10 blur-3xl transition-opacity duration-700 -translate-y-1/2 translate-x-1/2 " + theme.bg}></div>
                             <div className={"w-14 h-14 rounded-2xl mb-8 flex items-center justify-center transition-transform group-hover:scale-110 duration-500 " + theme.softBg + " " + theme.accent}>
                                 {cap.icon}
@@ -95,12 +95,12 @@ export const SubServiceShared = {
     ),
 
     Process: ({ process, theme, title = "Methodology", eyebrow = "How We Work" }) => (
-        <section className="py-24 lg:py-32 px-6 lg:px-8 bg-white border-b border-brand-border relative">
-            <div className="absolute top-0 right-1/4 w-96 h-96 bg-black/5 blur-[120px] rounded-full mix-blend-multiply pointer-events-none"></div>
+        <section className="py-16 lg:py-32 px-5 lg:px-8 bg-white border-b border-[#D9E7EF] relative overflow-hidden">
+            <div className="absolute top-0 right-1/4 w-96 h-96 bg-black/5 blur-[120px] rounded-full mix-blend-multiply pointer-events-none hidden lg:block"></div>
             <div className="max-w-[1400px] mx-auto relative z-10">
-                <div className="mb-16 lg:mb-24 text-center max-w-3xl mx-auto">
-                    <span className={"text-[13px] font-bold tracking-[0.2em] uppercase mb-4 block " + theme.accent}>{eyebrow}</span>
-                    <h2 className="text-3xl lg:text-5xl font-heading font-extrabold text-[brand-primary-navy]">{title}</h2>
+                <div className="mb-12 lg:mb-24 text-center max-w-3xl mx-auto">
+                    <span className={"text-[12px] md:text-[13px] font-bold tracking-[0.2em] uppercase mb-3 md:mb-4 block " + theme.accent}>{eyebrow}</span>
+                    <h2 className="text-[clamp(32px,7vw,52px)] font-heading font-extrabold text-[#061A2E] leading-tight">{title}</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative">
                     <div className="hidden lg:block absolute top-[27px] left-[70px] right-[70px] h-[2px] bg-gradient-to-r from-transparent via-black/10 to-transparent -z-10"></div>
@@ -119,12 +119,12 @@ export const SubServiceShared = {
     ),
 
     Benefits: ({ benefits, theme }) => (
-        <section className="py-24 px-6 lg:px-8 bg-[brand-off-white]">
+        <section className="py-16 lg:py-24 px-5 lg:px-8 bg-[#F7FAFC]">
             <div className="max-w-[1400px] mx-auto">
-                <div className="mb-16 flex flex-col lg:flex-row gap-8 justify-between items-start">
+                <div className="mb-10 lg:mb-16 flex flex-col lg:flex-row gap-6 lg:gap-8 justify-between items-start">
                     <div className="max-w-xl">
-                        <span className={"text-[13px] font-bold tracking-[0.2em] uppercase mb-4 block " + theme.accent}>Business Value</span>
-                        <h2 className="text-3xl lg:text-4xl font-heading font-extrabold text-[brand-primary-navy]">Why This Matters</h2>
+                        <span className={"text-[12px] md:text-[13px] font-bold tracking-[0.2em] uppercase mb-3 md:mb-4 block " + theme.accent}>Business Value</span>
+                        <h2 className="text-[clamp(32px,7vw,52px)] font-heading font-extrabold text-[#061A2E] leading-tight">Why This Matters</h2>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -145,11 +145,11 @@ export const SubServiceShared = {
     ),
 
     FAQ: ({ faqs, theme }) => (
-        <section className="py-24 px-6 lg:px-8 bg-white border-y border-brand-border">
+        <section className="py-16 lg:py-24 px-5 lg:px-8 bg-white border-y border-[#D9E7EF]">
             <div className="max-w-[1000px] mx-auto">
-                <div className="mb-16 text-center">
-                    <span className={"text-[13px] font-bold tracking-[0.2em] uppercase mb-4 block " + theme.accent}>Common Questions</span>
-                    <h2 className="text-3xl lg:text-4xl font-heading font-extrabold text-[brand-primary-navy]">Frequently Asked Questions</h2>
+                <div className="mb-10 lg:mb-16 text-center">
+                    <span className={"text-[12px] md:text-[13px] font-bold tracking-[0.2em] uppercase mb-3 md:mb-4 block " + theme.accent}>Common Questions</span>
+                    <h2 className="text-[clamp(32px,7vw,52px)] font-heading font-extrabold text-[#061A2E] leading-tight">Frequently Asked Questions</h2>
                 </div>
                 <div className="space-y-4">
                     {faqs.map((faq, i) => (
@@ -171,10 +171,10 @@ export const SubServiceShared = {
     ),
 
     Related: ({ links, theme }) => (
-        <section className="py-24 px-6 lg:px-8 bg-[brand-off-white]">
+        <section className="py-16 lg:py-24 px-5 lg:px-8 bg-[#F7FAFC]">
             <div className="max-w-[1400px] mx-auto">
-                <h2 className="text-3xl font-heading font-extrabold text-[brand-primary-navy] mb-12">Related Services</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <h2 className="text-[clamp(32px,7vw,48px)] font-heading font-extrabold text-[#061A2E] mb-10 lg:mb-12">Related Services</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
                     {links.map((link, i) => (
                         <Link key={i} to={link.href} className="group bg-white border border-brand-border rounded-2xl p-6 md:p-8 hover:-translate-y-2 hover:shadow-[0_15px_30px_-15px_rgba(0,0,0,0.1)] transition-all duration-300 block relative overflow-hidden">
                             <h3 className="text-xl font-bold text-[brand-primary-navy] mb-4 pr-8 relative z-10">{link.title}</h3>
@@ -189,10 +189,10 @@ export const SubServiceShared = {
     ),
 
     CTA: ({ theme }) => (
-        <section className={"py-32 px-6 lg:px-8 relative overflow-hidden " + theme.softBg}>
-            <div className={"absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/2 pointer-events-none " + theme.bg}></div>
+        <section className={"py-20 lg:py-32 px-5 lg:px-8 relative overflow-hidden " + theme.softBg}>
+            <div className={"absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[100px] opacity-20 -translate-y-1/2 translate-x-1/2 pointer-events-none hidden md:block " + theme.bg}></div>
             <div className="max-w-[1000px] mx-auto text-center flex flex-col items-center relative z-10">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-[brand-primary-navy] mb-8 tracking-tight">Have a project in mind?</h2>
+                <h2 className="text-[clamp(36px,9vw,64px)] font-heading font-extrabold text-[#061A2E] mb-6 md:mb-8 tracking-tight">Have a project in mind?</h2>
                 <p className="text-xl text-[brand-primary-navy]/70 leading-relaxed max-w-2xl mb-12">
                     Let's build something meaningful. Tell us what you're building and we'll engineer the solution collaboratively.
                 </p>

@@ -194,3 +194,54 @@
     transform: none;
   }
 }
+
+@layer utilities {
+  .text-responsive-h1 {
+    font-size: clamp(40px, 10vw, 72px);
+    line-height: 1;
+  }
+
+  .text-responsive-h2 {
+    font-size: clamp(32px, 7vw, 52px);
+    line-height: 1.1;
+  }
+
+  .text-responsive-h3 {
+    font-size: clamp(22px, 5vw, 32px);
+    line-height: 1.2;
+  }
+
+  .text-responsive-body {
+    font-size: clamp(16px, 2vw, 18px);
+  }
+
+  .section-padding {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-padding-lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 96px;
+      padding-bottom: 96px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .section-padding-lg {
+      padding-top: 128px;
+      padding-bottom: 128px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}
