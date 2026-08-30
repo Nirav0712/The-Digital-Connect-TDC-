@@ -128,17 +128,20 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                 <div className="flex flex-col gap-4 pb-6 pl-4 border-l-2 border-[#18C5E8]/20 ml-2 mt-2">
                                                                     {sectionData.items.map((subItem) => {
                                                                         const isSubExpanded = expandedSubSection === subItem.id;
-                                                                        const hasSubServices = subItem.subServices && subItem.subServices.length > 0;
+                                                                        const childrenItems = subItem.subServices || subItem.roles || null;
+                                                                        const hasChildren = childrenItems && childrenItems.length > 0;
+                                                                        const linkHref = subItem.href || subItem.featuredProject?.href || '#';
+
                                                                         return (
                                                                             <div key={subItem.id} className="flex flex-col gap-3 mb-4">
-                                                                                {hasSubServices ? (
+                                                                                {hasChildren ? (
                                                                                     <button onClick={() => setExpandedSubSection(prev => prev === subItem.id ? null : subItem.id)} className="text-lg font-bold text-[#087EA4] hover:text-[#061A2E] transition-colors flex items-center justify-between w-full pr-4 text-left">
                                                                                         <span>{subItem.label}</span>
                                                                                         <motion.span animate={{ rotate: isSubExpanded ? 180 : 0 }} className="text-sm">▼</motion.span>
                                                                                     </button>
                                                                                 ) : (
                                                                                     <Link
-                                                                                        to={subItem.href}
+                                                                                        to={linkHref}
                                                                                         onClick={onClose}
                                                                                         className="text-lg font-bold text-[#087EA4] hover:text-[#061A2E] transition-colors flex items-center justify-between w-full pr-4"
                                                                                     >
@@ -147,27 +150,27 @@ const MobileMenu = ({ isOpen, onClose }) => {
                                                                                 )}
 
                                                                                 <AnimatePresence>
-                                                                                    {isSubExpanded && hasSubServices && (
+                                                                                    {isSubExpanded && hasChildren && (
                                                                                         <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} className="overflow-hidden">
                                                                                             <div className="flex flex-col gap-3 pl-3 border-l border-[#061A2E]/5 text-sm mb-2 mt-2">
-                                                                                                {subItem.subServices.map((srv, idx) => (
+                                                                                                {childrenItems.map((child, idx) => (
                                                                                                     <Link
                                                                                                         key={idx}
-                                                                                                        to={srv.href}
+                                                                                                        to={child.href}
                                                                                                         onClick={onClose}
                                                                                                         className="text-[#607080] hover:text-[#18C5E8] transition-colors block py-0.5 text-base"
                                                                                                     >
-                                                                                                        {srv.title}
+                                                                                                        {child.title}
                                                                                                     </Link>
                                                                                                 ))}
-                                                                                                {subItem.href && (
+                                                                                                {linkHref && linkHref !== '#' && (
                                                                                                     <div className="pt-2 mt-1 border-t border-[#061A2E]/5">
                                                                                                         <Link
-                                                                                                            to={subItem.href}
+                                                                                                            to={linkHref}
                                                                                                             onClick={onClose}
-                                                                                                            className="text-[#087EA4] font-bold hover:text-[#18C5E8] transition-colors block py-1 text-base inline-flex items-center"
+                                                                                                            className="text-[#087EA4] font-bold hover:text-[#18C5E8] transition-colors block py-1 text-base flex items-center"
                                                                                                         >
-                                                                                                            {subItem.cta ? subItem.cta.replace(' \u2192', '') : 'Overview'} <span className="ml-1 text-sm">→</span>
+                                                                                                            Overview <span className="ml-1 text-sm">→</span>
                                                                                                         </Link>
                                                                                                     </div>
                                                                                                 )}
